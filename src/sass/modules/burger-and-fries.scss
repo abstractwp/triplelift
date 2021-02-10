@@ -1,15 +1,9 @@
 .not-home,
 html:not([data-scroll="0"]) {
   .burger-and-fries-container {
-    background: white;
-
-    .logo-in-navigation .white-logo {
-      opacity: 0;
-    }
-
-    .logo-in-navigation .orange-logo {
-      opacity: 1;
-    }
+    background: $gradientDark1;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.75);
+    transition: 0.6s;
 
     .menu-on-large a {
       color: $amplifiedOrange;
@@ -20,12 +14,6 @@ html:not([data-scroll="0"]) {
 
     .login {
       border: 1px solid $amplifiedOrange;
-    }
-
-    .hamburger-inner,
-    .hamburger-inner::before,
-    .hamburger-inner::after {
-      background-color: $amplifiedOrange;
     }
   }
 }
@@ -45,7 +33,7 @@ html:not([data-scroll="0"]) {
   justify-content: space-between;
   height: 71px;
   padding: 18px 18px;
-  transition: 0.6s ease-in;
+  transition: 0.6s;
   width: 100%;
   z-index: 200;
   position: fixed;
@@ -54,15 +42,19 @@ html:not([data-scroll="0"]) {
     height: 78px;
   }
 
-  .logo-in-navigation * {
-    transition: 0.6s ease-out;
-  }
-
-  .logo-in-navigation .orange-logo {
-    position: absolute;
-    opacity: 0;
-    z-index: 1;
-    left: 0;
+  .logo-in-navigation {
+    * {
+      transition: 0.6s;
+    }
+    &.logo-lockup {
+      .lift-icon {
+        width: 36px;
+        margin-right: 6px;
+      }
+      .wordmark {
+        width: 128px;
+      }
+    }
   }
 
   .hamburger-inner,

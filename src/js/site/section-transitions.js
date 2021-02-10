@@ -10,9 +10,9 @@ const whyTLGradientTL = gsap.timeline( {
 
 whyTLGradientTL
   .to(
-    '.gradient-transition.gradient2', 
+    '.section-transition.section2', 
     { 
-      opacity: 1, 
+      opacity: .5, 
       duration: 1 
     }, "why-triplelift"
 );
@@ -30,7 +30,7 @@ const exploreGalleryGradientTL = gsap.timeline( {
 
 exploreGalleryGradientTL
   .to(
-    '.gradient-transition.white', 
+    '.section-transition.section3', 
     { 
       opacity: 1, 
       duration: 1 
@@ -49,7 +49,7 @@ const weWorkWithGradientTL = gsap.timeline( {
 
 weWorkWithGradientTL
   .to(
-    '.gradient-transition.white', 
+    '.section-transition.section3', 
     { 
       opacity: 0, 
       duration: 0

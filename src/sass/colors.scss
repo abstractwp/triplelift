@@ -1,5 +1,22 @@
 $amplifiedOrange: rgba(241, 92, 44, 1);
+$heritageBlue: #0e3d52;
+
 $primaryGradient: linear-gradient(77.24deg, #f47b20 14.56%, #f15c2c 88.29%);
-$secondaryGradient1: linear-gradient(142.86deg, #F47B20 2.47%, #F15C2C 43.9%, #ED79B0 95.24%);
-$secondaryGradient2: linear-gradient(141.68deg, #ED79CA 7.45%, #F15C2C 90.6%);
+
+$secondaryGradient1: linear-gradient(
+  142.86deg,
+  #f47b20 2.47%,
+  #f15c2c 43.9%,
+  #ed79b0 95.24%
+);
+
+$secondaryGradient2: linear-gradient(141.68deg, #ed79ca 7.45%, #f15c2c 90.6%);
+
 $gradientDark1: linear-gradient(122.97deg, #0e3d52 0%, #000000 95.81%);
+
+$gradientDark2: linear-gradient(
+  155.43deg,
+  #313131 31.37%,
+  #212121 37.63%,
+  #000000 84.12%
+);

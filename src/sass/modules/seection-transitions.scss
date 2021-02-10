@@ -1,4 +1,4 @@
-.gradient-transition-container {
+.section-transition-container {
   height: 100vh;
   position: fixed;
   width: 100%;
@@ -15,16 +15,16 @@
   }
 }
 
-.gradient-transition.gradient1 {
-  background: $primaryGradient;
+.section-transition.section1 {
+  background: $gradientDark1;
 }
 
-.gradient-transition.gradient2 {
-  background: $secondaryGradient1;
-  opacity: 0;
+.section-transition.section2 {
+  background: $gradientDark1;
+  opacity: 0.5;
 }
 
-.gradient-transition.white {
+.section-transition.section3 {
   background: white;
   opacity: 0;
 }
