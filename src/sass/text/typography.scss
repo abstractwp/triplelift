@@ -14,3 +14,17 @@ p {
 .f26 {
   font-size: 26px;
 }
+
+.text-primaryGradient {
+  background: $primaryGradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+}
+
+.text-secondaryGradient1 {
+  background: $secondaryGradient1;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+}
