@@ -2,14 +2,22 @@
   padding-bottom: 24vw;
 
   h3 {
-    font-size: 8vw;
+    font-size: 36px;
     font-weight: bold;
     text-align: center;
   }
 
   h4 {
-    font-size: 6vw;
+    color: $heritageBlue;
+    font-size: 28px;
     font-weight: 500;
+    height: inherit;
+
+    .gradient-border {
+      margin-top: 12px;
+      height: 2px;
+      background: $primaryGradient;
+    }
   }
 
   p {

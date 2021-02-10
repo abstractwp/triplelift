@@ -10,20 +10,18 @@
 
     display: flex;
     flex-direction: column;
+
     .headline {
       font-size: 32px;
       font-weight: 800;
       line-height: 1.3;
     }
-    .cta {
-      align-self: flex-end;
-      align-items: center;
-      justify-content: flex-end;
-      margin-top: 36px;
-      span {
-        font-weight: 600;
-        text-transform: uppercase;
-        margin-right: 12px;
+    .animate-border-content {
+      display: flex;
+      flex-direction: column;
+      .cta {
+        align-self: flex-end;
+        margin-top: 36px;
       }
     }
   }

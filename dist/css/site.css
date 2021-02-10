@@ -1196,6 +1196,15 @@ body.menu-open {
   .cta.cta-style-1 {
     background: white;
     color: #0e3d52; }
+  .cta.cta-style-2 {
+    background: linear-gradient(77.24deg, #f47b20 14.56%, #f15c2c 88.29%);
+    color: white;
+    font-size: 14px;
+    padding: 16px 24px;
+    letter-spacing: 2px;
+    font-weight: 500; }
+    .cta.cta-style-2 img {
+      width: 16px; }
 
 .explore-our-gallery-container {
   margin: 24vw 0 24vw;
@@ -1210,15 +1219,12 @@ body.menu-open {
       font-size: 32px;
       font-weight: 800;
       line-height: 1.3; }
-    .explore-our-gallery-container a.explore-our-gallery .cta {
-      align-self: flex-end;
-      align-items: center;
-      justify-content: flex-end;
-      margin-top: 36px; }
-      .explore-our-gallery-container a.explore-our-gallery .cta span {
-        font-weight: 600;
-        text-transform: uppercase;
-        margin-right: 12px; }
+    .explore-our-gallery-container a.explore-our-gallery .animate-border-content {
+      display: flex;
+      flex-direction: column; }
+      .explore-our-gallery-container a.explore-our-gallery .animate-border-content .cta {
+        align-self: flex-end;
+        margin-top: 36px; }
 
 @media (min-width: 1024px) {
   .explore-our-gallery-container {
@@ -1346,12 +1352,18 @@ body.menu-open {
 .we-work-with {
   padding-bottom: 24vw; }
   .we-work-with h3 {
-    font-size: 8vw;
+    font-size: 36px;
     font-weight: bold;
     text-align: center; }
   .we-work-with h4 {
-    font-size: 6vw;
-    font-weight: 500; }
+    color: #0e3d52;
+    font-size: 28px;
+    font-weight: 500;
+    height: inherit; }
+    .we-work-with h4 .gradient-border {
+      margin-top: 12px;
+      height: 2px;
+      background: linear-gradient(77.24deg, #f47b20 14.56%, #f15c2c 88.29%); }
   .we-work-with p {
     margin-top: 16px; }
   .we-work-with .we-work-with-section-container {

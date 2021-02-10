@@ -8,6 +8,7 @@
   font-size: 14px;
   font-weight: 600;
   width: fit-content;
+
   > span {
     line-height: 1;
     margin-top: 3px;
@@ -16,5 +17,17 @@
   &.cta-style-1 {
     background: white;
     color: $heritageBlue;
+  }
+
+  &.cta-style-2 {
+    background: $primaryGradient;
+    color: white;
+    font-size: 14px;
+    padding: 16px 24px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    img {
+      width: 16px;
+    }
   }
 }
