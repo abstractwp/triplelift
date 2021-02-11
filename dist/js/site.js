@@ -865,6 +865,15 @@ const exploreGalleryGradientTL = gsap.timeline( {
   }
 });
 
+exploreGalleryGradientTL
+  .to(
+    '.section-transition.section2', 
+    { 
+      opacity: 0, 
+      duration: .5 
+    }, "explore"
+);
+
 
 exploreGalleryGradientTL
   .to(
