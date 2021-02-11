@@ -74,15 +74,27 @@
 
   .homepage-hero .copy {
     h1 {
-      font-size: 3vw;
+      font-size: 48px;
+    }
+    p {
+      font-size: 24px;
     }
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1600px) {
   .homepage-hero {
-    max-width: 1368px;
+    max-width: 80vw;
     margin: 0 auto;
+    .homepage-hero .copy {
+      h1 {
+        font-size: 60px;
+      }
+      p {
+        font-size: 32px;
+      }
+    }
+  
   }
 }
 

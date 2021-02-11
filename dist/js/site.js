@@ -756,7 +756,7 @@ const parallaxHomePageHero = gsap.timeline( {
       start: "100% center",
       end: "+=100 center",
       scrub: true,
-      toggleActions: "play reverse play reverse",
+      toggleActions: "play",
     }
   });
 
@@ -772,12 +772,12 @@ parallaxHomePageHero
 
 parallaxHomePageHero
   .from(
-    '.why-triplelift', 
+    '.why-triplelift h2', 
     { 
       opacity: 0, 
       duration: 1,
       y: 20
-    })
+    }, "-=1")
   ;
 
 const whyTripleLiftParallax = gsap.timeline( {    
@@ -786,7 +786,7 @@ const whyTripleLiftParallax = gsap.timeline( {
     start: "10% center",
     end: "60% center",
     scrub: true,
-    toggleActions: "play reverse play reverse",
+    toggleActions: "play",
   }
 });
 
@@ -805,7 +805,7 @@ const exploreGalleryParallax = gsap.timeline( {
     trigger: ".explore-our-gallery-container",
     scrub: true,
     end: "10%",
-    toggleActions: "play reverse play reverse",
+    toggleActions: "play",
   }
 });
 
