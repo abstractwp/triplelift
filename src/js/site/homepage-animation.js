@@ -273,10 +273,29 @@ weWorkWithParallax.from(".we-work-with", {
   duration: .3,
 }, "weWorkWith")
 
-
 weWorkWithParallax.from(".we-work-with .logo-grid", {
   opacity: 0,
   y: 20,
   duration: .08,
   stagger: .03
 }, "weWorkWith", "-=1.2")
+
+let headlines = gsap.utils.toArray('.we-work-with h4 .gradient-border');
+
+headlines.forEach((item, index) =>{
+  const weWorkWithHeadlineBorder = gsap.timeline( {    
+    scrollTrigger: {
+      trigger: item,
+      start: "top center",
+      end: "30px",
+      scrub: true,
+      markers: true,
+      toggleActions: "play reverse play reverse",
+    }
+  });
+  
+  weWorkWithHeadlineBorder.from(item, {
+    width: 0,
+    duration: .5,
+  })
+})
