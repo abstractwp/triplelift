@@ -604,6 +604,9 @@ var Lantern = (function() {
 
 })();
 
+if (document.getElementById("homepageJSIndicator")) {
+  gsap.config({nullTargetWarn:false});
+
 window.setTimeout(function(){$(".loading").addClass("not-loading");}, 100);
 
 var tl = gsap.timeline({repeat: 0});
@@ -891,6 +894,9 @@ const weWorkWithGradientTL = gsap.timeline( {
   }
 });
 
+}
+gsap.config({nullTargetWarn:false});
+
 $(window).on("load", function () {
 
   // set up hamburger stuff
@@ -1008,3 +1014,26 @@ downarrowTL
     y: 100
   }, 0.5)
 ;
+if (document.getElementById("productPageJSIndicator")) {
+  
+  
+  const innovationSectionTL = gsap.timeline( {    
+    scrollTrigger: {
+      trigger: ".innovation-header-container",
+      scrub: true,
+      toggleActions: "play reverse play reverse",
+    }
+  });
+  
+  innovationSectionTL
+    .to(
+      '.productpage-section-transition-container .section-transition.white', 
+      { 
+        opacity: 1, 
+        duration: 1 
+      }
+  );
+
+
+
+}

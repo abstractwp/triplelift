@@ -1,3 +1,5 @@
+gsap.config({nullTargetWarn:false});
+
 $(window).on("load", function () {
 
   // set up hamburger stuff

@@ -1,3 +1,6 @@
+if (document.getElementById("homepageJSIndicator")) {
+  gsap.config({nullTargetWarn:false});
+
 window.setTimeout(function(){$(".loading").addClass("not-loading");}, 100);
 
 var tl = gsap.timeline({repeat: 0});
@@ -284,3 +287,5 @@ const weWorkWithGradientTL = gsap.timeline( {
     toggleActions: "play reverse play reverse",
   }
 });
+
+}

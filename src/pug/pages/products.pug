@@ -1,15 +1,14 @@
 extends ../template.pug
 
 block content
+  #productPageJSIndicator
   include ../regions/header.pug
   .productpage-section-transition-container.section-transition-container
     .section-transition.section1
     .section-transition.white
   include ../modules/products-hero.pug
   include ../modules/creative-gallery.pug
-  .innovation-container 
-      h2 Innovation
-      p We say that we’re reinventing ad placement one medium at a time…and we mean it. Keep scrolling to see how our OTT business is changing the television advertising landscape and explore our Exchange Traded Deals, the smart way to buy, measure and optimize programmatic media.
+  include ../modules/innovation-header.pug
   .explore-our-gallery-container
     a.does-not-work.explore-our-gallery
         .animate-border-outer.shadow-3
