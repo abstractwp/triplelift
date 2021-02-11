@@ -1,7 +1,17 @@
+.texture-animation-container {
+  width: 100%;
+  height: 24vw;
+  position: relative;
+}
+
 .texture {
-  padding: 100px 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: inherit;
+  padding: 74px 0;
   &.texture1 {
-    background: url("/images/plus-primary-gradient-bg.svg");
+    background-image: url("/images/plus-primary-gradient-bg.svg");
   }
   &.texture2 {
     background: url("/images/plus-white-bg.svg");

@@ -1023,11 +1023,48 @@ ctaBordersToAnimate.forEach(item =>{
   
 })
 
+let texturesToAnimateRight = gsap.utils.toArray('.animated-texture-to-right');
 
+texturesToAnimateRight.forEach(item =>{
+  const textureScrollItem = gsap.timeline( {    
+    scrollTrigger: {
+      trigger: item,
+      scrub: true,
+      end: "100%",
+      toggleActions: "play reverse play reverse",
+    }
+  });
+  
+  textureScrollItem.from(item, {
+    backgroundPosition: "-500px 0",
+    duration: 6,
+  })
+  
+})
+
+let texturesToAnimateLeft = gsap.utils.toArray('.animated-texture-to-left');
+
+texturesToAnimateLeft.forEach(item =>{
+  const textureScrollItem = gsap.timeline( {    
+    scrollTrigger: {
+      trigger: item,
+      scrub: true,
+      end: "100%",
+      toggleActions: "play reverse play reverse",
+    }
+  });
+  
+  textureScrollItem.from(item, {
+    backgroundPosition: "500px 0",
+    duration: 6,
+    stagger: 1
+  })
+  
+})
 if (document.getElementById("productPageJSIndicator")) {
   
   
-  const innovationSectionTL = gsap.timeline( {    
+  const creativeGallerySectionTL = gsap.timeline( {    
     scrollTrigger: {
       trigger: ".creative-gallery-section-container",
       scrub: true,
@@ -1036,21 +1073,125 @@ if (document.getElementById("productPageJSIndicator")) {
     }
   });
 
-  innovationSectionTL
+  creativeGallerySectionTL
   .to(
     '.productpage-section-transition-container .section-transition.section1', 
     { 
       opacity: 0, 
       duration: 1 
     },"transition1"
-);
+  );
   
-  innovationSectionTL
-    .to(
-      '.productpage-section-transition-container .section-transition.white', 
-      { 
-        opacity: 1, 
-        duration: 1 
-      },"transition1"
-      );
+  creativeGallerySectionTL
+  .to(
+    '.productpage-section-transition-container .section-transition.white', 
+    { 
+      opacity: 1, 
+      duration: 1 
+    },"transition1"
+  );
+
+  const innovationHeaderSectionTLIntro = gsap.timeline( {    
+    scrollTrigger: {
+      trigger: ".innovation-header-container",
+      scrub: true,
+      start: "20px center",
+      end: "80px top",
+      toggleActions: "play reverse play reverse",
+    }
+  });
+
+  innovationHeaderSectionTLIntro
+  .to(
+    '.productpage-section-transition-container .section-transition.white', 
+    { 
+      opacity: 0, 
+      duration: 1 
+    },"transition2"
+  );
+
+  innovationHeaderSectionTLIntro
+  .to(
+    '.productpage-section-transition-container .section-transition.gradient2', 
+    { 
+      opacity: 1, 
+      duration: 1 
+    },"transition2"
+  );
+
+  innovationHeaderSectionTLIntro
+  .to(
+    '.texture-animation-container', 
+    { 
+      opacity: 0, 
+      duration: 1 
+    },"transition2"
+  );
+
+  innovationHeaderSectionTLIntro
+  .from(
+    '.innovation-header-container .copy', 
+    { 
+      opacity: 0,
+      y: -20,
+      duration: .6 
+    },"transition2"
+  );
+
+  const innovationHeaderSectionTLOutro = gsap.timeline( {    
+    scrollTrigger: {
+      trigger: ".innovation-header-container",
+      scrub: true,
+      markers: true,
+      start: "95% bottom",
+      end: "120% bottom",
+      toggleActions: "play reverse play reverse",
+    }
+  });
+
+  innovationHeaderSectionTLOutro
+  .to(
+    '.texture-animation-container', 
+    { 
+      opacity: 1, 
+      duration: 1 
+    },"transition3"
+  );
+
+  innovationHeaderSectionTLOutro
+  .to(
+    '.innovation-header-container .copy', 
+    { 
+      opacity: 0, 
+      duration: 1 
+    },"transition3"
+  );
+
+  innovationHeaderSectionTLOutro
+  .to(
+    '.productpage-section-transition-container .section-transition.gradient2', 
+    { 
+      opacity: 0, 
+      duration: 1 
+    },"transition3"
+  );
+
+  innovationHeaderSectionTLOutro
+  .to(
+    '.productpage-section-transition-container .section-transition.white', 
+    { 
+      opacity: 1, 
+      duration: 1 
+    },"transition3"
+  );
+
+  innovationHeaderSectionTLOutro
+  .to(
+    '.texture-animation-container', 
+    { 
+      opacity: 1, 
+      duration: 1 
+    },"transition3"
+  );
+
 }

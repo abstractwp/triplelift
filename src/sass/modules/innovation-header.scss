@@ -1,12 +1,11 @@
 .innovation-header-container {
-  background: white;
-
-  .innovation-inner-container {
-    background: $secondaryGradient1;
+  position: relative;
+  .texture-animation-container {
+    position: absolute;
+    height: 100%;
   }
-
   .copy {
-    padding: 100px 24px;
+    padding: 300px 24px 500px;
     color: white;
     h2 {
       font-weight: bold;
