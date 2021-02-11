@@ -634,17 +634,46 @@ tl.to(".loading", {
 tl.from("#navigation .logo-in-navigation", {
   y: -20,
   opacity: 0,
-  duration: .5
+  duration: .2
 })
 
-tl.from(".phone-breakout img", {
-    opacity: 0, 
-    y: 20,
-    x: 20,
-    delay: .1,
-    duration: 1,
-    stagger: -0.5
-  }
+tl.from(".phone-breakout", {
+  opacity: 0, 
+  y: 20,
+  duration: .5,
+  },
+  "phone-breakout-slide-up"
+)
+
+tl.from(".phone-breakout img:nth-child(1)", {
+  x: -10,  
+  duration: .4,
+  },
+  "phone-breakout"
+)
+
+tl.from(".phone-breakout img:nth-child(2)", {
+  x: -10,  
+  duration: .4,
+},
+"phone-breakout"
+)
+
+tl.from(".phone-breakout img:nth-child(3)", {
+  scale: .95,
+  x: 15,
+  duration: .4,
+},
+"phone-breakout"
+)
+
+tl.from(".phone-breakout img:nth-child(4)", {
+  scale: .9,
+  y: 10,
+  x: 30,
+  duration: .4,
+},
+"phone-breakout"
 )
 
 tl.from("#navigation .burger-and-fries", {
@@ -822,7 +851,6 @@ const weWorkWithParallax = gsap.timeline( {
     start: "-15% center",
     end: "90% center",
     scrub: true,
-    markers: true,
     toggleActions: "play reverse play reverse",
   }
 });
