@@ -804,7 +804,6 @@ const exploreGalleryParallax = gsap.timeline( {
   scrollTrigger: {
     trigger: ".explore-our-gallery-container",
     scrub: true,
-    markers: true,
     end: "10%",
     toggleActions: "play reverse play reverse",
   }
