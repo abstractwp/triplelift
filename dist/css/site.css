@@ -1015,6 +1015,32 @@ h3 {
   margin: 12px;
   z-index: 3; }
 
+.phone-breakout {
+  position: relative;
+  margin-top: 4vh;
+  height: 40vh;
+  width: 100%; }
+  .phone-breakout img {
+    top: 0;
+    width: 87%;
+    position: absolute;
+    left: 59%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 330px; }
+
+.laptop-breakout {
+  position: relative;
+  width: 100%; }
+  .laptop-breakout img {
+    top: 0;
+    width: 87%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 330px; }
+
 .not-home .burger-and-fries-container,
 html:not([data-scroll="0"]) .burger-and-fries-container {
   background: linear-gradient(122.97deg, #0e3d52 0%, #000000 95.81%);
@@ -1482,20 +1508,6 @@ button.triggerGalleryMenu {
 .logo-lockup {
   display: flex;
   align-items: center; }
-
-.phone-breakout {
-  position: relative;
-  margin-top: 4vh;
-  height: 40vh;
-  width: 100%; }
-  .phone-breakout img {
-    top: 0;
-    width: 87%;
-    position: absolute;
-    left: 59%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 330px; }
 
 .section-transition-container {
   height: 100vh;

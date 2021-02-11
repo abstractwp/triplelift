@@ -1199,7 +1199,6 @@ if (document.getElementById("productPageJSIndicator")) {
       start: "20% center",
       end: "50% center",
       scrub: true,
-      markers: true,
       toggleActions: "play reverse play reverse",
     }
   });
