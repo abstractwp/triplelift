@@ -770,34 +770,35 @@ parallaxHomePageHero
     })
   ;
 
-parallaxHomePageHero
-  .from(
-    '.why-triplelift h2', 
-    { 
-      opacity: 0, 
-      duration: 1,
-      y: 20
-    }, "-=1")
-  ;
 
 const whyTripleLiftParallax = gsap.timeline( {    
   scrollTrigger: {
     trigger: ".why-triplelift",
-    start: "10% center",
-    end: "60% center",
     scrub: true,
+    end: "-=70%",
     toggleActions: "play",
   }
 });
 
 whyTripleLiftParallax
   .from(
+    '.why-triplelift h2', 
+    { 
+      opacity: 0, 
+      duration: .5,
+      y: 20
+    })
+  ;
+
+
+whyTripleLiftParallax
+  .from(
     '.why-triplelift-section', 
     { 
       opacity: 0, 
-      duration: 1,
+      duration: .3,
       x: -20,
-      stagger: .5
+      stagger: .05
     });
 
 const exploreGalleryParallax = gsap.timeline( {    

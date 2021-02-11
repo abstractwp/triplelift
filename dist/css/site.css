@@ -965,6 +965,10 @@ body {
 p {
   line-height: 1.5; }
 
+h2,
+h4 {
+  line-height: 1.2; }
+
 .bold {
   font-weight: 800; }
 
@@ -1285,9 +1289,15 @@ body.menu-open {
     .slide-content-container .copy {
       width: 50%; }
   .homepage-hero .copy h1 {
-    font-size: 48px; }
+    font-size: 36px; }
   .homepage-hero .copy p {
     font-size: 24px; } }
+
+@media (min-width: 1440px) {
+  .homepage-hero .copy h1 {
+    font-size: 48px; }
+  .homepage-hero .copy p {
+    font-size: 28px; } }
 
 @media (min-width: 1600px) {
   .homepage-hero {
@@ -1371,7 +1381,6 @@ body.menu-open {
     color: #0e3d52;
     font-size: 28px;
     font-weight: 500;
-    height: inherit;
     width: fit-content;
     overflow: hidden; }
     .we-work-with h4 .gradient-border {
@@ -1427,7 +1436,7 @@ body.menu-open {
     .we-work-with .we-work-with-section-container:nth-child(4) {
       margin-top: 9vw; } }
 
-@media (min-width: 1440px) {
+@media (min-width: 1600px) {
   .we-work-with {
     max-width: 60vw; } }
 
@@ -1465,7 +1474,7 @@ body.menu-open {
       .why-triplelift .why-triplelift-section-container .why-triplelift-section {
         margin-top: 0; } }
 
-@media (min-width: 1440px) {
+@media (min-width: 1600px) {
   .why-triplelift {
     max-width: 60vw; } }
 

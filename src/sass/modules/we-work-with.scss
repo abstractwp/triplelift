@@ -11,7 +11,6 @@
     color: $heritageBlue;
     font-size: 28px;
     font-weight: 500;
-    height: inherit;
     width: fit-content;
     overflow: hidden;
 
@@ -100,7 +99,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1600px) {
   .we-work-with {
    max-width: 60vw;
   }
