@@ -38,7 +38,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     place-items: center;
     column-gap: 36px;
-    row-gap: 36px;
+    row-gap: 24px;
 
     .work-with-logo {
       max-width: 100px;
@@ -47,18 +47,24 @@
       &.point5bigger {
         transform: scale(1.5) !important;
       }
+
+      &.point5smaller {
+        transform: scale(.8) !important;
+      }
     }
   }
 }
 
 @media (min-width: 1024px) {
   .we-work-with {
+    margin: 0 auto;
+    max-width: 90vw;
     h3 {
-      font-size: 6vw;
+      font-size: 72px;
     }
 
     h4 {
-      font-size: 3vw;
+      font-size: 32px;
     }
 
     > .container {

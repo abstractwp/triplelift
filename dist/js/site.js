@@ -875,7 +875,6 @@ weWorkWithParallax.to(".explore-our-gallery-container", {
 
 weWorkWithParallax.from(".we-work-with", {
   opacity: 0,
-  y: 40,
   duration: .3,
 }, "weWorkWith")
 
@@ -888,13 +887,12 @@ weWorkWithParallax.from(".we-work-with .logo-grid", {
 
 let headlines = gsap.utils.toArray('.we-work-with h4 .gradient-border');
 
-headlines.forEach((item, index) =>{
+headlines.forEach(item =>{
   const weWorkWithHeadlineBorder = gsap.timeline( {    
     scrollTrigger: {
       trigger: item,
-      start: "-60% bottom",
-      end: "center",
       scrub: true,
+      end: "center, center",
       toggleActions: "play reverse play reverse",
     }
   });
