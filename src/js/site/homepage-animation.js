@@ -86,12 +86,6 @@ tl.from(".homepage-hero .copy *", {
 }, "loadTheRest")
 
 
-tl.from(".homepage-hero .cta", {
-  opacity: 0,
-  y: -10,
-}
-)
-
 tl.from(".slider-arrow.left", {
   opacity: 0,
   scale: 0,
@@ -105,6 +99,12 @@ tl.from(".slider-arrow.right", {
   duration: .3,
   x: -50,
 }, "arrows")
+
+tl.from(".homepage-hero .cta", {
+  opacity: 0,
+  y: -10,
+}
+)
 
 
 tl.from(".down-arrow", {
@@ -285,3 +285,57 @@ headlines.forEach(item =>{
     duration: .2,
   })
 })
+
+
+
+// section transitions 
+
+
+const whyTLGradientTL = gsap.timeline( {    
+  scrollTrigger: {
+    trigger: ".why-triplelift",
+    start: "40% bottom",
+    end: "60% bottom",
+    scrub: true,
+    toggleActions: "play reverse play reverse",
+  }
+});
+
+whyTLGradientTL
+  .to(
+    '.section-transition.section2', 
+    { 
+      opacity: .4, 
+      duration: 1 
+    }, "why-triplelift"
+);
+
+const exploreGalleryGradientTL = gsap.timeline( {    
+  scrollTrigger: {
+    trigger: ".explore-our-gallery-container",
+    start: "-100% center",
+    end: "20% center",
+    scrub: true,
+    toggleActions: "play reverse play reverse",
+  }
+});
+
+
+exploreGalleryGradientTL
+  .to(
+    '.section-transition.section3', 
+    { 
+      opacity: 1, 
+      duration: .5 
+    }, "explore"
+);
+
+const weWorkWithGradientTL = gsap.timeline( {    
+  scrollTrigger: {
+    trigger: ".we-work-with",
+    start: "top center",
+    end: "60% center",
+    scrub: true,
+    toggleActions: "play reverse play reverse",
+  }
+});
