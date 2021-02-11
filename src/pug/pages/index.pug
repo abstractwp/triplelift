@@ -2,22 +2,7 @@ extends ../template.pug
 
 block content
   .loading
-  .fries.menu-hide
-    .menu-on-small
-      include ../modules/menu.pug
-  .sticky-header
-    #navigation.burger-and-fries-container
-      a(href="/" class="logo-in-navigation logo-lockup relative")
-        img.lift-icon(src="/images/Logomark - Gradient 1.svg")
-        img.wordmark(src="/images/Wordmark - White.svg")
-      .burger-and-fries
-        <button class="hamburger hamburger--collapse js-hamburger" type="button">
-          <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-          </span>
-        </button> 
-        .menu-on-large
-          include ../modules/menu.pug
+  include ../regions/header.pug
   .section-transition-container
     .section-transition.section1
     .section-transition.section2

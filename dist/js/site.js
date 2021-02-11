@@ -709,6 +709,7 @@ tl.from(".slider-arrow.right", {
   opacity: 0,
   scale: 0,
   duration: .3,
+  x: -50,
 }, "arrows")
 
 
