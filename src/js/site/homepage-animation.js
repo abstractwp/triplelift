@@ -197,9 +197,9 @@ whyTripleLiftParallax
 const exploreGalleryParallax = gsap.timeline( {    
   scrollTrigger: {
     trigger: ".explore-our-gallery-container",
-    start: "-60% center",
-    end: "100% center",
     scrub: true,
+    markers: true,
+    end: "10%",
     toggleActions: "play reverse play reverse",
   }
 });
@@ -286,7 +286,6 @@ headlines.forEach(item =>{
     scrollTrigger: {
       trigger: item,
       scrub: true,
-      end: "center, center",
       toggleActions: "play reverse play reverse",
     }
   });

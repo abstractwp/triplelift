@@ -1484,4 +1484,5 @@ body.menu-open {
   margin-left: 24px; }
   @media (min-width: 1024px) {
     .down-arrow {
+      margin-top: -60px;
       margin-left: 60px; } }

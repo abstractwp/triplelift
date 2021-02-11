@@ -33,7 +33,7 @@ exploreGalleryGradientTL
     '.section-transition.section3', 
     { 
       opacity: 1, 
-      duration: 1 
+      duration: .5 
     }, "explore"
 );
 
