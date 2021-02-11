@@ -85,30 +85,26 @@ tl.from(".homepage-hero .copy *", {
   stagger: .2
 }, "loadTheRest")
 
+
+tl.from(".homepage-hero .cta", {
+  opacity: 0,
+  y: -10,
+}
+)
+
 tl.from(".slider-arrow.left", {
   opacity: 0,
   scale: 0,
   duration: .3,
-  x: 50
-},
-"phone-breakout"
-)
+  x: 50,
+}, "arrows")
 
 tl.from(".slider-arrow.right", {
   opacity: 0,
   scale: 0,
   duration: .3,
-  x: -50
-},
-"phone-breakout"
-)
+}, "arrows")
 
-tl.from(".homepage-hero .cta", {
-  opacity: 0,
-  y: -10,
-  duration: .5
-}
-)
 
 tl.from(".down-arrow", {
     opacity: 0,
