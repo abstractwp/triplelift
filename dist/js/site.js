@@ -820,8 +820,9 @@ const weWorkWithParallax = gsap.timeline( {
   scrollTrigger: {
     trigger: ".we-work-with",
     start: "-15% center",
-    end: "80% center",
+    end: "90% center",
     scrub: true,
+    markers: true,
     toggleActions: "play reverse play reverse",
   }
 });
@@ -851,12 +852,12 @@ weWorkWithParallax.from(".we-work-with", {
 }, "weWorkWith")
 
 
-weWorkWithParallax.from(".we-work-with .logo-grid *", {
+weWorkWithParallax.from(".we-work-with .logo-grid", {
   opacity: 0,
   y: 20,
   duration: .08,
   stagger: .03
-}, "weWorkWith")
+}, "weWorkWith", "-=1.2")
 
 $(window).on("load", function () {
 

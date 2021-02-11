@@ -1004,15 +1004,6 @@ html:not([data-scroll="0"]) .burger-and-fries-container {
   background: linear-gradient(122.97deg, #0e3d52 0%, #000000 95.81%);
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.75);
   transition: 0.6s; }
-  .not-home .burger-and-fries-container .menu-on-large a,
-  html:not([data-scroll="0"]) .burger-and-fries-container .menu-on-large a {
-    color: #f15c2c; }
-    .not-home .burger-and-fries-container .menu-on-large a:hover,
-    html:not([data-scroll="0"]) .burger-and-fries-container .menu-on-large a:hover {
-      border-bottom-color: #f15c2c; }
-  .not-home .burger-and-fries-container .login,
-  html:not([data-scroll="0"]) .burger-and-fries-container .login {
-    border: 1px solid #f15c2c; }
 
 .sticky-header {
   position: -webkit-sticky;
@@ -1131,7 +1122,7 @@ body.menu-open {
 .menu-on-large .main-nav a {
   border-bottom: 4px solid transparent; }
   .menu-on-large .main-nav a:hover {
-    border-bottom: 4px solid white; }
+    border-bottom: 4px solid #f15c2c; }
 
 .login {
   border: 1px solid #fff;
@@ -1378,6 +1369,7 @@ body.menu-open {
     column-gap: 36px;
     row-gap: 36px; }
     .we-work-with .logo-grid .work-with-logo {
+      max-width: 100px;
       filter: invert(100%); }
       .we-work-with .logo-grid .work-with-logo.point5bigger {
         transform: scale(1.5) !important; }

@@ -4,17 +4,6 @@ html:not([data-scroll="0"]) {
     background: $gradientDark1;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.75);
     transition: 0.6s;
-
-    .menu-on-large a {
-      color: $amplifiedOrange;
-      &:hover {
-        border-bottom-color: $amplifiedOrange;
-      }
-    }
-
-    .login {
-      border: 1px solid $amplifiedOrange;
-    }
   }
 }
 
@@ -176,7 +165,7 @@ body.menu-open {
   border-bottom: 4px solid transparent;
 
   &:hover {
-    border-bottom: 4px solid white;
+    border-bottom: 4px solid $amplifiedOrange;
   }
 }
 
