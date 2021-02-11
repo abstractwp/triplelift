@@ -1,9 +1,27 @@
 .innovation-header-container {
+  background: white;
+
   .texture {
-    background: blue;
-    padding: 100px 0 100px;
+    padding: 100px 0;
+    &.texture1 {
+      background: url("/images/plus-primary-gradient-bg.svg");
+    }
+    &.texture2 {
+      background: url("/images/plus-white-bg.svg");
+    }
   }
+
+  .innovation-inner-container {
+    background: $secondaryGradient1;
+  }
+
   .copy {
-    padding: 0 24px;
+    padding: 100px 24px;
+    color: white;
+    p {
+      margin-top: 12px;
+      font-size: 18px;
+      line-height: 1.5;
+    }
   }
 }

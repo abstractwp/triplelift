@@ -1429,12 +1429,23 @@ button.triggerGalleryMenu {
     .homepage-hero .homepage-hero .copy p {
       font-size: 32px; } }
 
-.innovation-header-container .texture {
-  background: blue;
-  padding: 100px 0 100px; }
-
-.innovation-header-container .copy {
-  padding: 0 24px; }
+.innovation-header-container {
+  background: white; }
+  .innovation-header-container .texture {
+    padding: 100px 0; }
+    .innovation-header-container .texture.texture1 {
+      background: url("/images/plus-primary-gradient-bg.svg"); }
+    .innovation-header-container .texture.texture2 {
+      background: url("/images/plus-white-bg.svg"); }
+  .innovation-header-container .innovation-inner-container {
+    background: linear-gradient(142.86deg, #f47b20 2.47%, #f15c2c 43.9%, #ed79b0 95.24%); }
+  .innovation-header-container .copy {
+    padding: 100px 24px;
+    color: white; }
+    .innovation-header-container .copy p {
+      margin-top: 12px;
+      font-size: 18px;
+      line-height: 1.5; }
 
 .loading {
   background: linear-gradient(122.97deg, #0e3d52 0%, #000000 95.81%);
