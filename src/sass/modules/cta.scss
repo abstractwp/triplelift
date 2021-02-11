@@ -32,6 +32,15 @@
     padding: 16px 24px;
     letter-spacing: 2px;
     font-weight: 500;
+    &.right-text-align {
+      font-size: 12px;
+      width: fit-content;
+      text-align: right;
+      span {
+        line-height: 1.2;
+        width: fit-content;
+      }
+    }
     img {
       width: 16px;
     }

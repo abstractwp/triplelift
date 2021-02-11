@@ -6,6 +6,7 @@ ctaBordersToAnimate.forEach(item =>{
       trigger: item,
       scrub: true,
       start: "20px, center",
+      markers: true,
       toggleActions: "play reverse play reverse",
     }
   });

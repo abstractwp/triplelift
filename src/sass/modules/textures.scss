@@ -1,0 +1,9 @@
+.texture {
+  padding: 100px 0;
+  &.texture1 {
+    background: url("/images/plus-primary-gradient-bg.svg");
+  }
+  &.texture2 {
+    background: url("/images/plus-white-bg.svg");
+  }
+}
