@@ -48,19 +48,25 @@ tl.from(".phone-breakout img:nth-child(4)", {
 
 tl.set(".burger-and-fries-container", {
   opacity: 1
-})
+},
+"phone-breakout"
+)
 
 tl.from("#navigation .logo-in-navigation", {
   y: -20,
   opacity: 0,
   duration: .2
-})
+},
+"phone-breakout"
+)
 
 tl.from("#navigation .burger-and-fries", {
   y: -20,
   opacity: 0,
   duration: .5
-}, "loadTheRest")
+},
+"phone-breakout"
+)
 
 tl.from("#navigation .menu-on-large .main-nav a", {
   x: 50,
@@ -84,7 +90,8 @@ tl.from(".slider-arrow.left", {
   scale: 0,
   duration: .3,
   x: 50
-}, "sliders"
+},
+"phone-breakout"
 )
 
 tl.from(".slider-arrow.right", {
@@ -92,12 +99,13 @@ tl.from(".slider-arrow.right", {
   scale: 0,
   duration: .3,
   x: -50
-}, "sliders"
+},
+"phone-breakout"
 )
 
 tl.from(".homepage-hero .cta", {
   opacity: 0,
-  y: 10,
+  y: -10,
   duration: .5
 }
 )
