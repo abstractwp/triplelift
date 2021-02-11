@@ -20,9 +20,10 @@ whyTLGradientTL
 const exploreGalleryGradientTL = gsap.timeline( {    
   scrollTrigger: {
     trigger: ".explore-our-gallery-container",
-    start: "-70% center",
-    end: "60% center",
+    start: "-100% center",
+    end: "20% center",
     scrub: true,
+    markers: true,
     toggleActions: "play reverse play reverse",
   }
 });

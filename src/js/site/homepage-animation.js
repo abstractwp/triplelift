@@ -156,7 +156,7 @@ const parallaxHomePageHero = gsap.timeline( {
 
 parallaxHomePageHero
   .to(
-    '.homepage-hero', 
+    '.homepage-hero > *', 
     { 
       opacity: 0, 
       duration: 1,
@@ -214,9 +214,9 @@ exploreGalleryParallax
 
 exploreGalleryParallax
   .from(
-    '.explore-our-gallery-container', 
+    '.explore-our-gallery-container > *', 
     { 
-      y: 60,
+      opacity: 0,
       duration: 2,
   }, "exploreGallery");
 
@@ -260,7 +260,7 @@ weWorkWithParallax.to('.explore-our-gallery-container .animate-border-outer', {
   delay: .1,
 }, "weWorkWith")
 
-weWorkWithParallax.to(".explore-our-gallery-container", {
+weWorkWithParallax.to(".explore-our-gallery-container ", {
   y: -100,
   duration: .6,
 }, "weWorkWith")
