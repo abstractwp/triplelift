@@ -1194,12 +1194,13 @@ body.menu-open {
     padding: 0 12vw; } }
 
 .creative-gallery-section-container {
-  background: white;
   padding: 100px 0; }
   .creative-gallery-section-container h2 {
     padding: 0 24px 100px; }
   .creative-gallery-section-container .creative-gallery-section-inner {
-    position: relative; }
+    position: relative;
+    max-width: 375px;
+    margin: 0 auto; }
     .creative-gallery-section-container .creative-gallery-section-inner .tab {
       background: linear-gradient(122.97deg, #0e3d52 0%, #000000 95.81%);
       color: white;
@@ -1342,6 +1343,9 @@ button.triggerGalleryMenu {
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
+    @media (min-width: 768px) {
+      .hero.not-homepage .copy {
+        align-self: center; } }
   .hero .copy {
     padding: 24px; }
     .hero .copy h1 {

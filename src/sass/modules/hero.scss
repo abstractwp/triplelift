@@ -8,6 +8,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media (min-width: 768px) {
+      .copy {
+        align-self: center;
+      }
+    }
   }
 
   .copy {
@@ -58,7 +64,6 @@
   }
 }
 
-
 @media (min-width: 1600px) {
   .homepage-hero {
     max-width: 80vw;
@@ -71,7 +76,5 @@
         font-size: 32px;
       }
     }
-  
   }
 }
-
