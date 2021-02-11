@@ -33,11 +33,12 @@
   }
 
   .logo-grid {
+    padding: 0 6x;
     margin-top: 24px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     place-items: center;
-    column-gap: 36px;
+    column-gap: 48px;
     row-gap: 24px;
 
     .work-with-logo {
@@ -45,7 +46,7 @@
       filter: invert(100%);
 
       &.point5bigger {
-        transform: scale(1.5) !important;
+        transform: scale(1.2) !important;
       }
 
       &.point5smaller {

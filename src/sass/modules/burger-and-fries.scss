@@ -130,18 +130,25 @@ body.menu-open {
 
     a {
       width: 100%;
-      text-align: center;
-      padding: 24px 18px;
+      text-align: right;
+      padding: 24px 40px 24px 24px;
       font-size: 24px;
+      text-transform: capitalize;
+      border-bottom: 1px solid rgba(255, 255, 255, .2);
+      &:last-of-type {
+        border-bottom: 0;
+      }
     }
   }
 
   .login {
     width: fit-content;
     display: block;
-    margin: 24px auto 0;
+    margin-top: 24px;
+    margin-right: 36px;
+    align-self: flex-end;
     font-size: 24px;
-    padding: 24px 64px;
+    padding: 12px 64px;
   }
 }
 

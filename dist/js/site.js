@@ -813,7 +813,6 @@ exploreGalleryParallax
   .to(
     '.why-triplelift-section', 
     { 
-      opacity: 0, 
       duration: 1,
       y: -20,
   }, "exploreGallery");

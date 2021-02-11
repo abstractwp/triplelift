@@ -1095,15 +1095,21 @@ body.menu-open {
     flex-direction: column; }
     .menu-on-small > .main-nav a {
       width: 100%;
-      text-align: center;
-      padding: 24px 18px;
-      font-size: 24px; }
+      text-align: right;
+      padding: 24px 40px 24px 24px;
+      font-size: 24px;
+      text-transform: capitalize;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+      .menu-on-small > .main-nav a:last-of-type {
+        border-bottom: 0; }
   .menu-on-small .login {
     width: fit-content;
     display: block;
-    margin: 24px auto 0;
+    margin-top: 24px;
+    margin-right: 36px;
+    align-self: flex-end;
     font-size: 24px;
-    padding: 24px 64px; }
+    padding: 12px 64px; }
 
 .menu-on-large {
   display: flex;
@@ -1239,7 +1245,8 @@ body.menu-open {
   .homepage-hero .slider-static {
     justify-content: space-between;
     padding: 0 16px;
-    width: 100%; }
+    width: 90%;
+    margin: 0 auto; }
   .homepage-hero .copy {
     padding: 24px; }
     .homepage-hero .copy h1 {
@@ -1372,17 +1379,18 @@ body.menu-open {
     border-radius: 24px;
     padding: 30px 24px 36px; }
   .we-work-with .logo-grid {
+    padding: 0 6x;
     margin-top: 24px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     place-items: center;
-    column-gap: 36px;
+    column-gap: 48px;
     row-gap: 24px; }
     .we-work-with .logo-grid .work-with-logo {
       max-width: 100px;
       filter: invert(100%); }
       .we-work-with .logo-grid .work-with-logo.point5bigger {
-        transform: scale(1.5) !important; }
+        transform: scale(1.2) !important; }
       .we-work-with .logo-grid .work-with-logo.point5smaller {
         transform: scale(0.8) !important; }
 
