@@ -1336,8 +1336,8 @@ body.menu-open {
   background: linear-gradient(122.97deg, #0e3d52 0%, #000000 95.81%); }
 
 .section-transition.section2 {
-  background: linear-gradient(122.97deg, #0e3d52 0%, #000000 95.81%);
-  opacity: 0.5; }
+  background: black;
+  opacity: 0; }
 
 .section-transition.section3 {
   background: white;
@@ -1354,7 +1354,8 @@ body.menu-open {
     font-size: 28px;
     font-weight: 500;
     height: inherit;
-    width: fit-content; }
+    width: fit-content;
+    overflow: hidden; }
     .we-work-with h4 .gradient-border {
       margin-top: 12px;
       height: 2px;

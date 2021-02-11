@@ -849,7 +849,7 @@ const weWorkWithParallax = gsap.timeline( {
   scrollTrigger: {
     trigger: ".we-work-with",
     start: "-15% center",
-    end: "90% center",
+    end: "40% center",
     scrub: true,
     toggleActions: "play reverse play reverse",
   }
@@ -892,8 +892,8 @@ headlines.forEach((item, index) =>{
   const weWorkWithHeadlineBorder = gsap.timeline( {    
     scrollTrigger: {
       trigger: item,
-      start: "top center",
-      end: "30px",
+      start: "-60% bottom",
+      end: "center",
       scrub: true,
       markers: true,
       toggleActions: "play reverse play reverse",
@@ -901,8 +901,8 @@ headlines.forEach((item, index) =>{
   });
   
   weWorkWithHeadlineBorder.from(item, {
-    width: 0,
-    duration: .5,
+    x: "-100%",
+    duration: .2,
   })
 })
 
@@ -975,7 +975,7 @@ whyTLGradientTL
   .to(
     '.section-transition.section2', 
     { 
-      opacity: .5, 
+      opacity: .4, 
       duration: 1 
     }, "why-triplelift"
 );
@@ -1012,7 +1012,7 @@ const weWorkWithGradientTL = gsap.timeline( {
 
 weWorkWithGradientTL
   .to(
-    '.section-transition.section3', 
+    '.section-transition.white', 
     { 
       opacity: 0, 
       duration: 0
