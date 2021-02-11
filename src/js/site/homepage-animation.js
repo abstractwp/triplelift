@@ -7,7 +7,7 @@ tl.to(".loading", {
   duration: .5,
 })
 
-tl.from(".phone-breakout", {
+tl.from(".homepage .phone-breakout", {
   opacity: 0, 
   y: 20,
   duration: .5,
@@ -15,21 +15,21 @@ tl.from(".phone-breakout", {
   "phone-breakout-slide-up"
 )
 
-tl.from(".phone-breakout img:nth-child(1)", {
+tl.from(".homepage .phone-breakout img:nth-child(1)", {
   x: -10,  
   duration: .4,
   },
   "phone-breakout"
 )
 
-tl.from(".phone-breakout img:nth-child(2)", {
+tl.from(".homepage .phone-breakout img:nth-child(2)", {
   x: -10,  
   duration: .4,
 },
 "phone-breakout"
 )
 
-tl.from(".phone-breakout img:nth-child(3)", {
+tl.from(".homepage .phone-breakout img:nth-child(3)", {
   scale: .95,
   x: 15,
   duration: .4,
@@ -37,7 +37,7 @@ tl.from(".phone-breakout img:nth-child(3)", {
 "phone-breakout"
 )
 
-tl.from(".phone-breakout img:nth-child(4)", {
+tl.from(".homepage .phone-breakout img:nth-child(4)", {
   scale: .9,
   y: 10,
   x: 30,
@@ -45,38 +45,6 @@ tl.from(".phone-breakout img:nth-child(4)", {
 },
 "phone-breakout"
 )
-
-tl.set(".burger-and-fries-container", {
-  opacity: 1
-},
-"phone-breakout"
-)
-
-tl.from("#navigation .logo-in-navigation", {
-  y: -20,
-  opacity: 0,
-  duration: .2
-},
-"phone-breakout"
-)
-
-tl.from("#navigation .burger-and-fries", {
-  y: -20,
-  opacity: 0,
-  duration: .5
-},
-"phone-breakout"
-)
-
-tl.from("#navigation .menu-on-large .main-nav a", {
-  x: 50,
-  y: -40,
-  opacity: 0,
-  duration: .2,
-  stagger: {
-    amount: .5
-  },
-}, "loadTheRest")
 
 tl.from(".homepage-hero .copy *", {
   opacity: 0,
@@ -86,14 +54,14 @@ tl.from(".homepage-hero .copy *", {
 }, "loadTheRest")
 
 
-tl.from(".slider-arrow.left", {
+tl.from(".homepage .slider-arrow.left", {
   opacity: 0,
   scale: 0,
   duration: .3,
   x: 50,
 }, "arrows")
 
-tl.from(".slider-arrow.right", {
+tl.from(".homepage .slider-arrow.right", {
   opacity: 0,
   scale: 0,
   duration: .3,
@@ -106,34 +74,6 @@ tl.from(".homepage-hero .cta", {
 }
 )
 
-
-tl.from(".down-arrow", {
-    opacity: 0,
-    y: -10,
-    duration: .5
-  }
-)
-
-
-const downarrowTL = gsap.timeline( {    
-  scrollTrigger: {
-    trigger: ".down-arrow",
-    start: "-=400% center",
-    end: "200% center",
-    scrub: true,
-    toggleActions: "play reverse play reverse",
-  }
-});
-
-downarrowTL
-  .to(
-    '.down-arrow', 
-    { 
-      opacity: 0, 
-      duration: 2,
-      y: 100
-    }, 0.5)
-  ;
 
 const parallaxHomePageHero = gsap.timeline( {    
     scrollTrigger: {
