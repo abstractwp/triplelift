@@ -738,7 +738,7 @@ downarrowTL
       opacity: 0, 
       duration: 2,
       y: 100
-    }, 0.5)
+    })
   ;
 
 const parallaxHomePageHero = gsap.timeline( {    
