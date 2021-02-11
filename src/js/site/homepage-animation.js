@@ -74,7 +74,6 @@ tl.from(".homepage-hero .cta", {
 }
 )
 
-
 const parallaxHomePageHero = gsap.timeline( {    
     scrollTrigger: {
       trigger: ".homepage-hero",

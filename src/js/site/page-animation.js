@@ -9,25 +9,21 @@ tl.to(".loading", {
 
 tl.set(".burger-and-fries-container", {
   opacity: 1
-},
-"phone-breakout"
-)
+})
 
 tl.from("#navigation .logo-in-navigation", {
   y: -20,
   opacity: 0,
-  duration: .2
-},
-"phone-breakout"
-)
+  duration: .2,
+  delay: 1.2
+})
 
 tl.from("#navigation .burger-and-fries", {
   y: -20,
   opacity: 0,
-  duration: .5
-},
-"phone-breakout"
-)
+  duration: .5,
+  delay: .5
+})
 
 tl.from("#navigation .menu-on-large .main-nav a", {
   x: 50,
@@ -37,7 +33,7 @@ tl.from("#navigation .menu-on-large .main-nav a", {
   stagger: {
     amount: .5
   },
-}, "loadTheRest")
+})
 
 tl.from(".down-arrow", {
   opacity: 0,

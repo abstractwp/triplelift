@@ -969,6 +969,18 @@ h2,
 h4 {
   line-height: 1.2; }
 
+h2 {
+  font-size: 40px; }
+
+h3 {
+  font-size: 32px; }
+
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 72px; }
+  h3 {
+    font-size: 36px; } }
+
 .bold {
   font-weight: 800; }
 
@@ -1181,6 +1193,10 @@ body.menu-open {
   .burger-and-fries-container {
     padding: 0 12vw; } }
 
+.creative-gallery {
+  background: white;
+  padding: 200px 24px; }
+
 .cta {
   display: flex;
   align-items: center;
@@ -1242,6 +1258,10 @@ body.menu-open {
   min-height: 100vh;
   padding-top: 80px;
   z-index: 1; }
+  .hero.not-homepage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
   .hero .copy {
     padding: 24px; }
     .hero .copy h1 {
@@ -1476,7 +1496,6 @@ body.menu-open {
   padding: 24px 24px 0vw; }
   .why-triplelift h2 {
     color: white;
-    font-size: 40px;
     font-weight: 500;
     text-align: center;
     margin-bottom: 64px; }
@@ -1486,7 +1505,6 @@ body.menu-open {
     padding: 24px;
     margin-top: 48px; }
   .why-triplelift h3 {
-    font-size: 32px;
     font-weight: 500;
     text-align: center; }
 
@@ -1495,10 +1513,7 @@ body.menu-open {
     margin: 0 auto;
     max-width: 90vw; }
     .why-triplelift h2 {
-      font-size: 72px;
       text-align: left; }
-    .why-triplelift h3 {
-      font-size: 36px; }
     .why-triplelift .why-triplelift-section-container {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
