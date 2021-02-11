@@ -1450,12 +1450,6 @@ button.triggerGalleryMenu {
 
 .innovation-header-container {
   background: white; }
-  .innovation-header-container .texture {
-    padding: 100px 0; }
-    .innovation-header-container .texture.texture1 {
-      background: url("/images/plus-primary-gradient-bg.svg"); }
-    .innovation-header-container .texture.texture2 {
-      background: url("/images/plus-white-bg.svg"); }
   .innovation-header-container .innovation-inner-container {
     background: linear-gradient(142.86deg, #f47b20 2.47%, #f15c2c 43.9%, #ed79b0 95.24%); }
   .innovation-header-container .copy {
