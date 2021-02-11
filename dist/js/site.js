@@ -895,7 +895,6 @@ headlines.forEach((item, index) =>{
       start: "-60% bottom",
       end: "center",
       scrub: true,
-      markers: true,
       toggleActions: "play reverse play reverse",
     }
   });
