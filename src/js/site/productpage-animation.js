@@ -18,6 +18,4 @@ if (document.getElementById("productPageJSIndicator")) {
       }
   );
 
-
-
 }

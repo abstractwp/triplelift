@@ -154,23 +154,6 @@ exploreGalleryParallax
       duration: 2,
   }, "exploreGallery");
 
-
-exploreGalleryParallax
-  .to(
-    '.explore-our-gallery-container .animate-border-outer', 
-    {
-      opacity: 1,
-      duration: 1,
-  }, "exploreGallery");
-
-exploreGalleryParallax
-  .from(
-    '.explore-our-gallery-container .animate-border-outer', 
-    {
-      x: "-100%",
-      duration: 1,
-  }, "exploreGallery");
-
 const weWorkWithParallax = gsap.timeline( {    
   scrollTrigger: {
     trigger: ".we-work-with",
@@ -185,13 +168,6 @@ weWorkWithParallax.from(".we-work-with h3", {
   opacity: 0,
   y: 40,
   duration: .3,
-}, "weWorkWith")
-
-weWorkWithParallax.to('.explore-our-gallery-container .animate-border-outer', {
-  opacity: 0,
-  x: "100%",
-  duration: .4,
-  delay: .1,
 }, "weWorkWith")
 
 weWorkWithParallax.to(".explore-our-gallery-container ", {

@@ -1442,6 +1442,8 @@ button.triggerGalleryMenu {
   .innovation-header-container .copy {
     padding: 100px 24px;
     color: white; }
+    .innovation-header-container .copy h2 {
+      font-weight: bold; }
     .innovation-header-container .copy p {
       margin-top: 12px;
       font-size: 18px;
