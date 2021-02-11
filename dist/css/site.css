@@ -1462,14 +1462,25 @@ body.menu-open {
     bottom: 0;
     left: 0; }
 
-.section-transition.section1 {
+.homepage-section-transition-container .section-transition.section1 {
   background: linear-gradient(122.97deg, #0e3d52 0%, #000000 95.81%); }
 
-.section-transition.section2 {
+.homepage-section-transition-container .section-transition.section2 {
   background: black;
   opacity: 0; }
 
-.section-transition.white {
+.homepage-section-transition-container .section-transition.section3 {
+  background: white;
+  opacity: 0; }
+
+.productpage-section-transition-container .section-transition.section1 {
+  background: linear-gradient(122.97deg, #0e3d52 0%, #000000 95.81%); }
+
+.productpage-section-transition-container .section-transition.section2 {
+  background: black;
+  opacity: 0; }
+
+.productpage-section-transition-container .section-transition.section3 {
   background: white;
   opacity: 0; }
 

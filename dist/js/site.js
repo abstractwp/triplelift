@@ -831,10 +831,7 @@ headlines.forEach(item =>{
   })
 })
 
-
-
 // section transitions 
-
 
 const whyTLGradientTL = gsap.timeline( {    
   scrollTrigger: {
@@ -848,7 +845,7 @@ const whyTLGradientTL = gsap.timeline( {
 
 whyTLGradientTL
   .to(
-    '.section-transition.section2', 
+    '.homepage-section-transition-container .section-transition.section2', 
     { 
       opacity: .4, 
       duration: 1 
@@ -867,7 +864,7 @@ const exploreGalleryGradientTL = gsap.timeline( {
 
 exploreGalleryGradientTL
   .to(
-    '.section-transition.section2', 
+    '.homepage-section-transition-container .section-transitions.section2', 
     { 
       opacity: 0, 
       duration: .5 
@@ -877,7 +874,7 @@ exploreGalleryGradientTL
 
 exploreGalleryGradientTL
   .to(
-    '.section-transition.section3', 
+    '.homepage-section-transition-container .section-transition.section3', 
     { 
       opacity: 1, 
       duration: .5 

@@ -15,16 +15,34 @@
   }
 }
 
-.section-transition.section1 {
-  background: $gradientDark1;
+.homepage-section-transition-container {
+  .section-transition.section1 {
+    background: $gradientDark1;
+  }
+
+  .section-transition.section2 {
+    background: black;
+    opacity: 0;
+  }
+
+  .section-transition.section3 {
+    background: white;
+    opacity: 0;
+  }
 }
 
-.section-transition.section2 {
-  background: black;
-  opacity: 0;
-}
+.productpage-section-transition-container {
+  .section-transition.section1 {
+    background: $gradientDark1;
+  }
 
-.section-transition.white {
-  background: white;
-  opacity: 0;
+  .section-transition.section2 {
+    background: black;
+    opacity: 0;
+  }
+
+  .section-transition.section3 {
+    background: white;
+    opacity: 0;
+  }
 }
