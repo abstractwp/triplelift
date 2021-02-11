@@ -14,9 +14,15 @@
     margin-top: 3px;
     margin-right: 8px;
   }
+
   &.cta-style-1 {
     background: white;
     color: $heritageBlue;
+  }
+
+  &.cta-style-3 {
+    background: $primaryGradient;
+    color: white;
   }
 
   &.cta-style-2 {

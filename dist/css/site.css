@@ -1187,6 +1187,9 @@ body.menu-open {
   .cta.cta-style-1 {
     background: white;
     color: #0e3d52; }
+  .cta.cta-style-3 {
+    background: linear-gradient(77.24deg, #f47b20 14.56%, #f15c2c 88.29%);
+    color: white; }
   .cta.cta-style-2 {
     background: linear-gradient(77.24deg, #f47b20 14.56%, #f15c2c 88.29%);
     color: white;
@@ -1350,7 +1353,8 @@ body.menu-open {
     color: #0e3d52;
     font-size: 28px;
     font-weight: 500;
-    height: inherit; }
+    height: inherit;
+    width: fit-content; }
     .we-work-with h4 .gradient-border {
       margin-top: 12px;
       height: 2px;
