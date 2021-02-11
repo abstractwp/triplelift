@@ -46,12 +46,3 @@ const weWorkWithGradientTL = gsap.timeline( {
     toggleActions: "play reverse play reverse",
   }
 });
-
-weWorkWithGradientTL
-  .to(
-    '.section-transition.white', 
-    { 
-      opacity: 0, 
-      duration: 0
-    }, "we-work-with"
-);

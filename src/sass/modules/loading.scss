@@ -8,19 +8,6 @@
   display: flex;
   align-items: center;
 
-  img {
-    visibility: hidden;
-    display: block;
-    margin: -60% auto 0;
-    width: 100px;
-  }
-
-  @media (min-width: 1024px) {
-    img {
-      margin-top: -10%;
-    }
-  }
-
   &.not-loading {
     z-index: -100;
   }

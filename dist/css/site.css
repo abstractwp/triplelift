@@ -1018,6 +1018,7 @@ html:not([data-scroll="0"]) .burger-and-fries-container {
   z-index: 200; }
 
 .burger-and-fries-container {
+  opacity: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1249,7 +1250,7 @@ body.menu-open {
   .homepage-hero .slider-static {
     justify-content: space-between;
     padding: 0 16px;
-    width: 90%;
+    width: 80%;
     margin: 0 auto; }
   .homepage-hero .copy {
     padding: 24px; }
@@ -1317,14 +1318,6 @@ body.menu-open {
   z-index: 300;
   display: flex;
   align-items: center; }
-  .loading img {
-    visibility: hidden;
-    display: block;
-    margin: -60% auto 0;
-    width: 100px; }
-  @media (min-width: 1024px) {
-    .loading img {
-      margin-top: -10%; } }
   .loading.not-loading {
     z-index: -100; }
 
@@ -1339,9 +1332,9 @@ body.menu-open {
   width: 100%; }
   .phone-breakout img {
     top: 0;
-    width: 80%;
+    width: 87%;
     position: absolute;
-    left: 55%;
+    left: 59%;
     top: 50%;
     transform: translate(-50%, -50%);
     max-width: 330px; }

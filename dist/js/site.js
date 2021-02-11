@@ -604,37 +604,13 @@ var Lantern = (function() {
 
 })();
 
-window.setTimeout(function(){$(".loading").addClass("not-loading");}, 3000);
+window.setTimeout(function(){$(".loading").addClass("not-loading");}, 100);
 
 var tl = gsap.timeline({repeat: 0});
-
-tl.set(".loading img", {
-  visibility: "visible"
-})
-
-tl.from(".loading img", {
-  opacity: 0,
-  duration: .5,
-  y: 50,
-  delay: .5
-})
-
-tl.to(".loading img", {
-  opacity: 0,
-  duration: .5,
-  y: -50,
-  delay: 1
-})
 
 tl.to(".loading", {
   opacity: 0,
   duration: .5,
-})
-
-tl.from("#navigation .logo-in-navigation", {
-  y: -20,
-  opacity: 0,
-  duration: .2
 })
 
 tl.from(".phone-breakout", {
@@ -676,6 +652,16 @@ tl.from(".phone-breakout img:nth-child(4)", {
 "phone-breakout"
 )
 
+tl.set(".burger-and-fries-container", {
+  opacity: 1
+})
+
+tl.from("#navigation .logo-in-navigation", {
+  y: -20,
+  opacity: 0,
+  duration: .2
+})
+
 tl.from("#navigation .burger-and-fries", {
   y: -20,
   opacity: 0,
@@ -702,7 +688,7 @@ tl.from(".homepage-hero .copy *", {
 tl.from(".slider-arrow.left", {
   opacity: 0,
   scale: 0,
-  duration: .6,
+  duration: .3,
   x: 50
 }, "sliders"
 )
@@ -1004,12 +990,3 @@ const weWorkWithGradientTL = gsap.timeline( {
     toggleActions: "play reverse play reverse",
   }
 });
-
-weWorkWithGradientTL
-  .to(
-    '.section-transition.white', 
-    { 
-      opacity: 0, 
-      duration: 0
-    }, "we-work-with"
-);
