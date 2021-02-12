@@ -1245,7 +1245,8 @@ body.menu-open {
       @media (min-width: 1024px) {
         .creative-gallery-section-container .creative-gallery-section-inner .tab {
           margin: 0 auto;
-          font-size: 36px; } }
+          font-size: 36px;
+          padding: 36px 48px 28px; } }
     .creative-gallery-section-container .creative-gallery-section-inner .gallery-container {
       padding: 24px;
       background: #0e3d52;
