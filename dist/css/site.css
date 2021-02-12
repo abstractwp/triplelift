@@ -1412,6 +1412,14 @@ button.triggerGalleryMenu {
     .homepage-hero .homepage-hero .copy p {
       font-size: 32px; } }
 
+@media (min-width: 1024px) {
+  .hero.not-homepage {
+    flex-direction: row; }
+  .products-hero .copy {
+    width: 80%; }
+  .products-hero .hero-visual {
+    width: 100%; } }
+
 .hero.homepage-hero h1 {
   font-size: 26px;
   font-weight: 500; }

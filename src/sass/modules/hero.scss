@@ -78,3 +78,18 @@
     }
   }
 }
+
+@media (min-width: 1024px) {
+  .hero.not-homepage {
+    flex-direction: row;
+  }
+
+  .products-hero {
+    .copy {
+      width: 80%;
+    }
+    .hero-visual {
+      width: 100%;
+    }
+  }
+}

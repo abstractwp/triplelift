@@ -1082,7 +1082,47 @@ texturesToAnimateUp.forEach(item =>{
   
 })
 if (document.getElementById("productPageJSIndicator")) {
+
+  var laptopBreakout = gsap.timeline({repeat: 0});
+
+  laptopBreakout.from(".laptop-breakout", {
+    opacity: 0, 
+    y: 20,
+    duration: .5,
+    },
+    "phone-breakout-slide-up"
+  )
   
+  laptopBreakout.from(".laptop-breakout img:nth-child(1)", {
+    x: -10,  
+    duration: .4,
+    },
+    "phone-breakout"
+  )
+  
+  laptopBreakout.from(".laptop-breakout img:nth-child(2)", {
+    x: -10,  
+    duration: .4,
+  },
+  "phone-breakout"
+  )
+  
+  laptopBreakout.from(".laptop-breakout img:nth-child(3)", {
+    scale: .95,
+    x: 15,
+    duration: .4,
+  },
+  "phone-breakout"
+  )
+  
+  laptopBreakout.from(".laptop-breakout img:nth-child(4)", {
+    scale: .9,
+    y: 10,
+    x: 30,
+    duration: .4,
+  },
+  "phone-breakout"
+  )
   
   const creativeGallerySectionTL = gsap.timeline( {    
     scrollTrigger: {
@@ -1116,7 +1156,7 @@ if (document.getElementById("productPageJSIndicator")) {
       trigger: ".innovation-header-container",
       scrub: true,
       start: "20px center",
-      end: "80px 40%",
+      end: "80px 20%",
       toggleActions: "play reverse play reverse",
     }
   });
