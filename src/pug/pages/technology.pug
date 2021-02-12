@@ -1,0 +1,58 @@
+extends ../template.pug
+
+block content
+  #productPageJSIndicator
+  include ../regions/header.pug
+  .productpage-section-transition-container.section-transition-container
+    .section-transition.section1
+    .section-transition.white
+    .section-transition.gradient2
+  include ../modules/products-hero.pug
+  include ../modules/creative-gallery.pug
+  include ../modules/innovation-header.pug
+  .explore-our-gallery-container.product-page-cta.product-page-cta-1
+    a.does-not-work.explore-our-gallery
+        .animate-border-outer.shadow-3
+        .animate-border-content
+          .product-page-cta-content-inner
+            .headline-container
+              span.headline.text-primaryGradient OTT
+              span.sideheadline Beta
+            img.section-visual.small(src="/images/ottbeta.png")
+            p We’re pioneering an innovative post-production solution that provides integrated ad experiences in streaming TV.
+            span.cta.cta-style-2.right-text-align
+                span See What we're <br/>working on 
+                img(src="/images/arrow-right.svg")
+          img.section-visual.large(src="/images/ottbeta.png")
+  .between-product-page-ctas.trans1
+    .vertical-texture-animation
+  .explore-our-gallery-container.product-page-cta.product-page-cta-2
+    a.does-not-work.explore-our-gallery
+        .animate-border-outer.shadow-3
+        .animate-border-content
+          .product-page-cta-content-inner
+            .headline-container
+              span.headline.text-primaryGradient Exchange Traded Deals
+            img.section-visual.small(src="/images/ETD.png")
+            p We’ve organized our most direct, effective and requested inventory to create deals that are built for you, easy to buy and include all the benefits of working with TripleLift.
+            span.cta.cta-style-2.right-text-align
+                span Explore exchange <br/> traded deals
+                img(src="/images/arrow-right.svg")
+          img.section-visual.large(src="/images/ETD.png")
+  .between-product-page-ctas.trans2
+    .vertical-texture-animation.right
+  .explore-our-gallery-container.product-page-cta.product-page-cta-3
+    a.does-not-work.explore-our-gallery
+        .animate-border-outer.shadow-3
+        .animate-border-content
+          .product-page-cta-content-inner
+            .headline-container
+              span.headline.text-primaryGradient Offers & Packages
+            img.section-visual.small(src="/images/offers-packages.png")
+            p We routinely offer deals and packages tailored to advertisers like you. These packages highlight consumer and cultural trends, TripleLift performance data, and creative best practices to get the most out of your campaign.
+            span.cta.cta-style-2.right-text-align
+                span Explore product offers
+                img(src="/images/arrow-right.svg")
+          img.section-visual.large(src="/images/offers-packages.png")
+  .between-product-page-ctas.trans1
+    .vertical-texture-animation

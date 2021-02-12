@@ -1099,36 +1099,36 @@ if (document.getElementById("productPageJSIndicator")) {
     "laptop-breakout-slide-up"
   )
   
-  laptopBreakout.from(".laptop-breakout img:nth-child(1)", {
-    x: -10,  
-    duration: .4,
-    },
-    "laptop-breakout"
-  )
+  // laptopBreakout.from(".laptop-breakout img:nth-child(1)", {
+  //   x: -10,  
+  //   duration: .4,
+  //   },
+  //   "laptop-breakout"
+  // )
   
-  laptopBreakout.from(".laptop-breakout img:nth-child(2)", {
-    x: -10,  
-    duration: .4,
-  },
-  "laptop-breakout"
-  )
+  // laptopBreakout.from(".laptop-breakout img:nth-child(2)", {
+  //   x: -10,  
+  //   duration: .4,
+  // },
+  // "laptop-breakout"
+  // )
   
-  laptopBreakout.from(".laptop-breakout img:nth-child(3)", {
-    scale: .95,
-    x: 15,
-    duration: .4,
-  },
-  "laptop-breakout"
-  )
+  // laptopBreakout.from(".laptop-breakout img:nth-child(3)", {
+  //   scale: .95,
+  //   x: 15,
+  //   duration: .4,
+  // },
+  // "laptop-breakout"
+  // )
   
-  laptopBreakout.from(".laptop-breakout img:nth-child(4)", {
-    scale: .9,
-    y: 10,
-    x: 30,
-    duration: .4,
-  },
-  "laptop-breakout"
-  )
+  // laptopBreakout.from(".laptop-breakout img:nth-child(4)", {
+  //   scale: .9,
+  //   y: 10,
+  //   x: 30,
+  //   duration: .4,
+  // },
+  // "laptop-breakout"
+  // )
   
   const creativeGallerySectionTL = gsap.timeline( {    
     scrollTrigger: {
