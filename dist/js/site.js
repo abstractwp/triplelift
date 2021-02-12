@@ -1158,33 +1158,6 @@ if (document.getElementById("productPageJSIndicator")) {
     },"transition2"
   );
 
-  const innovationHeaderSectionTLOutro = gsap.timeline( {    
-    scrollTrigger: {
-      trigger: ".innovation-header-container",
-      scrub: true,
-      start: "70% center",
-      end: "95% 40%",
-      toggleActions: "play reverse play reverse",
-    }
-  });
-
-  innovationHeaderSectionTLOutro
-  .to(
-    '.innovation-header-container .copy', 
-    { 
-      opacity: 0, 
-      duration: 1 
-    },"transition3p1"
-  );
-
-  innovationHeaderSectionTLOutro
-  .to(
-    '.texture-animation-container', 
-    { 
-      opacity: 1, 
-      duration: 1 
-    },"transition3p1"
-  );
 
   const fadeOutTextureOnInnovationHeader = gsap.timeline( {    
     scrollTrigger: {
@@ -1229,7 +1202,6 @@ if (document.getElementById("productPageJSIndicator")) {
     scrollTrigger: {
       trigger: ".between-product-page-ctas.trans1",
       scrub: true,
-      markers: true,
       start: "-100% 50%",
       end: "00% 40%",
       toggleActions: "play reverse play reverse",

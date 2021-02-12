@@ -1,5 +1,8 @@
 .product-page-cta {
   margin: 0;
+  &:last-of-type {
+    margin-bottom: 200px;
+  }
   .product-page-cta-content-inner {
     display: flex;
     flex-direction: column;
@@ -53,5 +56,25 @@
     left: 0;
     width: 100%;
     height: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .between-product-page-ctas {
+    max-width: 900px;
+    margin: 0 auto;
+
+    .vertical-texture-animation {
+      background-image: url("/images/plus-primary-gradient-bg.svg");
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50%;
+      height: 100%;
+      &.right {
+        left: inherit;
+        right: 0;
+      }
+    }
   }
 }
