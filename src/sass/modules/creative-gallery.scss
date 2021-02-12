@@ -83,9 +83,8 @@ button.triggerGalleryMenu {
   background: $primaryGradient;
   border: 0;
   color: white;
-  padding: 12px 16px;
+  padding: 16px 16px;
   border-radius: 40px;
-  transform: rotate(270deg) translateY(55px);
   position: sticky;
   top: 160px;
   right: -0;
@@ -93,11 +92,6 @@ button.triggerGalleryMenu {
   align-items: center;
   text-transform: uppercase;
   font-size: 13px;
-
-  img {
-    transform: rotate(90deg);
-    margin-right: 12px;
-  }
 }
 
 .large-controls {
