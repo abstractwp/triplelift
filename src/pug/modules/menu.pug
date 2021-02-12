@@ -2,8 +2,8 @@
 - var currentUrl = page
 .main-nav
   a.does-not-work() Company
-  a.does-not-work(class={active: currentUrl === 'about'}) Products
-  a.does-not-work(class={active: currentUrl === 'activities'}) Technology
+  a(href="products.html" class={active: currentUrl === 'products'}) Products
+  a(href="technology.html" class={active: currentUrl === 'technology'}) Technology
   a.does-not-work(class={active: currentUrl === 'faq'}) Ideas
   a.does-not-work(class={active: currentUrl === 'contact'}) Contact us
 a.does-not-work.login(class={active: currentUrl === 'contact'}) Login
