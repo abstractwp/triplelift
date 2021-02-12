@@ -7,7 +7,9 @@
   &.not-homepage {
     display: flex;
     flex-direction: column;
-
+    .copy {
+      padding: 0 24px 24px;
+    }
     .laptop-breakout {
       opacity: 0;
       height: 200px;

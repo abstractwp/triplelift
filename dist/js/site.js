@@ -1234,7 +1234,5 @@ $(window).on("load", function(){
         duration: 1 
       },"transition5"
     );
-  
-    
   }
 });

@@ -1472,6 +1472,8 @@ button.triggerGalleryMenu {
   .hero.not-homepage {
     display: flex;
     flex-direction: column; }
+    .hero.not-homepage .copy {
+      padding: 0 24px 24px; }
     .hero.not-homepage .laptop-breakout {
       opacity: 0;
       height: 200px; }
