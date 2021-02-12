@@ -1482,7 +1482,17 @@ button.triggerGalleryMenu {
       .hero.not-homepage .laptop-breakout > * {
         width: 100%;
         object-fit: contain;
-        max-height: 400px; }
+        max-height: 200px; }
+      @media (min-width: 768px) {
+        .hero.not-homepage .laptop-breakout {
+          height: 300px; }
+          .hero.not-homepage .laptop-breakout > * {
+            max-height: 300px; } }
+      @media (min-width: 1024px) {
+        .hero.not-homepage .laptop-breakout {
+          height: 400px; }
+          .hero.not-homepage .laptop-breakout > * {
+            max-height: 400px; } }
     @media (min-width: 768px) {
       .hero.not-homepage .copy {
         align-self: center; } }
