@@ -1,3 +1,7 @@
+:root {
+  --border: 0.01em solid white;
+}
+
 .creative-gallery-section-container {
   padding: 100px 0;
 
@@ -88,5 +92,134 @@ button.triggerGalleryMenu {
   img {
     transform: rotate(90deg);
     margin-right: 12px;
+  }
+}
+
+.large-controls {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .triggerGalleryMenuContainer {
+    display: none;
+  }
+
+  .creative-gallery-section-container .creative-gallery-section-inner {
+    max-width: inherit;
+    margin: 0 24px;
+  }
+
+  .selected-gallery-content,
+  .gallery-container {
+    display: flex;
+  }
+
+  .selected-gallery-content {
+    align-items: center;
+  }
+
+  .large-controls {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    span {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .selected-gallery-content {
+    width: 75%;
+  }
+
+  .selected-gallery-visual {
+    margin-left: 64px;
+    max-width: 200px;
+  }
+
+  .selected-gallery-copy {
+    margin-left: 48px;
+  }
+
+  .controlHeadline {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 12px;
+  }
+
+  .product-select-grid {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: stretch;
+    justify-items: stretch;
+    border-radius: 12px;
+    overflow: hidden;
+
+    .select-item {
+      text-align: center;
+      padding: 16px 0 0;
+
+      &:first-child {
+        background: $primaryGradient;
+        z-index: 1;
+      }
+
+      &:nth-child(-n + 2) {
+        border-bottom: var(--border);
+        margin-bottom: -1px;
+      }
+
+      &:nth-child(2n + 1) {
+        border-right: var(--border);
+        margin-right: -1px;
+      }
+
+      &:nth-child(2n) {
+        border-left: var(--border);
+      }
+
+      &:nth-child(n + 3) {
+        border-top: var(--border);
+      }
+
+      img {
+        width: 70px;
+        height: 60px;
+        object-fit: contain;
+      }
+    }
+    span {
+      font-size: 12px;
+      padding-top: 12px;
+      text-transform: uppercase;
+    }
+  }
+  .format-selection-container {
+    margin-top: 48px;
+    button.format-select {
+      border: 0;
+      background: transparent;
+      display: flex;
+      color: white;
+      align-items: center;
+      justify-content: flex-end;
+      width: 100%;
+      padding: 12px;
+      text-align: right;
+      border-radius: 12px;
+      &:first-of-type {
+        background: $primaryGradient;
+      }
+      span {
+        margin-right: 16px;
+      }
+      img {
+        width: 40px;
+        object-fit: contain;
+      }
+    }
   }
 }
