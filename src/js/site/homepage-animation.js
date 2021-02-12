@@ -1,5 +1,5 @@
 if (document.getElementById("homepageJSIndicator")) {
-  gsap.config({nullTargetWarn:false});
+gsap.config({nullTargetWarn:false});
 
 window.setTimeout(function(){$(".loading").addClass("not-loading");}, 100);
 
