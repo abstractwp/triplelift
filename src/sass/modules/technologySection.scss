@@ -1,0 +1,29 @@
+.technologySectionContainer {
+    padding: 96px 24px;
+    color: white;
+
+    p {
+        padding-top: 12px;
+    }
+
+    .animate-border-content {
+        margin: 0;
+        padding: 0 12px;
+    }
+
+    .video-container {
+        position: relative;
+        margin-top: 12px;
+        overflow: hidden;
+    
+        iframe {
+            width: 100%;
+            max-width: calc(177.778vh);
+            height: calc(56.25vw);
+            z-index: 5;
+            position: relative;
+        }
+    }
+
+
+}

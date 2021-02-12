@@ -1477,7 +1477,11 @@ button.triggerGalleryMenu {
       padding: 0 24px 24px; }
     .hero.not-homepage .laptop-breakout {
       opacity: 0;
-      height: 200px; }
+      height: 400px; }
+      .hero.not-homepage .laptop-breakout > * {
+        width: 100%;
+        object-fit: contain;
+        max-height: 400px; }
     @media (min-width: 768px) {
       .hero.not-homepage .copy {
         align-self: center; } }
@@ -1748,6 +1752,28 @@ button.triggerGalleryMenu {
 .productpage-section-transition-container .section-transition.gradient2 {
   background: linear-gradient(142.86deg, #f47b20 2.47%, #f15c2c 43.9%, #ed79b0 95.24%);
   opacity: 0; }
+
+.technologypage-section-transition-container .section-transition.section1 {
+  background: linear-gradient(122.97deg, #0e3d52 0%, #000000 95.81%); }
+
+.technologySectionContainer {
+  padding: 96px 24px;
+  color: white; }
+  .technologySectionContainer p {
+    padding-top: 12px; }
+  .technologySectionContainer .animate-border-content {
+    margin: 0;
+    padding: 0 12px; }
+  .technologySectionContainer .video-container {
+    position: relative;
+    margin-top: 12px;
+    overflow: hidden; }
+    .technologySectionContainer .video-container iframe {
+      width: 100%;
+      max-width: calc(177.778vh);
+      height: calc(56.25vw);
+      z-index: 5;
+      position: relative; }
 
 .texture-animation-container {
   width: 100%;
