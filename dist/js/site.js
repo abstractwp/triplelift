@@ -1086,25 +1086,31 @@ if (document.getElementById("productPageJSIndicator")) {
   var laptopBreakout = gsap.timeline({repeat: 0});
 
   laptopBreakout.from(".laptop-breakout", {
-    opacity: 0, 
     y: 20,
     duration: .5,
     },
-    "phone-breakout-slide-up"
+    "laptop-breakout-slide-up"
+  )
+
+  laptopBreakout.to(".laptop-breakout", {
+    opacity: 1,
+    duration: .5,
+    },
+    "laptop-breakout-slide-up"
   )
   
   laptopBreakout.from(".laptop-breakout img:nth-child(1)", {
     x: -10,  
     duration: .4,
     },
-    "phone-breakout"
+    "laptop-breakout"
   )
   
   laptopBreakout.from(".laptop-breakout img:nth-child(2)", {
     x: -10,  
     duration: .4,
   },
-  "phone-breakout"
+  "laptop-breakout"
   )
   
   laptopBreakout.from(".laptop-breakout img:nth-child(3)", {
@@ -1112,7 +1118,7 @@ if (document.getElementById("productPageJSIndicator")) {
     x: 15,
     duration: .4,
   },
-  "phone-breakout"
+  "laptop-breakout"
   )
   
   laptopBreakout.from(".laptop-breakout img:nth-child(4)", {
@@ -1121,7 +1127,7 @@ if (document.getElementById("productPageJSIndicator")) {
     x: 30,
     duration: .4,
   },
-  "phone-breakout"
+  "laptop-breakout"
   )
   
   const creativeGallerySectionTL = gsap.timeline( {    

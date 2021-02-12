@@ -1369,8 +1369,10 @@ button.triggerGalleryMenu {
   z-index: 1; }
   .hero.not-homepage {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between; }
+    flex-direction: column; }
+    .hero.not-homepage .laptop-breakout {
+      opacity: 0;
+      height: 200px; }
     @media (min-width: 768px) {
       .hero.not-homepage .copy {
         align-self: center; } }
