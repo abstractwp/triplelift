@@ -146,6 +146,9 @@ if (document.getElementById("productPageJSIndicator")) {
     scrollTrigger: {
       trigger: ".between-product-page-ctas.trans1",
       scrub: true,
+      markers: true,
+      start: "-100% 50%",
+      end: "00% 40%",
       toggleActions: "play reverse play reverse",
     }
   });
