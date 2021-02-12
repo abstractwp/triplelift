@@ -15,6 +15,18 @@
   }
 }
 
+.section-transition.section1 {
+  z-index: 1;
+}
+
+.section-transition.section2 {
+  z-index: 2;
+}
+
+.section-transition.section3 {
+  z-index: 3;
+}
+
 .homepage-section-transition-container {
   .section-transition.section1 {
     background: $gradientDark1;
@@ -50,5 +62,10 @@
 .technologypage-section-transition-container {
   .section-transition.section1 {
     background: $gradientDark1;
+  }
+  
+  .section-transition.section2 {
+    background: $gradientDark2;
+    opacity: 0;
   }
 }

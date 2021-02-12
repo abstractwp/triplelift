@@ -62,14 +62,15 @@ downarrowTL
   }, 0.5)
 ;
 
-let ctaBordersToAnimate = gsap.utils.toArray('.animate-border-outer');
+let videoBordersToAnimate = gsap.utils.toArray('.animate-video-border-outer');
 
-ctaBordersToAnimate.forEach(item =>{
+videoBordersToAnimate.forEach(item =>{
   const borderScrollItem = gsap.timeline( {    
     scrollTrigger: {
       trigger: item,
       scrub: true,
-      start: "20px, center",
+      start: "20% 80%",
+      end: "50% 10%",
       toggleActions: "play reverse play reverse",
     }
   });
@@ -92,6 +93,37 @@ ctaBordersToAnimate.forEach(item =>{
   })
   
 })
+
+let ctaBordersToAnimate = gsap.utils.toArray('.animate-border-outer');
+
+ctaBordersToAnimate.forEach(item =>{
+  const borderScrollItem = gsap.timeline( {    
+    scrollTrigger: {
+      trigger: item,
+      scrub: true,
+      toggleActions: "play reverse play reverse",
+    }
+  });
+  
+  borderScrollItem.from(item, {
+    x: "-100%",
+    duration: .2,
+  }, "loadin")
+
+  borderScrollItem.to(item, {
+    opacity: 1,
+    duration: .2,
+  }, "loadin")
+
+  borderScrollItem.to(item, {
+    opacity: 0,
+    x: "100%",
+    duration: .4,
+    delay: .5,
+  })
+  
+})
+
 
 let texturesToAnimateRight = gsap.utils.toArray('.animated-texture-to-right');
 

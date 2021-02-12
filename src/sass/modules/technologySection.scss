@@ -2,24 +2,29 @@
     padding: 96px 24px;
     color: white;
 
+    h2 {
+        font-size: 32px;
+    }
+
     p {
         padding-top: 12px;
     }
 
     .animate-border-content {
+        background: $mineralGray;
         margin: 0;
         padding: 0 12px;
     }
 
     .video-container {
         position: relative;
-        margin-top: 12px;
+        margin-top: 24px;
         overflow: hidden;
     
         iframe {
             width: 100%;
             max-width: calc(177.778vh);
-            height: calc(56.25vw);
+            height: calc(51.25vw);
             z-index: 5;
             position: relative;
         }

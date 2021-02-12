@@ -57,7 +57,23 @@ $(window).on("load", function(){
     },
     "laptop-breakout"
     )
-    
-    
+
+    const computerVisionSectionTransition = gsap.timeline( {    
+      scrollTrigger: {
+        trigger: ".technologySection1",
+        scrub: true,
+        end: "5%",
+        toggleActions: "play reverse play reverse",
+      }
+    });
+  
+    computerVisionSectionTransition
+    .to(
+      '.technologypage-section-transition-container .section-transition.section2', 
+      { 
+        opacity: 1, 
+        duration: 1 
+      },"transition1"
+    );
   }
 });
