@@ -1420,7 +1420,9 @@ button.triggerGalleryMenu {
   .products-hero .copy {
     width: 80%; }
   .products-hero .hero-visual {
-    width: 100%; } }
+    width: 100%; }
+  .hero.not-homepage .laptop-breakout {
+    height: inherit; } }
 
 .hero.homepage-hero h1 {
   font-size: 26px;
