@@ -106,7 +106,7 @@ $(window).on("load", function(){
   
     innovationHeaderSectionTLIntro
     .to(
-      '.productpage-section-transition-container .section-transition.gradient2', 
+      '.innovation-header-container .bg', 
       { 
         opacity: 1, 
         duration: 1 
@@ -147,38 +147,11 @@ $(window).on("load", function(){
     .from(
       '.product-page-cta-1', 
       { 
-        y: -20,
         opacity: .8, 
         duration: 1 
       },"transition5"
     );
   
-    const fadeInFirstCTATransition = gsap.timeline( {    
-      scrollTrigger: {
-        trigger: ".product-page-cta-1",
-        scrub: true,
-        markers: true,
-        toggleActions: "play reverse play reverse",
-      }
-    });
-  
-    fadeInFirstCTATransition
-    .to(
-      '.productpage-section-transition-container .section-transition.gradient2', 
-      { 
-        opacity: 0, 
-        duration: 1 
-      },"transition5"
-    );
-  
-    fadeInFirstCTATransition
-    .to(
-      '.productpage-section-transition-container .section-transition.white', 
-      { 
-        opacity: 1, 
-        duration: 1 
-      },"transition5"
-    );
-  
+    
   }
 });

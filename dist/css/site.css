@@ -1602,6 +1602,14 @@ button.triggerGalleryMenu {
 
 .innovation-header-container {
   position: relative; }
+  .innovation-header-container .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(77.24deg, #f47b20 14.56%, #f15c2c 88.29%);
+    opacity: 0; }
   .innovation-header-container .between-product-page-ctas {
     position: absolute;
     bottom: 0; }
@@ -1676,7 +1684,7 @@ button.triggerGalleryMenu {
 @media (min-width: 1024px) {
   .product-page-cta {
     max-width: 900px;
-    margin: 0 auto; } }
+    margin: 24px auto; } }
 
 .between-product-page-ctas {
   width: 100%;
