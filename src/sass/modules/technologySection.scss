@@ -27,8 +27,45 @@
             height: calc(51.25vw);
             z-index: 5;
             position: relative;
+
+            @media (min-width: 768px) {
+                height: calc(53.25vw);
+            }
+
+            @media (min-width: 1024px) {
+                height: calc(54.25vw);
+            }
+
         }
     }
+}
 
+@media (min-width: 1024px) {
+    .technologySectionContainer {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 48px;
+        align-items: center;
+        max-width: 90vw;
+        margin: 0 auto;
+
+        .video-container iframe {
+            height: calc(31.25vw);
+        }
+
+    }
+}
+
+@media (min-width: 1280px) {
+    .technologySectionContainer {
+        column-gap: 72px;
+
+        h2 {
+            font-size: 44px;
+        }
+        p {
+            font-size: 24px;
+        }
+    }
 
 }
