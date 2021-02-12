@@ -1243,6 +1243,10 @@ body.menu-open {
       font-weight: 600;
       letter-spacing: 2px;
       font-size: 20px; }
+      @media (min-width: 1024px) {
+        .creative-gallery-section-container .creative-gallery-section-inner .tab {
+          margin: 0 auto;
+          font-size: 36px; } }
     .creative-gallery-section-container .creative-gallery-section-inner .gallery-container {
       padding: 24px;
       background: #0e3d52;
@@ -1315,7 +1319,12 @@ button.triggerGalleryMenu {
     width: 75%; }
   .selected-gallery-visual {
     margin-left: 64px;
-    max-width: 200px; }
+    max-width: 200px; } }
+  @media (min-width: 1024px) and (min-width: 1280px) {
+    .selected-gallery-visual {
+      max-width: 300px; } }
+
+@media (min-width: 1024px) {
   .selected-gallery-copy {
     margin-left: 48px; }
   .controlHeadline {
@@ -1324,7 +1333,7 @@ button.triggerGalleryMenu {
     font-weight: 500;
     padding-bottom: 12px; }
   .product-select-grid {
-    margin-top: 24px;
+    margin-top: 12px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -1334,7 +1343,7 @@ button.triggerGalleryMenu {
     overflow: hidden; }
     .product-select-grid .select-item {
       text-align: center;
-      padding: 16px 0 0; }
+      padding: 16px 0; }
       .product-select-grid .select-item:first-child {
         background: linear-gradient(77.24deg, #f47b20 14.56%, #f15c2c 88.29%);
         z-index: 1; }
@@ -1376,6 +1385,10 @@ button.triggerGalleryMenu {
       .format-selection-container button.format-select img {
         width: 40px;
         object-fit: contain; } }
+
+@media (min-width: 1440px) {
+  .creative-gallery-section-container {
+    margin: 0 4vw; } }
 
 .cta {
   display: flex;
@@ -1514,6 +1527,12 @@ button.triggerGalleryMenu {
   .hero.not-homepage .laptop-breakout {
     height: inherit; } }
 
+@media (min-width: 1280px) {
+  .hero.not-homepage {
+    margin: 0 4vw; }
+    .hero.not-homepage h1 {
+      font-size: 80px; } }
+
 .hero.homepage-hero h1 {
   font-size: 26px;
   font-weight: 500; }
@@ -1599,6 +1618,14 @@ button.triggerGalleryMenu {
       margin-top: 12px;
       font-size: 18px;
       line-height: 1.5; }
+
+@media (min-width: 1024px) {
+  .innovation-inner-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 200px; }
+    .innovation-inner-container .copy p {
+      font-size: 24px; } }
 
 .loading {
   background: linear-gradient(122.97deg, #0e3d52 0%, #000000 95.81%);

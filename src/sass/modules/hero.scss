@@ -100,3 +100,12 @@
     height: inherit;
   }
 }
+
+@media (min-width: 1280px) {
+  .hero.not-homepage {
+    margin: 0 4vw;
+    h1 {
+      font-size: 80px;
+    }
+  }
+}

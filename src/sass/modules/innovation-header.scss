@@ -22,3 +22,15 @@
     }
   }
 }
+
+@media (min-width: 1024px) {
+  .innovation-inner-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 200px;
+
+    .copy p {
+      font-size: 24px;
+    }
+  }
+}
