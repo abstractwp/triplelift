@@ -1,14 +1,23 @@
 .innovation-header-container {
   position: relative;
+
+  .between-product-page-ctas {
+    position: absolute;
+    bottom: 0;
+    @media (min-width: 1024px) {
+      right: 0;
+    }
+  }
+
   .texture-animation-container {
     position: absolute;
     height: 100%;
   }
   .copy {
-    padding: 300px 24px 100px;
+    padding: 300px 24px 224px;
 
     @media (min-width: 768px) {
-      padding: 200px 24px 100px;
+      padding: 200px 24px 224px;
     }
 
     color: white;
@@ -27,7 +36,6 @@
   .innovation-inner-container {
     max-width: 900px;
     margin: 0 auto;
-    padding-bottom: 200px;
 
     .copy p {
       font-size: 24px;

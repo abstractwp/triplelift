@@ -1216,25 +1216,6 @@ $(window).on("load", function(){
     );
   
   
-    const fadeOutTextureOnInnovationHeader = gsap.timeline( {    
-      scrollTrigger: {
-        trigger: ".product-page-cta-1",
-        start: "-100px center",
-        end: "bottom center",
-        scrub: true,
-        toggleActions: "play reverse play reverse",
-      }
-    });
-  
-    fadeOutTextureOnInnovationHeader
-    .to(
-      '.texture-animation-container', 
-      { 
-        opacity: 0, 
-        duration: 3 
-      },"transition4"
-    );
-  
     const fadeInFirstCTA = gsap.timeline( {    
       scrollTrigger: {
         trigger: ".product-page-cta-1",
@@ -1257,10 +1238,9 @@ $(window).on("load", function(){
   
     const fadeInFirstCTATransition = gsap.timeline( {    
       scrollTrigger: {
-        trigger: ".between-product-page-ctas.trans1",
+        trigger: ".product-page-cta-1",
         scrub: true,
-        start: "-100% 50%",
-        end: "00% 40%",
+        markers: true,
         toggleActions: "play reverse play reverse",
       }
     });
