@@ -150,8 +150,8 @@ exploreGalleryParallax
   .from(
     '.explore-our-gallery-container > *', 
     { 
-      opacity: 0,
-      duration: 2,
+      opacity: .5,
+      duration: .6,
   }, "exploreGallery");
 
 const weWorkWithParallax = gsap.timeline( {    

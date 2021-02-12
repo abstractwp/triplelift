@@ -756,8 +756,8 @@ exploreGalleryParallax
   .from(
     '.explore-our-gallery-container > *', 
     { 
-      opacity: 0,
-      duration: 2,
+      opacity: .5,
+      duration: .6,
   }, "exploreGallery");
 
 const weWorkWithParallax = gsap.timeline( {    
@@ -1030,7 +1030,10 @@ ctaBordersToAnimate.forEach(item =>{
   const borderScrollItem = gsap.timeline( {    
     scrollTrigger: {
       trigger: item,
+      start: "10%, 70%",
+      end: "90% 10%",
       scrub: true,
+      markers: true,
       toggleActions: "play reverse play reverse",
     }
   });
