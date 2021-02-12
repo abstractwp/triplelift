@@ -1033,7 +1033,6 @@ ctaBordersToAnimate.forEach(item =>{
       start: "10%, 70%",
       end: "90% 10%",
       scrub: true,
-      markers: true,
       toggleActions: "play reverse play reverse",
     }
   });
