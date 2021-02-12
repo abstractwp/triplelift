@@ -48,6 +48,13 @@ $(window).on("load", function(){
     },
     "laptop-breakout"
     )
+
+    laptopBreakout.to(".laptop-breakout img:nth-child(3)", {
+      opacity: 0,  
+      duration: .4,
+      },
+      "laptop-breakout"
+    )
     
     laptopBreakout.from(".laptop-breakout img:nth-child(4)", {
       scale: .9,
@@ -56,6 +63,13 @@ $(window).on("load", function(){
       duration: .4,
     },
     "laptop-breakout"
+    )
+
+    laptopBreakout.to(".laptop-breakout img:nth-child(4)", {
+      opacity: 0,  
+      duration: .4,
+      },
+      "laptop-breakout"
     )
 
     const computerVisionSectionTransition = gsap.timeline( {    

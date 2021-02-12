@@ -1478,7 +1478,7 @@ button.triggerGalleryMenu {
       padding: 0 24px 24px; }
     .hero.not-homepage .laptop-breakout {
       opacity: 0;
-      height: 400px; }
+      height: 200px; }
       .hero.not-homepage .laptop-breakout > * {
         width: 100%;
         object-fit: contain;
@@ -1816,6 +1816,24 @@ button.triggerGalleryMenu {
       font-size: 44px; }
     .technologySectionContainer p {
       font-size: 24px; } }
+
+.show-on-small p {
+  margin-top: 24px;
+  padding: 0 24px; }
+  .show-on-small p + p {
+    margin-top: 12px; }
+
+.show-on-large {
+  display: none; }
+
+@media (min-width: 1024px) {
+  .show-on-small {
+    display: none; }
+  .show-on-large {
+    display: block; }
+    .show-on-large p {
+      margin-top: 12px;
+      font-weight: 200 !important; } }
 
 .texture-animation-container {
   width: 100%;
