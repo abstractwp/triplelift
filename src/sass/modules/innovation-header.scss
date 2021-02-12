@@ -5,7 +5,12 @@
     height: 100%;
   }
   .copy {
-    padding: 300px 24px 500px;
+    padding: 300px 24px 100px;
+
+    @media (min-width: 768px) {
+      padding: 200px 24px 400px;
+    }
+
     color: white;
     h2 {
       font-weight: bold;

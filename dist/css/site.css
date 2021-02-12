@@ -1038,8 +1038,7 @@ h3 {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 330px; }
+    transform: translate(-50%, -50%); }
 
 .not-home .burger-and-fries-container,
 html:not([data-scroll="0"]) .burger-and-fries-container {
@@ -1223,6 +1222,9 @@ body.menu-open {
   padding: 100px 0; }
   .creative-gallery-section-container h2 {
     padding: 0 24px 100px; }
+    @media (min-width: 768px) {
+      .creative-gallery-section-container h2 {
+        max-width: 70vw; } }
   .creative-gallery-section-container .creative-gallery-section-inner {
     position: relative;
     max-width: 375px;
@@ -1323,7 +1325,7 @@ button.triggerGalleryMenu {
       width: 16px; }
 
 .explore-our-gallery-container {
-  margin: 24vw 0 24vw;
+  margin: 24vw 0;
   position: relative;
   overflow: hidden; }
   .explore-our-gallery-container a.explore-our-gallery {
@@ -1484,8 +1486,11 @@ button.triggerGalleryMenu {
     position: absolute;
     height: 100%; }
   .innovation-header-container .copy {
-    padding: 300px 24px 500px;
+    padding: 300px 24px 100px;
     color: white; }
+    @media (min-width: 768px) {
+      .innovation-header-container .copy {
+        padding: 200px 24px 400px; } }
     .innovation-header-container .copy h2 {
       font-weight: bold; }
     .innovation-header-container .copy p {
@@ -1508,6 +1513,47 @@ button.triggerGalleryMenu {
 .logo-lockup {
   display: flex;
   align-items: center; }
+
+.product-page-cta {
+  margin: 0; }
+  .product-page-cta .product-page-cta-content-inner {
+    display: flex;
+    flex-direction: column; }
+    .product-page-cta .product-page-cta-content-inner .cta {
+      align-self: flex-end;
+      margin-top: 36px; }
+
+.section-visual.large {
+  display: none; }
+
+@media (min-width: 768px) {
+  .section-visual.small {
+    display: none; }
+  .section-visual.large {
+    display: block; }
+  .explore-our-gallery-container.product-page-cta a.explore-our-gallery .animate-border-content {
+    flex-direction: row; }
+    .explore-our-gallery-container.product-page-cta a.explore-our-gallery .animate-border-content .product-page-cta-content-inner {
+      width: 50%; }
+  .explore-our-gallery-container a.explore-our-gallery .section-visual {
+    max-width: inherit; } }
+
+@media (min-width: 1024px) {
+  .product-page-cta {
+    max-width: 900px;
+    margin: 0 auto; } }
+
+.between-product-page-ctas {
+  width: 100%;
+  height: 200px;
+  position: relative; }
+  .between-product-page-ctas .vertical-texture-animation {
+    background-image: url("/images/plus-primary-gradient-bg.svg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
 
 .section-transition-container {
   height: 100vh;

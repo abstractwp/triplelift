@@ -131,3 +131,23 @@ texturesToAnimateLeft.forEach(item =>{
   })
   
 })
+
+let texturesToAnimateUp = gsap.utils.toArray('.vertical-texture-animation');
+
+texturesToAnimateUp.forEach(item =>{
+  const textureScrollItem = gsap.timeline( {    
+    scrollTrigger: {
+      trigger: item,
+      scrub: true,
+      end: "100%",
+      toggleActions: "play reverse play reverse",
+    }
+  });
+  
+  textureScrollItem.from(item, {
+    backgroundPosition: "0px 200px",
+    duration: 6,
+    stagger: 1
+  })
+  
+})

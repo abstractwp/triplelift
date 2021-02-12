@@ -33,7 +33,7 @@ if (document.getElementById("productPageJSIndicator")) {
       trigger: ".innovation-header-container",
       scrub: true,
       start: "20px center",
-      end: "80px top",
+      end: "80px 40%",
       toggleActions: "play reverse play reverse",
     }
   });
@@ -79,20 +79,11 @@ if (document.getElementById("productPageJSIndicator")) {
     scrollTrigger: {
       trigger: ".innovation-header-container",
       scrub: true,
-      start: "95% bottom",
-      end: "120% bottom",
+      start: "70% center",
+      end: "95% 40%",
       toggleActions: "play reverse play reverse",
     }
   });
-
-  innovationHeaderSectionTLOutro
-  .to(
-    '.texture-animation-container', 
-    { 
-      opacity: 1, 
-      duration: 1 
-    },"transition3"
-  );
 
   innovationHeaderSectionTLOutro
   .to(
@@ -100,25 +91,7 @@ if (document.getElementById("productPageJSIndicator")) {
     { 
       opacity: 0, 
       duration: 1 
-    },"transition3"
-  );
-
-  innovationHeaderSectionTLOutro
-  .to(
-    '.productpage-section-transition-container .section-transition.gradient2', 
-    { 
-      opacity: 0, 
-      duration: 1 
-    },"transition3"
-  );
-
-  innovationHeaderSectionTLOutro
-  .to(
-    '.productpage-section-transition-container .section-transition.white', 
-    { 
-      opacity: 1, 
-      duration: 1 
-    },"transition3"
+    },"transition3p1"
   );
 
   innovationHeaderSectionTLOutro
@@ -127,14 +100,14 @@ if (document.getElementById("productPageJSIndicator")) {
     { 
       opacity: 1, 
       duration: 1 
-    },"transition3", "+1"
+    },"transition3p1"
   );
 
   const fadeOutTextureOnInnovationHeader = gsap.timeline( {    
     scrollTrigger: {
       trigger: ".product-page-cta-1",
-      start: "20% center",
-      end: "50% center",
+      start: "-100px center",
+      end: "bottom center",
       scrub: true,
       toggleActions: "play reverse play reverse",
     }
@@ -147,6 +120,52 @@ if (document.getElementById("productPageJSIndicator")) {
       opacity: 0, 
       duration: 3 
     },"transition4"
+  );
+
+  const fadeInFirstCTA = gsap.timeline( {    
+    scrollTrigger: {
+      trigger: ".product-page-cta-1",
+      start: "-40% center",
+      end: "50% center",
+      scrub: true,
+      toggleActions: "play reverse play reverse",
+    }
+  });
+
+  fadeInFirstCTA
+  .from(
+    '.product-page-cta-1', 
+    { 
+      y: -20,
+      opacity: .8, 
+      duration: 1 
+    },"transition5"
+  );
+
+  const fadeInFirstCTATransition = gsap.timeline( {    
+    scrollTrigger: {
+      trigger: ".between-product-page-ctas.trans1",
+      scrub: true,
+      toggleActions: "play reverse play reverse",
+    }
+  });
+
+  fadeInFirstCTATransition
+  .to(
+    '.productpage-section-transition-container .section-transition.gradient2', 
+    { 
+      opacity: 0, 
+      duration: 1 
+    },"transition5"
+  );
+
+  fadeInFirstCTATransition
+  .to(
+    '.productpage-section-transition-container .section-transition.white', 
+    { 
+      opacity: 1, 
+      duration: 1 
+    },"transition5"
   );
 
 }
