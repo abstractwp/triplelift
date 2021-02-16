@@ -1032,8 +1032,46 @@ h3 {
 
 .laptop-breakout {
   position: relative;
-  width: 100%; }
+  width: 100%;
+  opacity: 0;
+  height: 200px; }
+  .laptop-breakout > * {
+    width: 100%;
+    object-fit: contain;
+    max-height: 200px; }
+  @media (min-width: 768px) {
+    .laptop-breakout {
+      height: 300px; }
+      .laptop-breakout > * {
+        max-height: 300px; } }
+  @media (min-width: 1024px) {
+    .laptop-breakout {
+      height: inherit; }
+      .laptop-breakout > * {
+        max-height: 400px; } }
   .laptop-breakout img {
+    top: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+
+.OTT-breakout {
+  opacity: 0;
+  height: 300px;
+  position: relative;
+  width: 90%; }
+  @media (min-width: 768px) {
+    .OTT-breakout {
+      height: 300px; }
+      .OTT-breakout > * {
+        max-height: 300px; } }
+  @media (min-width: 1024px) {
+    .OTT-breakout {
+      height: inherit; }
+      .OTT-breakout > * {
+        max-height: 400px; } }
+  .OTT-breakout img {
     top: 0;
     position: absolute;
     left: 50%;
@@ -1476,23 +1514,6 @@ button.triggerGalleryMenu {
     flex-direction: column; }
     .hero.not-homepage .copy {
       padding: 0 24px 24px; }
-    .hero.not-homepage .laptop-breakout {
-      opacity: 0;
-      height: 200px; }
-      .hero.not-homepage .laptop-breakout > * {
-        width: 100%;
-        object-fit: contain;
-        max-height: 200px; }
-      @media (min-width: 768px) {
-        .hero.not-homepage .laptop-breakout {
-          height: 300px; }
-          .hero.not-homepage .laptop-breakout > * {
-            max-height: 300px; } }
-      @media (min-width: 1024px) {
-        .hero.not-homepage .laptop-breakout {
-          height: 400px; }
-          .hero.not-homepage .laptop-breakout > * {
-            max-height: 400px; } }
     @media (min-width: 768px) {
       .hero.not-homepage .copy {
         align-self: center; } }
@@ -1540,9 +1561,7 @@ button.triggerGalleryMenu {
   .products-hero .copy {
     width: 80%; }
   .products-hero .hero-visual {
-    width: 100%; }
-  .hero.not-homepage .laptop-breakout {
-    height: inherit; } }
+    width: 100%; } }
 
 @media (min-width: 1280px) {
   .hero.not-homepage {

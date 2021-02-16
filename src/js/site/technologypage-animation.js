@@ -11,65 +11,51 @@ $(window).on("load", function(){
       duration: 1,
     })
   
-    var laptopBreakout = gsap.timeline({repeat: 0, delay: 1});
+    var OTTBreakout = gsap.timeline({repeat: 0, delay: 1});
   
-    laptopBreakout.from(".laptop-breakout", {
+    OTTBreakout.from(".OTT-breakout", {
       y: 20,
       duration: .5,
       },
-      "laptop-breakout-slide-up"
+      "OTT-breakout-slide-up"
     )
   
-    laptopBreakout.to(".laptop-breakout", {
+    OTTBreakout.to(".OTT-breakout", {
       opacity: 1,
       duration: .5,
       },
-      "laptop-breakout-slide-up"
+      "OTT-breakout-slide-up"
     )
     
-    laptopBreakout.from(".laptop-breakout img:nth-child(1)", {
+    OTTBreakout.from(".OTT-breakout img:nth-child(1)", {
       x: -10,  
       duration: .4,
       },
-      "laptop-breakout"
+      "OTT-breakout"
     )
     
-    laptopBreakout.from(".laptop-breakout img:nth-child(2)", {
+    OTTBreakout.from(".OTT-breakout img:nth-child(2)", {
       x: -10,  
       duration: .4,
     },
-    "laptop-breakout"
+    "OTT-breakout"
     )
     
-    laptopBreakout.from(".laptop-breakout img:nth-child(3)", {
+    OTTBreakout.from(".OTT-breakout img:nth-child(3)", {
       scale: .95,
       x: 15,
       duration: .4,
     },
-    "laptop-breakout"
-    )
-
-    laptopBreakout.to(".laptop-breakout img:nth-child(3)", {
-      opacity: 0,  
-      duration: .4,
-      },
-      "laptop-breakout"
+    "OTT-breakout"
     )
     
-    laptopBreakout.from(".laptop-breakout img:nth-child(4)", {
+    OTTBreakout.from(".OTT-breakout img:nth-child(4)", {
       scale: .9,
       y: 10,
       x: 30,
       duration: .4,
     },
-    "laptop-breakout"
-    )
-
-    laptopBreakout.to(".laptop-breakout img:nth-child(4)", {
-      opacity: 0,  
-      duration: .4,
-      },
-      "laptop-breakout"
+    "OTT-breakout"
     )
 
     const computerVisionSectionTransition = gsap.timeline( {    
