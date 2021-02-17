@@ -17,10 +17,18 @@
     @media (min-width: 1024px) {
       right: 0;
     }
+
+    &.center {
+      left: 0;
+      .texture{
+        left: 50%;
+        transform: translate(-50%, 0%);
+      }
+    }
   }
 
   .texture-animation-container {
-    width: 50%;
+    width: 35%;
     left: 50%;
     top: 50%;
     margin-top: -200px;
@@ -29,6 +37,7 @@
     position: absolute;
     height: 100%;
   }
+  
   .copy {
     padding: 300px 24px 224px;
 
