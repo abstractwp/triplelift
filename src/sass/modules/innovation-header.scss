@@ -11,22 +11,6 @@
     opacity: 0;
   }
 
-  .between-product-page-ctas {
-    position: absolute;
-    bottom: 0;
-    @media (min-width: 1024px) {
-      right: 0;
-    }
-
-    &.center {
-      left: 0;
-      .texture{
-        left: 50%;
-        transform: translate(-50%, 0%);
-      }
-    }
-  }
-
   .texture-animation-container {
     width: 35%;
     left: 50%;

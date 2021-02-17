@@ -1016,6 +1016,18 @@ h3 {
   margin: 12px;
   z-index: 3; }
 
+.between-product-page-ctas {
+  position: absolute;
+  bottom: 0; }
+  @media (min-width: 1024px) {
+    .between-product-page-ctas {
+      right: 0; } }
+  .between-product-page-ctas.center {
+    left: 0; }
+    .between-product-page-ctas.center .texture {
+      left: 50%;
+      transform: translate(-50%, 0%); }
+
 .phone-breakout {
   position: relative;
   margin-top: 4vh;
@@ -1478,7 +1490,7 @@ button.triggerGalleryMenu {
       width: 16px; }
 
 .explore-our-gallery-container {
-  margin: 24vw 0;
+  margin: 20vw 0;
   position: relative;
   overflow: hidden; }
   .explore-our-gallery-container a.explore-our-gallery {
@@ -1511,7 +1523,7 @@ button.triggerGalleryMenu {
 
 @media (min-width: 1024px) {
   .explore-our-gallery-container {
-    margin: 24vw 12vw 12vw; }
+    margin: 12vw 12vw; }
     .explore-our-gallery-container a.explore-our-gallery .headline {
       font-size: 4vw; } }
 
@@ -1658,17 +1670,6 @@ button.triggerGalleryMenu {
     height: 100%;
     background: linear-gradient(77.24deg, #f47b20 14.56%, #f15c2c 88.29%);
     opacity: 0; }
-  .innovation-header-container .between-product-page-ctas {
-    position: absolute;
-    bottom: 0; }
-    @media (min-width: 1024px) {
-      .innovation-header-container .between-product-page-ctas {
-        right: 0; } }
-    .innovation-header-container .between-product-page-ctas.center {
-      left: 0; }
-      .innovation-header-container .between-product-page-ctas.center .texture {
-        left: 50%;
-        transform: translate(-50%, 0%); }
   .innovation-header-container .texture-animation-container {
     width: 35%;
     left: 50%;
@@ -1898,7 +1899,8 @@ button.triggerGalleryMenu {
       right: 0; } }
 
 .we-work-with {
-  padding-bottom: 24vw; }
+  padding-bottom: 24vw;
+  margin-top: 64px; }
   .we-work-with h3 {
     font-size: 36px;
     font-weight: bold;
@@ -1937,7 +1939,7 @@ button.triggerGalleryMenu {
 
 @media (min-width: 1024px) {
   .we-work-with {
-    margin: 0 auto;
+    margin: 120px auto;
     max-width: 90vw; }
     .we-work-with h3 {
       font-size: 72px; }
@@ -1967,7 +1969,8 @@ button.triggerGalleryMenu {
     max-width: 60vw; } }
 
 .why-triplelift {
-  padding: 24px 24px 0vw; }
+  padding: 24px 24px 0vw;
+  margin-bottom: 48px; }
   .why-triplelift h2 {
     color: white;
     font-weight: 500;
@@ -1996,7 +1999,7 @@ button.triggerGalleryMenu {
 
 @media (min-width: 1024px) {
   .why-triplelift {
-    margin: 0 auto;
+    margin: 0 auto 100px;
     max-width: 90vw; }
     .why-triplelift h2 {
       text-align: left; }
