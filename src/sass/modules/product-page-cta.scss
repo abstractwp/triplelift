@@ -1,5 +1,7 @@
 .product-page-cta {
   margin: 0;
+
+  
   &:last-of-type {
     margin-bottom: 200px;
   }
@@ -41,6 +43,9 @@
   .product-page-cta {
     max-width: 900px;
     margin: 24px auto;
+    &.product-page-cta-1 {
+      margin-top: 0;
+    }
   }
 }
 

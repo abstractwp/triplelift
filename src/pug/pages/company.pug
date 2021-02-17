@@ -1,0 +1,33 @@
+extends ../template.pug
+
+block content
+  - var page = "company"
+  #technologyPageJSIndicator
+  include ../regions/header.pug
+  .technologypage-section-transition-container.section-transition-container
+    .section-transition.section1
+    .section-transition.section2
+  .technologySectionContainer.technologySection1
+    .copy-container
+      h2.text-primaryGradient.bold Computer vision
+      p In order to make your ad look beautiful in any environment, we created computer vision technology that scans your ad to understand what elements are most essential to your campaign — like faces, objects and text areas. Our technology then generates a native placement that always keeps your important focal points in the frame.
+    .video-container
+      .animate-video-border-outer.shadow-3
+      .animate-border-content
+        iframe(class="lazy-loaded" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="" src="https://player.vimeo.com/video/420893419?background=1")  
+  .technologySectionContainer.technologySection2
+    .copy-container
+      h2.text-primaryGradient.bold Dynamic Templating
+      p Our Dynamic Templating adapts advertisers’ creative components in real time, rendering native ads that seamlessly match the look and feel of every environment.
+    .video-container
+      .animate-video-border-outer.shadow-3
+      .animate-border-content
+        iframe(class="lazy-loaded" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="" src="https://player.vimeo.com/video/420893459?background=1")  
+  .technologySectionContainer.technologySection3
+    .copy-container
+      h2.text-primaryGradient.bold Ad Server
+      p Our Ad Server allows Publishers to seamlessly power native direct deals as part of their existing workflow. Leverage our platform to build and manage native creative assets and run ads directly on the server of your choice.
+    .video-container
+      .animate-video-border-outer.shadow-3
+      .animate-border-content
+        iframe(class="lazy-loaded" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="" src="https://player.vimeo.com/video/420893584?background=1")                  

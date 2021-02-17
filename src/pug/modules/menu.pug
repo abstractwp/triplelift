@@ -1,7 +1,7 @@
 
 - var currentUrl = page
 .main-nav
-  a.does-not-work() Company
+  a(href="company.html" class={active: currentUrl === 'company'}) Company
   a(href="products.html" class={active: currentUrl === 'products'}) Products
   a(href="technology.html" class={active: currentUrl === 'technology'}) Technology
   a(href="ideas.html" class={active: currentUrl === 'ideas'}) Ideas

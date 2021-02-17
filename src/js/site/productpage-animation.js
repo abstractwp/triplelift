@@ -103,31 +103,12 @@ $(window).on("load", function(){
         duration: 1 
       },"transition2"
     );
-  
-    innovationHeaderSectionTLIntro
-    .to(
-      '.innovation-header-container .bg', 
-      { 
-        opacity: 1, 
-        duration: 1 
-      },"transition2"
-    );
-  
-    innovationHeaderSectionTLIntro
-    .to(
-      '.texture-animation-container', 
-      { 
-        opacity: 0, 
-        duration: 1 
-      },"transition2"
-    );
-  
+    
     innovationHeaderSectionTLIntro
     .from(
       '.innovation-header-container .copy', 
       { 
-        opacity: 0,
-        y: -20,
+        y: -10,
         duration: .6 
       },"transition2"
     );
