@@ -9,6 +9,10 @@
     max-width: 900px;
   }
 
+  @media (min-width: 1440px) {
+    max-width: 1024px;
+  }
+
   .bg {
     position: absolute;
     top: 0;
@@ -38,9 +42,15 @@
 
 
     color: white;
+    
     h2 {
       font-weight: bold;
+      @media (min-width: 1024px) {
+        padding-top: 36px;
+      }
     }
+
+
     p {
       margin-top: 12px;
       font-size: 18px;
