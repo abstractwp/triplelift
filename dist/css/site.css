@@ -965,6 +965,29 @@ body {
 p {
   line-height: 1.5; }
 
+.h1,
+h1 {
+  height: auto;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 1.3; }
+  @media (min-width: 1024px) {
+    .h1,
+    h1 {
+      font-size: 36px; } }
+  @media (min-width: 1280px) {
+    .h1,
+    h1 {
+      font-size: 80px; } }
+  @media (min-width: 1440px) {
+    .h1,
+    h1 {
+      font-size: 48px; } }
+  @media (min-width: 1600px) {
+    .h1,
+    h1 {
+      font-size: 60px; } }
+
 h2,
 h4 {
   line-height: 1.2; }
@@ -1027,6 +1050,9 @@ h3 {
     .between-product-page-ctas.center .texture {
       left: 50%;
       transform: translate(-50%, 0%); }
+
+.latest-blog-posts-section-container {
+  padding-top: 100px; }
 
 .phone-breakout {
   position: relative;
@@ -1542,10 +1568,6 @@ button.triggerGalleryMenu {
         align-self: center; } }
   .hero .copy {
     padding: 24px; }
-    .hero .copy h1 {
-      font-size: 44px;
-      font-weight: 600;
-      line-height: 1.3; }
     .hero .copy p {
       font-size: 20px;
       font-weight: 600; }
@@ -1558,14 +1580,10 @@ button.triggerGalleryMenu {
     display: flex;
     align-items: center;
     padding-top: 0; }
-  .homepage-hero .copy h1 {
-    font-size: 36px; }
   .homepage-hero .copy p {
     font-size: 24px; } }
 
 @media (min-width: 1440px) {
-  .homepage-hero .copy h1 {
-    font-size: 48px; }
   .homepage-hero .copy p {
     font-size: 28px; } }
 
@@ -1573,8 +1591,6 @@ button.triggerGalleryMenu {
   .homepage-hero {
     max-width: 80vw;
     margin: 0 auto; }
-    .homepage-hero .homepage-hero .copy h1 {
-      font-size: 60px; }
     .homepage-hero .homepage-hero .copy p {
       font-size: 32px; } }
 
@@ -1588,9 +1604,21 @@ button.triggerGalleryMenu {
 
 @media (min-width: 1280px) {
   .hero.not-homepage {
-    margin: 0 4vw; }
-    .hero.not-homepage h1 {
-      font-size: 80px; } }
+    margin: 0 4vw; } }
+
+.hero-visual.ideas {
+  margin: 24px 12px 0;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 48px;
+  column-gap: 48px; }
+  .hero-visual.ideas .between-product-page-ctas {
+    height: 72px; }
+  .hero-visual.ideas .texture {
+    background-size: 100%; }
 
 .hero.homepage-hero h1 {
   font-size: 26px;
@@ -1828,6 +1856,13 @@ button.triggerGalleryMenu {
 
 .technologypage-section-transition-container .section-transition.section2 {
   background: linear-gradient(155.43deg, #313131 31.37%, #212121 37.63%, #000000 84.12%);
+  opacity: 0; }
+
+.ideaspage-section-transition-container .section-transition.section1 {
+  background: linear-gradient(122.97deg, #0e3d52 0%, #000000 95.81%); }
+
+.ideaspage-section-transition-container .section-transition.white {
+  background: white;
   opacity: 0; }
 
 .technologySectionContainer {

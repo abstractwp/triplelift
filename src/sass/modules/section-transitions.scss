@@ -64,3 +64,14 @@
     opacity: 0;
   }
 }
+
+.ideaspage-section-transition-container {
+  .section-transition.section1 {
+    background: $gradientDark1;
+  }
+  
+  .section-transition.white {
+    background: white;
+    opacity: 0;
+  }
+}
