@@ -1,12 +1,13 @@
 extends ../template.pug
 
 block content
+  - var page = "ideas"
   #technologyPageJSIndicator
   include ../regions/header.pug
   .technologypage-section-transition-container.section-transition-container
     .section-transition.section1
     .section-transition.section2
-  include ../modules/technology-hero.pug
+  include ../modules/ideas-hero.pug
   .technologySectionContainer.technologySection1
     .copy-container
       h2.text-primaryGradient.bold Computer vision
