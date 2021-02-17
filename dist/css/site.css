@@ -1886,9 +1886,9 @@ button.triggerGalleryMenu {
   height: 100%;
   background-size: 25%; }
   .texture.texture1 {
-    background-image: url("/images/plus-primary-gradient-bg.svg"); }
+    background-image: url("/images/plus-primary-gradient-bg-thin.svg"); }
   .texture.texture2 {
-    background-image: url("/images/plus-white-bg.svg"); }
+    background-image: url("/images/plus-white-bg-thin.svg"); }
 
 @media (min-width: 1024px) {
   .vertical-texture-animation .vertical-texture-animation {
