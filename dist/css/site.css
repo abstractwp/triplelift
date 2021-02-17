@@ -1665,6 +1665,12 @@ button.triggerGalleryMenu {
       .innovation-header-container .between-product-page-ctas {
         right: 0; } }
   .innovation-header-container .texture-animation-container {
+    width: 50%;
+    left: 50%;
+    top: 50%;
+    margin-top: -200px;
+    z-index: -1;
+    transform: translate(-50%, -50%);
     position: absolute;
     height: 100%; }
   .innovation-header-container .copy {
@@ -1799,10 +1805,6 @@ button.triggerGalleryMenu {
   background: white;
   opacity: 0; }
 
-.productpage-section-transition-container .section-transition.gradient2 {
-  background: linear-gradient(142.86deg, #f47b20 2.47%, #f15c2c 43.9%, #ed79b0 95.24%);
-  opacity: 0; }
-
 .technologypage-section-transition-container .section-transition.section1 {
   background: linear-gradient(122.97deg, #0e3d52 0%, #000000 95.81%); }
 
@@ -1889,7 +1891,7 @@ button.triggerGalleryMenu {
   .texture.texture1 {
     background-image: url("/images/plus-primary-gradient-bg.svg"); }
   .texture.texture2 {
-    background: url("/images/plus-white-bg.svg"); }
+    background-image: url("/images/plus-white-bg.svg"); }
 
 .we-work-with {
   padding-bottom: 24vw; }

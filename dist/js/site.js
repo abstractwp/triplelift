@@ -1056,46 +1056,6 @@ ctaBordersToAnimate.forEach(item =>{
   
 })
 
-
-let texturesToAnimateRight = gsap.utils.toArray('.animated-texture-to-right');
-
-texturesToAnimateRight.forEach(item =>{
-  const textureScrollItem = gsap.timeline( {    
-    scrollTrigger: {
-      trigger: item,
-      scrub: true,
-      end: "100%",
-      toggleActions: "play reverse play reverse",
-    }
-  });
-  
-  textureScrollItem.from(item, {
-    backgroundPosition: "-500px 0",
-    duration: 6,
-  })
-  
-})
-
-let texturesToAnimateLeft = gsap.utils.toArray('.animated-texture-to-left');
-
-texturesToAnimateLeft.forEach(item =>{
-  const textureScrollItem = gsap.timeline( {    
-    scrollTrigger: {
-      trigger: item,
-      scrub: true,
-      end: "100%",
-      toggleActions: "play reverse play reverse",
-    }
-  });
-  
-  textureScrollItem.from(item, {
-    backgroundPosition: "500px 0",
-    duration: 6,
-    stagger: 1
-  })
-  
-})
-
 let texturesToAnimateUp = gsap.utils.toArray('.vertical-texture-animation');
 
 texturesToAnimateUp.forEach(item =>{
