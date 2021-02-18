@@ -1900,7 +1900,7 @@ button.triggerGalleryMenu {
   display: none; }
 
 @media (min-width: 768px) {
-  .section-visual.small {
+  .small {
     display: none; }
   .section-visual.large {
     display: block; }
