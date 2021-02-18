@@ -1308,7 +1308,7 @@ body.menu-open {
     height: 8px;
     width: 8px;
     border-radius: 10px; }
-    @media (max-width: 1024px) {
+    @media (max-width: 1023px) {
       .main-nav a.active::before {
         left: 68%; } }
 
