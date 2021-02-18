@@ -978,15 +978,15 @@ h1 {
   @media (min-width: 1280px) {
     .h1,
     h1 {
-      font-size: 80px; } }
+      font-size: 48px; } }
   @media (min-width: 1440px) {
     .h1,
     h1 {
-      font-size: 48px; } }
+      font-size: 64px; } }
   @media (min-width: 1600px) {
     .h1,
     h1 {
-      font-size: 60px; } }
+      font-size: 80px; } }
 
 h2,
 h4 {
@@ -1726,7 +1726,16 @@ button.triggerGalleryMenu {
       height: 72px; }
       @media (min-width: 768px) {
         .hero.not-homepage.ideas-hero .hero-visual.ideas .between-product-page-ctas {
-          height: 160px; } }
+          height: 260px; } }
+      @media (min-width: 1024px) {
+        .hero.not-homepage.ideas-hero .hero-visual.ideas .between-product-page-ctas {
+          height: 340px; } }
+      @media (min-width: 1280px) {
+        .hero.not-homepage.ideas-hero .hero-visual.ideas .between-product-page-ctas {
+          height: 450px; } }
+      @media (min-width: 1440px) {
+        .hero.not-homepage.ideas-hero .hero-visual.ideas .between-product-page-ctas {
+          height: 510px; } }
     .hero.not-homepage.ideas-hero .hero-visual.ideas .texture {
       background-size: 100%; }
 
@@ -1983,8 +1992,17 @@ button.triggerGalleryMenu {
   background: linear-gradient(122.97deg, #0e3d52 0%, #000000 95.81%);
   opacity: 0; }
 
+@media (min-width: 1280px) {
+  .spotlessPodcastSeriesSectionContainer.explore-our-gallery-container {
+    margin-top: 120px; } }
+
 .spotlessPodcastSeriesSectionContainer.explore-our-gallery-container .animate-border-content {
   background: linear-gradient(122.97deg, #0e3d52 0%, #000000 95.81%); }
+
+.spotlessPodcastSeriesSectionContainer.explore-our-gallery-container a.explore-our-gallery .cta {
+  align-self: center;
+  margin-top: 16px;
+  margin-bottom: 28px; }
 
 .spotlessPodcastSeriesSectionContainer.explore-our-gallery-container a.explore-our-gallery .section-visual {
   max-width: 100%; }
@@ -2087,6 +2105,11 @@ button.triggerGalleryMenu {
     background-image: url("/images/plus-primary-gradient-bg-thin.svg"); }
   .texture.texture2 {
     background-image: url("/images/plus-white-bg-thin.svg"); }
+  .texture.texture3 {
+    background-image: url("/images/multi-color-plus.svg"); }
+    @media (min-width: 768px) {
+      .texture.texture3 {
+        background-repeat: no-repeat; } }
 
 @media (min-width: 1024px) {
   .vertical-texture-animation {

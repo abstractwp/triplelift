@@ -122,8 +122,21 @@
       height: 72px;
 
       @media (min-width: 768px) {
-        height: 160px;
+        height: 260px;
       }
+
+      @media (min-width: 1024px) {
+        height: 340px;
+      }
+
+      @media (min-width: 1280px) {
+        height: 450px;
+      }
+
+      @media (min-width: 1440px) {
+        height: 510px;
+      }
+
     }
   
     .texture {

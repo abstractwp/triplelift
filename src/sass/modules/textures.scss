@@ -18,6 +18,13 @@
   &.texture2 {
     background-image: url("/images/plus-white-bg-thin.svg");
   }
+
+  &.texture3 {
+    background-image: url("/images/multi-color-plus.svg");
+    @media (min-width: 768px) {
+      background-repeat: no-repeat;      
+    }
+  }
 }
 
 
