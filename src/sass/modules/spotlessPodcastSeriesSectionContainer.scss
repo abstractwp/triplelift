@@ -5,9 +5,27 @@
 
     a.explore-our-gallery .section-visual {
         max-width: 100%;
+        @media (min-width: 768px) {
+            &.large {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img {
+                max-width: 250px;
+                object-fit: contain;
+            }
+            .cta {
+                align-self: inherit;
+            }
+        }
+        }
     }
 
     p {
         color: white;
+        @media (min-width: 768px) {
+            margin-top: 24px;
+        }
     }
 }
