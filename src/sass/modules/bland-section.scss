@@ -7,6 +7,9 @@
 
   .bland-section-inner-container {
     .bland-section-inner-item {
+      text-decoration: none;
+      color: black;
+      display: block;
       margin-top: 24px;
     }
   }
@@ -27,7 +30,7 @@
 
   .date {
       font-size: 14px;
-      margin-top: 48px;
+      margin-top: 24px;
   }
 
   p {
