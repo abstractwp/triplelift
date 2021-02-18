@@ -1,12 +1,13 @@
 extends ../template.pug
 
-mixin blanditem(image, title, body, publisher)
+mixin blanditem(image, title, date, publisher)
   a(href="https://google.com" target="_blank").bland-section-inner-item.blog-post-container.shadow-1
     img(src=image)
     .copy-container
       span.title=title
-      span.publisher=publisher
-      span.date=body
+      div
+        span.publisher=publisher
+        span.date=date
 
 
 block content
