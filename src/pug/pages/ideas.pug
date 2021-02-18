@@ -1,5 +1,13 @@
 extends ../template.pug
 
+mixin blogpost(image, title, body)
+  .bland-section-inner-item.blog-post-container.shadow-3
+    img(src=image)
+    .copy-container
+      span.title=title
+      span.date=body
+
+
 block content
   - var page = "ideas"
   #ideasPageJSIndicator
@@ -8,7 +16,24 @@ block content
     .section-transition.section1
     .section-transition.white
   include ../modules/ideas-hero.pug
-  .latest-blog-posts-section-container
-    h2.h1.text-primaryGradient Latest Blog posts
-    p A supportive company is a company that communicates. 
-    p Here’s what we’ve been thinking about.
+  .bland-section-container.latest-blog-posts-section-container
+    .heading
+      h2.h1.text-primaryGradient Latest Blog Posts
+      p A supportive company is a company that communicates. 
+      p Here’s what we’ve been thinking about.
+    .bland-section-inner-container
+      +blogpost(
+        "/images/blog-post/TL-Women-EveryMeeting-Jan21-960x960-F2-1-768x769.jpg",
+        "Every Meeting Makes a Difference: Helping Women Back Into the Workplace",
+        "February 2, 2021"
+      )
+      +blogpost(
+        "/images/blog-post/TL_PubSpotlight_Instagram_photo-768x768.png",
+        "Educational Tools in the World of Digital Learning",
+        "January 14, 2021"
+      )
+      +blogpost(
+        "/images/blog-post/Reflection_blog_1024x1024-768x768.jpg",
+        "Reflection on 2020",
+        "January 13, 2021"
+      )

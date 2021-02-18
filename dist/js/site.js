@@ -888,7 +888,8 @@ $(window).on("load", function(){
       scrollTrigger: {
         trigger: ".latest-blog-posts-section-container",
         scrub: true,
-        end: "5%",
+        start: "0% bottom",
+        end: "20% 95%",
         toggleActions: "play reverse play reverse",
       }
     });
