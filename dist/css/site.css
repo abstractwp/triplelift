@@ -992,11 +992,20 @@ h2,
 h4 {
   line-height: 1.2; }
 
+.h2,
 h2 {
-  font-size: 40px; }
+  font-size: 40px;
+  height: inherit; }
 
+.h3,
 h3 {
+  height: inherit;
   font-size: 32px; }
+
+.h4,
+h4 {
+  height: inherit;
+  font-size: 24px; }
 
 @media (min-width: 1024px) {
   h2 {
@@ -1062,6 +1071,7 @@ h3 {
       column-gap: 5vw;
       margin-top: 24px; } }
   .bland-section-container .bland-section-inner-container .bland-section-inner-item {
+    background: white;
     text-decoration: none;
     color: black;
     display: block;
@@ -1563,6 +1573,18 @@ button.triggerGalleryMenu {
     .cta.cta-style-2 img {
       width: 16px; }
 
+.distinctions-section-container {
+  color: white; }
+  .distinctions-section-container .distinctions-timeline .year-header {
+    margin-top: 48px;
+    font-weight: bold; }
+  .distinctions-section-container .distinctions-timeline .distinction {
+    margin: 16px 24px 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+    .distinctions-section-container .distinctions-timeline .distinction:last-of-type {
+      border-bottom: 0; }
+
 .explore-our-gallery-container {
   margin: 20vw 0;
   position: relative;
@@ -1911,12 +1933,21 @@ button.triggerGalleryMenu {
   background: linear-gradient(155.43deg, #313131 31.37%, #212121 37.63%, #000000 84.12%);
   opacity: 0; }
 
-.ideaspage-section-transition-container .section-transition.section1 {
+.ideaspage-section-transition-container .section-transition.white {
+  background: white; }
+
+.ideaspage-section-transition-container .section-transition.gradientDark1 {
+  background: linear-gradient(122.97deg, #0e3d52 0%, #000000 95.81%);
+  opacity: 0; }
+
+.spotlessPodcastSeriesSectionContainer.explore-our-gallery-container .animate-border-content {
   background: linear-gradient(122.97deg, #0e3d52 0%, #000000 95.81%); }
 
-.ideaspage-section-transition-container .section-transition.white {
-  background: white;
-  opacity: 0; }
+.spotlessPodcastSeriesSectionContainer.explore-our-gallery-container a.explore-our-gallery .section-visual {
+  max-width: 100%; }
+
+.spotlessPodcastSeriesSectionContainer.explore-our-gallery-container p {
+  color: white; }
 
 .technologySectionContainer {
   padding: 96px 24px;

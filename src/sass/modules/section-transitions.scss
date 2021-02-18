@@ -66,12 +66,12 @@
 }
 
 .ideaspage-section-transition-container {
-  .section-transition.section1 {
-    background: $gradientDark1;
-  }
-  
   .section-transition.white {
     background: white;
+  }
+  
+  .section-transition.gradientDark1 {
+    background: $gradientDark1;
     opacity: 0;
   }
 }

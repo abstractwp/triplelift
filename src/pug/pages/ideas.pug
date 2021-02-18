@@ -2,7 +2,8 @@ extends ../template.pug
 
 mixin blanditem(image, title, date, publisher)
   a(href="https://google.com" target="_blank").bland-section-inner-item.blog-post-container.shadow-1
-    img(src=image)
+    if image
+      img(src=image)
     .copy-container
       span.title=title
       div
@@ -14,6 +15,9 @@ block content
   - var page = "ideas"
   #ideasPageJSIndicator
   include ../regions/header.pug
+  .ideaspage-section-transition-container.section-transition-container
+    .section-transition.white
+    .section-transition.gradientDark1
   include ../modules/ideas-hero.pug
   .bland-section-container.latest-blog-posts-section-container
     .heading
@@ -60,3 +64,35 @@ block content
         "October 7, 2020",
         "AdExchanger"
       )
+  .spotlessPodcastSeriesSectionContainer.explore-our-gallery-container.product-page-cta
+    a.does-not-work.explore-our-gallery
+        .animate-border-outer.shadow-3
+        .animate-border-content
+          .product-page-cta-content-inner
+            .headline-container
+              span.headline.text-primaryGradient Podcast series: <br/> Spotless
+            img.section-visual.small(src="/images/spotless.png")
+            p The world of television and advertising is evolving quickly. The largest content creators, distributors and brands are all vying for new ways to engage the next generation of viewers. Presented by two media innovators – TripleLift and Advertising Week – Spotless brings you in-depth conversations with the leaders who are driving this evolution.
+            span.cta.cta-style-2.right-text-align
+                span Take a listen
+                img(src="/images/arrow-right.svg")
+          img.section-visual.large(src="/images/spotless.png")
+  .bland-section-container.distinctions-section-container
+    .distinctions-hero
+      h2.h1 Distinctions 
+      p.h4 We are proud of the awards & distinctions earned by our company and our people over the years.
+      p Here are some highlights:
+    .distinctions-timeline 
+      .year-container
+        h2.year-header 2020
+        p.distinction Deloitte Technology Fast 500
+        p.distinction Ad Week 10 Fastest Growing Solution Providers
+        p.distinction Inc. 5000 Fastest Growing Private Companies in America
+      .year-container
+        h2.year-header 2019
+        p.distinction One of Business Insider’s 18 Hottest Ad Tech Companies
+        p.distinction A Comparably “Best Company for Women” and “Best Company for Diversity”
+        p.distinction Entrepreneur Of the Year® 2019 New York Award Winner, Marketing & Advertising – Eric Berry, Co-Founder and CEO
+        p.distinction Flatiron School’s The 30 Best Tech Companies in NYC to Work for in 2019 (Mid-Size Tech Companies)
+        p.distinction Inc. 5000 Fastest Growing Private Companies in America
+        p.distinction Crain’s Fast 50, Fastest Growing Companies in New York

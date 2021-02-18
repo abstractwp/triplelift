@@ -37,12 +37,22 @@ h4 {
   line-height: 1.2;
 }
 
+.h2,
 h2 {
   font-size: 40px;
+  height: inherit;
 }
 
+.h3,
 h3 {
+  height: inherit;
   font-size: 32px;
+}
+
+.h4,
+h4 {
+  height: inherit;
+  font-size: 24px;
 }
 
 @media (min-width: 1024px) {

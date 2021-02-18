@@ -1,0 +1,18 @@
+.distinctions-section-container {
+    color: white;
+    
+    .distinctions-timeline {
+        .year-header {
+            margin-top: 48px;
+            font-weight: bold;
+        }
+        .distinction {
+            margin: 16px 24px 12px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid rgba(255, 255, 255, .3);
+            &:last-of-type {
+                border-bottom: 0;
+            }
+        }
+    }
+}
