@@ -1599,6 +1599,14 @@ button.triggerGalleryMenu {
     max-width: 100px;
     max-height: 100px; }
 
+@media (min-width: 768px) {
+  .distinctions-hero {
+    display: grid;
+    grid-template-columns: 2fr 1fr; }
+    .distinctions-hero .distinction-logo-grid {
+      padding: 0 24px;
+      width: 30%; } }
+
 .explore-our-gallery-container {
   margin: 20vw 0;
   position: relative;
@@ -1843,6 +1851,10 @@ button.triggerGalleryMenu {
     margin: 0 auto; }
     .innovation-inner-container .copy p {
       font-size: 24px; } }
+
+.latest-news-section-container,
+.latest-blog-posts-section-container {
+  background: white; }
 
 @media (min-width: 768px) {
   .latest-news-section-container {

@@ -32,3 +32,17 @@
         max-height: 100px;
     }
 }
+
+.distinctions-hero {
+    @media (min-width: 768px) {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        .copy-container {
+        }
+
+        .distinction-logo-grid {
+            padding: 0 24px;
+            width: 30%;
+        }
+    }
+}
