@@ -179,7 +179,13 @@ body.menu-open {
     height: 8px;
     width: 8px;
     border-radius: 10px;
+
+    @media (max-width:1024px) {
+      left: 68%;
+    }
   }
+
+
 
   // &.active {
   //   color: $amplifiedOrange;

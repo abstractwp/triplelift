@@ -1298,6 +1298,9 @@ body.menu-open {
     height: 8px;
     width: 8px;
     border-radius: 10px; }
+    @media (max-width: 1024px) {
+      .main-nav a.active::before {
+        left: 68%; } }
 
 .menu-on-large .main-nav a {
   border-bottom: 4px solid transparent; }
