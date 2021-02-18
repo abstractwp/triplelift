@@ -88,15 +88,22 @@
   }
 }
 
+
+.hero.not-homepage.ideas-hero {
+  background: $gradientDark1;
+  margin: 0;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  min-height: auto;
+}
+
 .hero-visual.ideas {
-  margin: 24px 12px 0;
+  margin: 24px 12px 48px;
   position: relative;
   overflow: hidden;
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  row-gap: 48px;
   column-gap: 48px;
 
   .between-product-page-ctas {
