@@ -1,10 +1,11 @@
 extends ../template.pug
 
-mixin blanditem(image, title, body)
+mixin blanditem(image, title, body, publisher)
   a(href="https://google.com" target="_blank").bland-section-inner-item.blog-post-container.shadow-1
     img(src=image)
     .copy-container
       span.title=title
+      span.publisher=publisher
       span.date=body
 
 
@@ -36,22 +37,25 @@ block content
       )
   .bland-section-container.latest-blog-posts-section-container
     .heading
-      h2.h1.text-primaryGradient Latest Blog Posts
-      p A supportive company is a company that communicates. 
-      p Here’s what we’ve been thinking about.
+      h2.h1.text-primaryGradient News
+      p We’re pleased to be featured in the press from time-to-time. 
+      p Here are some of our recent mentions:
     .bland-section-inner-container
       +blanditem(
         "",
-        "Every Meeting Makes a Difference: Helping Women Back Into the Workplace",
-        "February 2, 2021"
+        "What Will Happen To Paid Media After The Election?",
+        "November 3, 2020",
+        "AdExchanger"
       )
       +blanditem(
         "",
-        "Every Meeting Makes a Difference: Helping Women Back Into the Workplace",
-        "February 2, 2021"
+        "Ad-Tech Firms Are Paying Their Bills, but Concerns Linger",
+        "October 29, 2021",
+        "Adweek"
       )
       +blanditem(
         "",
-        "Every Meeting Makes a Difference: Helping Women Back Into the Workplace",
-        "February 2, 2021"
+        "The Real Winners This Political Season: Savvy Publishers And Programmatic Buyers",
+        "October 7, 2020",
+        "AdExchanger"
       )

@@ -2173,3 +2173,14 @@ button.triggerGalleryMenu {
     .down-arrow {
       margin-top: -60px;
       margin-left: 60px; } }
+
+.publisher {
+  opacity: .4;
+  display: block;
+  width: fit-content;
+  border-radius: 6px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 16px; }
