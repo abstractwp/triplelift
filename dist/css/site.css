@@ -1575,15 +1575,29 @@ button.triggerGalleryMenu {
 
 .distinctions-section-container {
   color: white; }
-  .distinctions-section-container .distinctions-timeline .year-header {
-    margin-top: 48px;
-    font-weight: bold; }
-  .distinctions-section-container .distinctions-timeline .distinction {
-    margin: 16px 24px 12px;
-    padding-bottom: 12px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
-    .distinctions-section-container .distinctions-timeline .distinction:last-of-type {
-      border-bottom: 0; }
+  .distinctions-section-container .distinctions-timeline {
+    margin-top: 88px; }
+    .distinctions-section-container .distinctions-timeline .year-header {
+      margin-top: 48px;
+      font-weight: bold; }
+    .distinctions-section-container .distinctions-timeline .distinction {
+      margin: 16px 24px 12px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+      .distinctions-section-container .distinctions-timeline .distinction:last-of-type {
+        border-bottom: 0; }
+
+.distinction-logo-grid {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 24px;
+  row-gap: 24px;
+  align-items: center;
+  justify-items: center; }
+  .distinction-logo-grid img {
+    max-width: 100px;
+    max-height: 100px; }
 
 .explore-our-gallery-container {
   margin: 20vw 0;

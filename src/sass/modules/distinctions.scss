@@ -2,6 +2,7 @@
     color: white;
     
     .distinctions-timeline {
+        margin-top: 88px;
         .year-header {
             margin-top: 48px;
             font-weight: bold;
@@ -14,5 +15,20 @@
                 border-bottom: 0;
             }
         }
+    }
+}
+
+.distinction-logo-grid {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
+    row-gap: 24px;
+    align-items: center;
+    justify-items: center;
+
+    img {
+        max-width: 100px;
+        max-height: 100px;
     }
 }
