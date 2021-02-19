@@ -11,6 +11,10 @@
             padding-bottom: 0;
         }
 
+
+        h3 {
+            padding-top: 40px;
+        }
         h1, h2, h3 {
             font-size: 24px;
             padding-top: 24px;
@@ -19,10 +23,6 @@
             @media (min-width: 1024px) {
                 padding-top: 0;
             }
-        }
-
-        h3 {
-            padding-top: 40px;
         }
 
         p {
@@ -56,7 +56,7 @@
         align-items: center;
         justify-content: flex-end;
         width: 100%;
-        min-height: 500px;
+        min-height: 580px;
 
         .icon-container {
             img {
@@ -66,17 +66,27 @@
 
     }
     .company-page-section {
-        .section-copy h1 {
+        .section-copy .big {
             font-size: 48px;
         }
     }
     
 
-    .who-we-are {
-        min-height: 500px;
+    .who-we-are,
+    .mission {
         align-items: center;
         > * {
             width: 50%;
         }
+    }
+
+    .who-we-are {
+        min-height: 580px;
+        padding: 0 48px 48px;
+    }
+
+    .mission {
+        padding: 80px 0;
+        margin: 0 48px;
     }
 }
