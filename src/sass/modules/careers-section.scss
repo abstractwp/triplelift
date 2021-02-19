@@ -1,0 +1,28 @@
+.careers-section-container {
+    padding: 24px;
+    background: $mineralGray;
+    color: white;
+    
+    h2 {
+        font-weight: bold;
+        padding-top: 32px;
+    }
+    
+    h3 {
+        font-size: 24px;
+        padding-top: 24px;
+        font-size: 24px;
+        font-weight: bold;;
+    }
+
+    p {
+        margin-top: 24px;
+        font-size: 20px;
+        line-height: 1.4;
+    }
+
+    .cta {
+        margin: 32px 0 36px;
+    }
+
+}

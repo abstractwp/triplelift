@@ -1365,6 +1365,25 @@ body.menu-open {
   .burger-and-fries-container {
     padding: 0 12vw; } }
 
+.careers-section-container {
+  padding: 24px;
+  background: #313131;
+  color: white; }
+  .careers-section-container h2 {
+    font-weight: bold;
+    padding-top: 32px; }
+  .careers-section-container h3 {
+    font-size: 24px;
+    padding-top: 24px;
+    font-size: 24px;
+    font-weight: bold; }
+  .careers-section-container p {
+    margin-top: 24px;
+    font-size: 20px;
+    line-height: 1.4; }
+  .careers-section-container .cta {
+    margin: 32px 0 36px; }
+
 .company-page-section {
   background: #0e3d52;
   min-height: 300px;
