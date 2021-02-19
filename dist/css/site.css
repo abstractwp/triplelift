@@ -1470,7 +1470,15 @@ body.menu-open {
       top: 40%;
       right: 0;
       transform: translate(0, -50%);
-      width: 400px; }
+      width: 400px; } }
+    @media (min-width: 1024px) and (min-width: 1280px) {
+      .company-page-sticky-animation .icon-container {
+        right: 40px; } }
+    @media (min-width: 1024px) and (min-width: 1440px) {
+      .company-page-sticky-animation .icon-container {
+        right: 160px; } }
+
+@media (min-width: 1024px) {
       .company-page-sticky-animation .icon-container > * {
         position: absolute;
         top: 0;
@@ -1543,7 +1551,9 @@ body.menu-open {
 @media (min-width: 1440px) {
   .company-page-section.core-values {
     padding-left: 8vw;
-    padding-right: 8vw; } }
+    padding-right: 8vw; }
+    .company-page-section.core-values .core-value-grid {
+      column-gap: 64px; } }
 
 :root {
   --border: 0.01em solid white; }

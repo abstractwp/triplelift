@@ -77,6 +77,14 @@
             transform: translate(0, -50%);
             width: 400px;
 
+            @media (min-width: 1280px) {
+                right: 40px;
+            }
+
+            @media (min-width: 1440px) {
+                right: 160px;
+            }
+
             > * {
                 position: absolute;
                 top: 0;

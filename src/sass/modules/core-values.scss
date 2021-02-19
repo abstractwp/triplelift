@@ -60,5 +60,11 @@
     .company-page-section.core-values {
         padding-left: 8vw;
         padding-right: 8vw;
+        
+        .core-value-grid {
+            column-gap: 64px;
+        }
+
     }
+    
 }
