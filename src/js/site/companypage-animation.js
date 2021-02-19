@@ -27,7 +27,6 @@ $(window).on("load", function(){
         scrollTrigger: {
           trigger: ".careers-section-container",
           scrub: true,
-          markers: true,
           toggleActions: "play reverse play reverse",
         }
       });
