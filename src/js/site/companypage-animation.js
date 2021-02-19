@@ -17,7 +17,7 @@ $(window).on("load", function(){
           trigger: ".company-page-section.who-we-are",
           pin: ".sticky-animation-container",
           scrub: true,
-          end: "120%",
+          end: "100%",
           toggleActions: "play reverse play reverse",
         }
       });
@@ -50,8 +50,9 @@ $(window).on("load", function(){
       scrollTrigger: {
         trigger: ".company-page-section.mission",
         scrub: true,
+        markers: true,
         start: "top center",
-        end: "10% center",
+        end: "40% center",
         toggleActions: "play reverse play reverse",
       }
     });
