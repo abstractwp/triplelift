@@ -115,3 +115,15 @@
         margin: 0 48px;
     }
 }
+
+@media (min-width: 1440px) {
+    .company-page-section {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+
+    .company-page-section.leadership, .company-page-section.mission {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
