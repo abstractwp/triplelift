@@ -1,15 +1,20 @@
 .core-value-container {
-    margin-top: 48px;
-
+    padding-bottom: 44px;
+    margin-top: 44px;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
     align-items: flex-start;
+
+    &:last-of-type {
+        border-bottom: 0;
+    }
 
     img {
         object-fit: contain;
     }
 
     .headline-container {
-        align-items: flex-end;
         display: flex;
+        align-items: center;
     }
 
     .headline {
@@ -18,10 +23,9 @@
         line-height: 1.1;
 
         &.number {
-            color: #fcb316;
-            margin-right: 16px;
-            font-size: 48px;
-            margin-bottom: -4px;
+            color: $yellow;
+            margin-right: 12px;
+            font-size: 44px;
         }
     
     }
@@ -31,4 +35,5 @@
         font-size: 19px;
         line-height: 1.2;
     }
+    
 }

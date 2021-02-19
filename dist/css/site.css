@@ -1390,22 +1390,25 @@ body.menu-open {
     color: #0e3d52; }
 
 .core-value-container {
-  margin-top: 48px;
+  padding-bottom: 44px;
+  margin-top: 44px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   align-items: flex-start; }
+  .core-value-container:last-of-type {
+    border-bottom: 0; }
   .core-value-container img {
     object-fit: contain; }
   .core-value-container .headline-container {
-    align-items: flex-end;
-    display: flex; }
+    display: flex;
+    align-items: center; }
   .core-value-container .headline {
     font-size: 30px;
     font-weight: bold;
     line-height: 1.1; }
     .core-value-container .headline.number {
       color: #fcb316;
-      margin-right: 16px;
-      font-size: 48px;
-      margin-bottom: -4px; }
+      margin-right: 12px;
+      font-size: 44px; }
   .core-value-container p {
     margin-top: 0px;
     font-size: 19px;
