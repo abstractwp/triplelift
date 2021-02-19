@@ -1300,19 +1300,21 @@ body.menu-open {
   text-decoration: none;
   text-transform: uppercase;
   transition: 0.6s ease-out; }
-  .main-nav a.active::before {
-    content: "";
-    position: absolute;
-    left: 12px;
-    top: 48%;
-    transform: translate(-50%, -50%);
-    background: linear-gradient(77.24deg, #f47b20 14.56%, #f15c2c 88.29%);
-    height: 8px;
-    width: 8px;
-    border-radius: 10px; }
-    @media (max-width: 1023px) {
-      .main-nav a.active::before {
-        left: 68%; } }
+  .main-nav a.active span {
+    position: relative; }
+    .main-nav a.active span::before {
+      content: "";
+      position: absolute;
+      left: -13%;
+      top: 46%;
+      transform: translate(-50%, -50%);
+      background: linear-gradient(77.24deg, #f47b20 14.56%, #f15c2c 88.29%);
+      height: 8px;
+      width: 8px;
+      border-radius: 10px; }
+      @media (max-width: 1023px) {
+        .main-nav a.active span::before {
+          left: -10%; } }
 
 .menu-on-large .main-nav a {
   border-bottom: 4px solid transparent; }
@@ -2137,6 +2139,15 @@ button.triggerGalleryMenu {
     position: absolute;
     right: 12px;
     bottom: 12px; }
+  @media (min-width: 768px) {
+    .team-container .rest-of-the-team {
+      margin-top: 24px; }
+    .team-container .three-up,
+    .team-container .rest-of-the-team {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 24px;
+      row-gap: 24px; } }
 
 .technologySectionContainer {
   padding: 96px 24px;

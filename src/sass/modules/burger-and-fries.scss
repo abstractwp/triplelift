@@ -169,19 +169,22 @@ body.menu-open {
   text-transform: uppercase;
   transition: 0.6s ease-out;
 
-  &.active::before{
-    content: "";
-    position: absolute;
-    left: 12px;
-    top: 48%;
-    transform: translate(-50%, -50%);
-    background: $primaryGradient;
-    height: 8px;
-    width: 8px;
-    border-radius: 10px;
-
-    @media (max-width:1023px) {
-      left: 68%;
+  &.active span {
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      left: -13%;
+      top: 46%;
+      transform: translate(-50%, -50%);
+      background: $primaryGradient;
+      height: 8px;
+      width: 8px;
+      border-radius: 10px;
+  
+      @media (max-width:1023px) {
+        left: -10%;
+      }
     }
   }
 

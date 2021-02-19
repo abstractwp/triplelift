@@ -45,4 +45,19 @@
         right: 12px;
         bottom: 12px;
     }
+    @media (min-width: 768px) {
+        .rest-of-the-team {
+            margin-top: 24px;
+        }
+        
+        .three-up,
+        .rest-of-the-team {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 24px;
+            row-gap: 24px;
+        }        
+    }
+
 }
+
