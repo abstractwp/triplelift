@@ -2266,7 +2266,16 @@ button.triggerGalleryMenu {
     padding: 0 72px 72px; }
     .team-container .rest-of-the-team {
       grid-template-columns: 1fr 1fr 1fr 1fr;
+      row-gap: 48px;
       align-items: end; } }
+
+@media (min-width: 1280px) {
+  .team-container .three-up {
+    max-width: 900px;
+    margin: 0 auto; }
+  .team-container .rest-of-the-team {
+    margin-top: 64px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; } }
 
 .technologySectionContainer {
   padding: 96px 24px;
