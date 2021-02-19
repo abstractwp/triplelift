@@ -61,3 +61,13 @@
 
 }
 
+@media (min-width: 1024px) {
+    .company-page-section.leadership {
+        background: $slightGray;
+        padding: 48px;
+        .section-copy {
+            width: 70%;
+        }
+    }
+}
+

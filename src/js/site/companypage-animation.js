@@ -11,6 +11,21 @@ $(window).on("load", function(){
       duration: 1,
     })
 
+    if (window.innerWidth > 1023 ) {
+      const pinTheDonkey = gsap.timeline( {
+        scrollTrigger: {
+          trigger: ".company-page-section.who-we-are",
+          pin: ".sticky-animation-container",
+          scrub: true,
+          end: "120%",
+          toggleActions: "play reverse play reverse",
+        }
+      });
+    }
+
+
+
+
     const missionSectionTransition = gsap.timeline( {    
       scrollTrigger: {
         trigger: ".company-page-section.mission",

@@ -21,12 +21,13 @@ block content
   #companyPageJSIndicator
   include ../regions/header.pug
   .first-two-sections-container
-    .company-page-sticky-animation.gradient-mark
-      .icon-container.icon-1 
-        img(src="/images/Logomark - Gradient 1.svg")
-    .company-page-sticky-animation.grey-mark
-      .icon-container.icon-2 
-        img(src="/images/Logomark - Grey.svg")
+    .sticky-animation-container
+      .company-page-sticky-animation.gradient-mark
+        .icon-container.icon-1 
+          img(src="/images/Logomark - Gradient 1.svg")
+      .company-page-sticky-animation.grey-mark
+        .icon-container.icon-2 
+          img(src="/images/Logomark - Grey.svg")
     .company-page-section.who-we-are
       .scrolling-sidebar
         span Who We Are
@@ -51,36 +52,39 @@ block content
     .scrolling-sidebar
       span Core Values
     .section-copy
+      h2.big.text-primaryGradient.large-up Core Values
       h3 We have five core values that guide our work.  
-      +coreValue(
-        "1",
-        "Win As A Team",
-        "We are a team of great people that like who they work with and want to make everyone around them better. This means being positive, collaborative, and compassionate."
-      )
-      +coreValue(
-        "2",
-        "Embrace and Drive Change",
-        "We are in a dynamic and competitive ecosystem. This means we need to move quickly, react to change and embrace it. We continuously innovate, which means plans and processes are never static. TripleLifters are comfortable with discomfort."
-      )
-      +coreValue(
-        "3",
-        "Learn and Grow",
-        "We commit to self-improvement in both knowledge and performance. This means taking extra steps to learn about your craft and our industry. It means seeking feedback and growing from it, and proactively taking steps to improve. It also means learning about our customers, how they view the market, and how we drive their success."
-      )
-      +coreValue(
-        "4",
-        "Take Initiative",
-        "We step up whenever there’s an opportunity. When we see an issue, we take ownership. This means improving what we touch, proposing solutions, and seizing every opportunity."
-      )
-      +coreValue(
-        "5",
-        "Crush It Daily",
-        "We work harder and are hungrier than the competition. Hustle is magnified by working smarter and making sure that your efforts maximize output for yourself and those around you."
-      )      
+      .core-value-grid
+        +coreValue(
+          "1",
+          "Win As A Team",
+          "We are a team of great people that like who they work with and want to make everyone around them better. This means being positive, collaborative, and compassionate."
+        )
+        +coreValue(
+          "2",
+          "Embrace and Drive Change",
+          "We are in a dynamic and competitive ecosystem. This means we need to move quickly, react to change and embrace it. We continuously innovate, which means plans and processes are never static. TripleLifters are comfortable with discomfort."
+        )
+        +coreValue(
+          "3",
+          "Learn and Grow",
+          "We commit to self-improvement in both knowledge and performance. This means taking extra steps to learn about your craft and our industry. It means seeking feedback and growing from it, and proactively taking steps to improve. It also means learning about our customers, how they view the market, and how we drive their success."
+        )
+        +coreValue(
+          "4",
+          "Take Initiative",
+          "We step up whenever there’s an opportunity. When we see an issue, we take ownership. This means improving what we touch, proposing solutions, and seizing every opportunity."
+        )
+        +coreValue(
+          "5",
+          "Crush It Daily",
+          "We work harder and are hungrier than the competition. Hustle is magnified by working smarter and making sure that your efforts maximize output for yourself and those around you."
+        )      
   .company-page-section.leadership
     .scrolling-sidebar
       span Leadership
     .section-copy
+      h2.big.text-primaryGradient.large-up Leadership
       h3 In 2012, our founders were working at a major ad tech company of the time. 
       h3 They identified a problem worth solving.
       p Ads were constrained — locked into fixed spaces that weren’t working. Meanwhile, Facebook and Google had cracked the code placing ads directly into the feed.  
