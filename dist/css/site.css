@@ -1141,9 +1141,15 @@ h4 {
         max-height: 300px; } }
   @media (min-width: 1024px) {
     .laptop-breakout {
-      height: inherit; }
-      .laptop-breakout > * {
-        max-height: 400px; } }
+      display: none; } }
+  .laptop-breakout.laptop-breakout-large {
+    display: none; }
+    @media (min-width: 1024px) {
+      .laptop-breakout.laptop-breakout-large {
+        display: block;
+        height: inherit; }
+        .laptop-breakout.laptop-breakout-large > * {
+          max-height: 400px; } }
   .laptop-breakout img {
     top: 0;
     position: absolute;
