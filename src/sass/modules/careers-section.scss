@@ -26,3 +26,36 @@
     }
 
 }
+
+@media (min-width: 1024px) {
+    .careers-section-container {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+
+        .section-copy {
+            width: 50%;
+            padding: 0 36px;
+            z-index: 2;
+        }
+        .image-bg {
+            background: url('https://mk0newtlihs9atvmilj.kinstacdn.com/wp-content/uploads/2020/11/Company_careers_gradient_2.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center right;
+            width: 75%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            .overlay {
+                background: linear-gradient(270deg, rgba(49,49,49,1) 0%, rgba(255,255,255,0) 15%);
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }   
+    }
+}

@@ -7,3 +7,13 @@
         margin-top: 24px;
     }
 }
+
+@media (min-width: 1024px) {
+    .our-offices-section-container {
+        padding: 48px;
+        img {
+            display: block;
+            margin-top: 48px;
+        }
+    }
+}
