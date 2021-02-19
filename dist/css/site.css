@@ -1385,7 +1385,7 @@ body.menu-open {
       line-height: 1.4; }
   .company-page-section.who-we-are {
     padding-top: 80px; }
-  .company-page-section.mission {
+  .company-page-section.leadership, .company-page-section.mission {
     background: white;
     color: #0e3d52; }
 
@@ -2086,6 +2086,38 @@ button.triggerGalleryMenu {
   @media (min-width: 768px) {
     .spotlessPodcastSeriesSectionContainer.explore-our-gallery-container p {
       margin-top: 24px; } }
+
+.team-container {
+  background: #EEEEEE;
+  padding: 36px 24px 24px; }
+  .team-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 24px; }
+  .team-container .team-member-container {
+    margin-top: 24px; }
+  .team-container .name-and-title,
+  .team-container .team-member-container {
+    display: flex;
+    flex-direction: column; }
+  .team-container .name {
+    font-weight: bold;
+    font-size: 20px; }
+  .team-container .title {
+    font-size: 14px;
+    margin-top: 6px; }
+  .team-container .team-image-container {
+    position: relative; }
+  .team-container .member-image {
+    margin-top: 12px;
+    height: 240px;
+    object-fit: cover;
+    object-position: 40% 15%;
+    width: 100%; }
+  .team-container .arrow {
+    position: absolute;
+    right: 12px;
+    bottom: 12px; }
 
 .technologySectionContainer {
   padding: 96px 24px;

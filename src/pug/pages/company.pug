@@ -7,6 +7,15 @@ mixin coreValue(number, headline, body)
       h4.headline.text-primaryGradient=headline
     p.body= body
 
+mixin teamMember(name, title, memberImage)
+  a.team-member-container
+    .name-and-title
+      span.name=name
+      span.title=title
+    .team-image-container
+      img.member-image(src=memberImage)
+      img.arrow(src="/images/orange-right-arrow-in-white-circle.svg")      
+      
 block content
   - var page = "company"
   #technologyPageJSIndicator
@@ -59,3 +68,59 @@ block content
         "Crush It Daily",
         "We work harder and are hungrier than the competition. Hustle is magnified by working smarter and making sure that your efforts maximize output for yourself and those around you."
       )      
+  .company-page-section.leadership
+    .scrolling-sidebar
+      span Leadership
+    .section-copy
+      h3 In 2012, our founders were working at a major ad tech company of the time. 
+      h3 They identified a problem worth solving.
+      p Ads were constrained — locked into fixed spaces that weren’t working. Meanwhile, Facebook and Google had cracked the code placing ads directly into the feed.  
+      p Their launch idea was to create better ads for the open web — to take what the platforms had done and bring it to everyone else.  
+      p They soon realized that their technology would benefit 3 different constituencies: advertisers, publishers and consumers.  
+      p They named the company TripleLift, because our solutions lift the fortunes of all three of these groups.  
+      p Since then, the business has grown exponentially, as measured by products, geographies, employees and revenue. 
+  .team-container 
+    h2 Scroll down to meet <br/> our leadership team.
+    .three-up
+      +teamMember(
+        "Eric Berry",
+        "CO-FOUNDER, CEO",
+        "https://mk0newtlihs9atvmilj.kinstacdn.com/wp-content/uploads/2019/12/Eric-Berry-1024x1024-1-229x268.jpg"
+      )      
+      +teamMember(
+        "Ari Lewine",
+        "CO-FOUNDER, CSO",
+        "https://mk0newtlihs9atvmilj.kinstacdn.com/wp-content/uploads/2019/12/Ari-Lewine-1024x1024-1-229x268.jpg"
+      )      
+      +teamMember(
+        "Shaun Zacharia",
+        "CO-FOUNDER, PRESIDENT",
+        "https://mk0newtlihs9atvmilj.kinstacdn.com/wp-content/uploads/2019/12/Shaun-Zacharia-1021x1024-1-229x268.jpg"
+      )            
+    .five-up
+      +teamMember(
+        "Jacqueline Quantrell",
+        "CRO",
+        "https://mk0newtlihs9atvmilj.kinstacdn.com/wp-content/uploads/2019/12/jacqueline_quantrell-2.jpg"
+      )      
+      +teamMember(
+        "Simon Adell",
+        "CFO",
+        "https://mk0newtlihs9atvmilj.kinstacdn.com/wp-content/uploads/2020/07/Simon_873x1024-768x901.png"
+      )      
+      +teamMember(
+        "Andrew Eifler",
+        "CHIEF PRODUCT OFFICER",
+        "https://mk0newtlihs9atvmilj.kinstacdn.com/wp-content/uploads/2019/10/andre_eifler-768x900.jpg"
+      )
+      +teamMember(
+        "Jordan Bitterman",
+        "CMO",
+        "https://mk0newtlihs9atvmilj.kinstacdn.com/wp-content/uploads/2019/12/jordern_bitterman-1-768x901.jpg"
+      )
+      +teamMember(
+        "Julia Shullman",
+        "CPO & GENERAL COUNSEL",
+        "https://mk0newtlihs9atvmilj.kinstacdn.com/wp-content/uploads/2020/02/julia_shullman-768x900.jpg"
+      )                        
+      

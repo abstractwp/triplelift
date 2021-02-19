@@ -1,0 +1,48 @@
+.team-container {
+    background: $slightGray;
+    padding: 36px 24px 24px;
+
+    h2 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 24px;
+    }
+
+    .team-member-container {
+        margin-top: 24px;
+    }
+
+    .name-and-title,
+    .team-member-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .name {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .title {
+        font-size: 14px;
+        margin-top: 6px;
+    }
+
+    .team-image-container {
+        position: relative;
+    }
+
+    .member-image {
+        margin-top: 12px;
+        height: 240px;
+        object-fit: cover;
+        object-position: 40% 15%;
+        width: 100%;
+    }
+
+    .arrow {
+        position: absolute;
+        right: 12px;
+        bottom: 12px;
+    }
+}
