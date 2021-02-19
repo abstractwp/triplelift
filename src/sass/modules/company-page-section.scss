@@ -1,0 +1,36 @@
+.company-page-section {
+    background: $heritageBlue;
+    min-height: 300px;
+    display: flex;
+    color: white;
+
+    .section-copy {
+        padding: 0 24px 80px;
+
+        h1, h3 {
+            font-size: 24px;
+            padding-top: 24px;
+            font-size: 24px;
+            font-weight: bold;;
+        }
+
+        h3 {
+            padding-top: 40px;
+        }
+
+        p {
+            margin-top: 24px;
+            font-size: 20px;
+            line-height: 1.4;
+        }
+    }
+
+    &.who-we-are {
+        padding-top: 80px;
+    }
+
+    &.mission {
+        background: white;
+        color: $heritageBlue;
+    }
+}
