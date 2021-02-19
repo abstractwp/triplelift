@@ -1957,6 +1957,13 @@ button.triggerGalleryMenu {
   display: flex;
   align-items: center; }
 
+.our-offices-section-container {
+  padding: 24px; }
+  .our-offices-section-container h2 {
+    font-weight: bold; }
+  .our-offices-section-container img {
+    margin-top: 24px; }
+
 .product-page-cta {
   margin: 0; }
   .product-page-cta:last-of-type {
