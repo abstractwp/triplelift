@@ -2227,7 +2227,12 @@ button.triggerGalleryMenu {
     background: #EEEEEE;
     padding: 48px; }
     .company-page-section.leadership .section-copy {
-      width: 70%; } }
+      width: 70%; }
+  .team-container {
+    padding: 0 72px 72px; }
+    .team-container .rest-of-the-team {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      align-items: end; } }
 
 .technologySectionContainer {
   padding: 96px 24px;

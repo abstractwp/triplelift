@@ -68,6 +68,15 @@
         .section-copy {
             width: 70%;
         }
+
     }
+    .team-container {
+        padding: 0 72px 72px;
+        .rest-of-the-team {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            align-items: end;
+        }
+    }
+
 }
 
