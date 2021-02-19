@@ -2246,6 +2246,10 @@ button.triggerGalleryMenu {
     margin-bottom: 24px; }
   .team-container .team-member-container {
     margin-top: 24px; }
+    .team-container .team-member-container:hover .member-image {
+      object-position: 40% 20%;
+      transform: scale(1.03);
+      cursor: pointer; }
   .team-container .name-and-title,
   .team-container .team-member-container {
     display: flex;
@@ -2259,6 +2263,7 @@ button.triggerGalleryMenu {
   .team-container .team-image-container {
     position: relative; }
   .team-container .member-image {
+    transition: .6s;
     margin-top: 12px;
     height: 240px;
     object-fit: cover;
