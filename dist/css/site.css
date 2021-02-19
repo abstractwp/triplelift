@@ -1421,15 +1421,29 @@ body.menu-open {
 
 @media (min-width: 1024px) {
   .company-page-sticky-animation {
-    position: absolute;
-    display: flex;
-    padding-top: 80px;
-    align-items: center;
-    justify-content: flex-end;
+    display: block;
     width: 100%;
-    min-height: 580px; }
-    .company-page-sticky-animation .icon-container img {
-      width: 80%; }
+    height: 100%;
+    position: sticky;
+    top: 25%; }
+    .company-page-sticky-animation.gradient-mark {
+      z-index: 5; }
+    .company-page-sticky-animation.grey-mark {
+      z-index: 6;
+      opacity: 0; }
+    .company-page-sticky-animation .icon-container {
+      position: absolute;
+      top: 40%;
+      right: 0;
+      transform: translate(0, -50%);
+      width: 400px; }
+      .company-page-sticky-animation .icon-container > * {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 400px; }
+      .company-page-sticky-animation .icon-container img {
+        width: 80%; }
   .company-page-section .section-copy .big {
     font-size: 48px; }
   .who-we-are,
@@ -1439,6 +1453,7 @@ body.menu-open {
     .mission > * {
       width: 50%; }
   .who-we-are {
+    position: relative;
     min-height: 580px;
     padding: 0 48px 48px; }
   .mission {

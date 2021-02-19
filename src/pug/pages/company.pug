@@ -18,31 +18,35 @@ mixin teamMember(name, title, memberImage)
       
 block content
   - var page = "company"
-  #technologyPageJSIndicator
+  #companyPageJSIndicator
   include ../regions/header.pug
-  .company-page-sticky-animation
-    .icon-container 
-      img.icon-1(src="/images/Logomark - Gradient 1.svg")
-  .company-page-section.who-we-are
-    .scrolling-sidebar
-      span Who We Are
-    .section-copy
-      h1.big.text-primaryGradient Who We Are
-      h2.h1 TripleLift is a technology company rooted at the intersection of creative and media.  
-      p We are an advertising platform where creative fits seamlessly into every experience across desktop, mobile and video.
-      p Scroll further to learn more about who we are, how we work and explore ways to join the team.
-  .company-page-section.mission
-    .scrolling-sidebar
-      span Mission
-    .section-copy
-      h2.big.text-primaryGradient Mission
-      h3 We help make advertising work for everyone.  
-      p Advertising is important. 
-      p It gives us a free press, enables us to connect with friends and funds our favorite content. 
-      p TripleLift makes ads that work for everyone: Publishers, who seek greater monetization – Advertisers, who require better performance – Consumers, who want better ad experiences. 
-      p This has been true from the first day of our existence, and it remains true today. 
-      p We didn’t invent advertising, but we are making advertising better.
-      p Scroll further to learn more about who we are, how we work and explore ways to join the team.
+  .first-two-sections-container
+    .company-page-sticky-animation.gradient-mark
+      .icon-container.icon-1 
+        img(src="/images/Logomark - Gradient 1.svg")
+    .company-page-sticky-animation.grey-mark
+      .icon-container.icon-2 
+        img(src="/images/Logomark - Grey.svg")
+    .company-page-section.who-we-are
+      .scrolling-sidebar
+        span Who We Are
+      .section-copy
+        h1.big.text-primaryGradient.large-up Who We Are
+        h2.h1 TripleLift is a technology company rooted at the intersection of creative and media.  
+        p We are an advertising platform where creative fits seamlessly into every experience across desktop, mobile and video.
+        p Scroll further to learn more about who we are, how we work and explore ways to join the team.
+    .company-page-section.mission
+      .scrolling-sidebar
+        span Mission
+      .section-copy
+        h2.big.text-primaryGradient.large-up Mission
+        h3 We help make advertising work for everyone.  
+        p Advertising is important. 
+        p It gives us a free press, enables us to connect with friends and funds our favorite content. 
+        p TripleLift makes ads that work for everyone: Publishers, who seek greater monetization – Advertisers, who require better performance – Consumers, who want better ad experiences. 
+        p This has been true from the first day of our existence, and it remains true today. 
+        p We didn’t invent advertising, but we are making advertising better.
+        p Scroll further to learn more about who we are, how we work and explore ways to join the team.
   .company-page-section.core-values
     .scrolling-sidebar
       span Core Values
