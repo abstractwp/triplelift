@@ -93,3 +93,14 @@
     }
 }
 
+@media (min-width: 1440px) {
+    .company-page-section.leadership {
+        padding-left: 8vw;
+        padding-right: 8vw;
+    }
+    .team-container {
+        padding-left: calc(8vw + 24px);
+        padding-right: calc(8vw + 24px);
+    }
+
+}

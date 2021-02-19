@@ -21,6 +21,27 @@ $(window).on("load", function(){
           toggleActions: "play reverse play reverse",
         }
       });
+
+
+      const careersSectionParallax = gsap.timeline( {    
+        scrollTrigger: {
+          trigger: ".careers-section-container",
+          scrub: true,
+          markers: true,
+          toggleActions: "play reverse play reverse",
+        }
+      });
+    
+      careersSectionParallax
+      .to(
+        '.careers-section-container .image-bg', 
+        { 
+          backgroundPosition: "center 20%",
+          duration: 1 
+        },"transition1"
+      );
+  
+
     }
 
 
@@ -44,5 +65,9 @@ $(window).on("load", function(){
         duration: 1 
       },"transition1"
     );
+
+
+
+
   }
 });

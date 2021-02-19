@@ -1490,8 +1490,9 @@ body.menu-open {
 
 @media (min-width: 1440px) {
   .company-page-section {
-    padding-left: 120px;
-    padding-right: 120px; }
+    padding-left: 8vw;
+    padding-right: 8vw;
+    margin: 0 auto; }
   .company-page-section.leadership, .company-page-section.mission {
     margin-left: 0;
     margin-right: 0; } }
@@ -1532,6 +1533,11 @@ body.menu-open {
       display: grid;
       grid-template-columns: 1fr 1fr;
       column-gap: 36px; } }
+
+@media (min-width: 1440px) {
+  .company-page-section.core-values {
+    padding-left: 8vw;
+    padding-right: 8vw; } }
 
 :root {
   --border: 0.01em solid white; }
@@ -2286,6 +2292,14 @@ button.triggerGalleryMenu {
   .team-container .rest-of-the-team {
     margin-top: 64px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr; } }
+
+@media (min-width: 1440px) {
+  .company-page-section.leadership {
+    padding-left: 8vw;
+    padding-right: 8vw; }
+  .team-container {
+    padding-left: calc(8vw + 24px);
+    padding-right: calc(8vw + 24px); } }
 
 .technologySectionContainer {
   padding: 96px 24px;
