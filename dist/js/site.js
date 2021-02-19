@@ -656,7 +656,6 @@ $(window).on("load", function(){
       scrollTrigger: {
         trigger: ".company-page-section.mission",
         scrub: true,
-        markers: true,
         start: "top center",
         end: "40% center",
         toggleActions: "play reverse play reverse",
