@@ -69,3 +69,10 @@
   letter-spacing: 1px;
   margin-bottom: 8px;
 }
+
+.large-up {
+  display: none;
+  @media (min-width: 1024px) {
+    display: block;    
+  }
+}

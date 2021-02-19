@@ -7,11 +7,18 @@
     .section-copy {
         padding: 0 24px 80px;
 
-        h1, h3 {
+        @media (min-width: 1024px) {
+            padding-bottom: 0;
+        }
+
+        h1, h2, h3 {
             font-size: 24px;
             padding-top: 24px;
             font-size: 24px;
             font-weight: bold;;
+            @media (min-width: 1024px) {
+                padding-top: 0;
+            }
         }
 
         h3 {
@@ -33,5 +40,43 @@
     &.mission {
         background: white;
         color: $heritageBlue;
+    }
+}
+
+.company-page-sticky-animation {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    
+    .company-page-sticky-animation {
+        position: absolute;
+        display: flex;
+        padding-top: 80px;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+        min-height: 500px;
+
+        .icon-container {
+            img {
+                width: 80%;
+            }
+        }
+
+    }
+    .company-page-section {
+        .section-copy h1 {
+            font-size: 48px;
+        }
+    }
+    
+
+    .who-we-are {
+        min-height: 500px;
+        align-items: center;
+        > * {
+            width: 50%;
+        }
     }
 }

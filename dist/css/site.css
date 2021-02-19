@@ -1393,11 +1393,17 @@ body.menu-open {
   color: white; }
   .company-page-section .section-copy {
     padding: 0 24px 80px; }
-    .company-page-section .section-copy h1, .company-page-section .section-copy h3 {
+    @media (min-width: 1024px) {
+      .company-page-section .section-copy {
+        padding-bottom: 0; } }
+    .company-page-section .section-copy h1, .company-page-section .section-copy h2, .company-page-section .section-copy h3 {
       font-size: 24px;
       padding-top: 24px;
       font-size: 24px;
       font-weight: bold; }
+      @media (min-width: 1024px) {
+        .company-page-section .section-copy h1, .company-page-section .section-copy h2, .company-page-section .section-copy h3 {
+          padding-top: 0; } }
     .company-page-section .section-copy h3 {
       padding-top: 40px; }
     .company-page-section .section-copy p {
@@ -1409,6 +1415,28 @@ body.menu-open {
   .company-page-section.leadership, .company-page-section.mission {
     background: white;
     color: #0e3d52; }
+
+.company-page-sticky-animation {
+  display: none; }
+
+@media (min-width: 1024px) {
+  .company-page-sticky-animation {
+    position: absolute;
+    display: flex;
+    padding-top: 80px;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    min-height: 500px; }
+    .company-page-sticky-animation .icon-container img {
+      width: 80%; }
+  .company-page-section .section-copy h1 {
+    font-size: 48px; }
+  .who-we-are {
+    min-height: 500px;
+    align-items: center; }
+    .who-we-are > * {
+      width: 50%; } }
 
 .core-value-container {
   padding-bottom: 44px;
@@ -2027,6 +2055,9 @@ button.triggerGalleryMenu {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end; }
+  @media (min-width: 1024px) {
+    .scrolling-sidebar {
+      display: none; } }
 
 .section-transition-container {
   height: 100vh;
@@ -2431,3 +2462,9 @@ button.triggerGalleryMenu {
   font-weight: 500;
   letter-spacing: 1px;
   margin-bottom: 8px; }
+
+.large-up {
+  display: none; }
+  @media (min-width: 1024px) {
+    .large-up {
+      display: block; } }
