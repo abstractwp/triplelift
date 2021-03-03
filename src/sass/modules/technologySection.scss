@@ -1,0 +1,101 @@
+.technologySectionContainer {
+    padding: 96px 24px;
+    color: white;
+
+    h2 {
+        font-size: 32px;
+    }
+
+    p {
+        padding-top: 12px;
+    }
+
+    
+
+    .animate-border-content {
+        background: $mineralGray;
+        margin: 0;
+        padding: 0 12px;
+    }
+
+    .video-container {
+        position: relative;
+        margin-top: 24px;
+        overflow: hidden;
+    
+        iframe {
+            width: 100%;
+            max-width: calc(177.778vh);
+            height: calc(51.25vw);
+            z-index: 5;
+            position: relative;
+
+            @media (min-width: 768px) {
+                height: calc(53.25vw);
+            }
+
+            @media (min-width: 1024px) {
+                height: calc(54.25vw);
+            }
+
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .technologySectionContainer {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 48px;
+        align-items: center;
+        max-width: 90vw;
+        margin: 0 auto;
+
+        .video-container iframe {
+            height: calc(31.25vw);
+        }
+
+    }
+}
+
+@media (min-width: 1280px) {
+    .technologySectionContainer {
+        column-gap: 72px;
+
+        h2 {
+            font-size: 44px;
+        }
+        p {
+            font-size: 24px;
+        }
+    }
+
+}
+
+.show-on-small {
+    p {
+        margin-top: 24px;
+        padding: 0 24px;
+        + p {
+            margin-top: 12px;
+        }
+    }
+}
+
+.show-on-large {
+    display: none;
+}
+
+@media(min-width: 1024px) {
+    .show-on-small {
+        display: none;
+    }
+
+    .show-on-large {
+        display: block;
+            p {
+                margin-top: 12px;
+                font-weight: 200 !important;
+            }
+    }
+}

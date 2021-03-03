@@ -1,11 +1,10 @@
 mixin why-triplelift-section(icon, title, body)
-  .why-triplelift-section.flex.flex-column.shadow-3
+  .why-triplelift-section.flex.flex-column
+    img(
+        src=icon
+      )
     .flex.items-end
-      img(
-          class="pr3" 
-          src=icon
-        )
-      h3= title 
+      h3.text-primaryGradient= title 
     p.pt3= body 
 
 .why-triplelift

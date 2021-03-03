@@ -1,0 +1,180 @@
+extends ../template.pug
+
+mixin coreValue(number, headline, body)
+  .core-value-container 
+    .headline-container
+      h4.headline.number=number
+      h4.headline.text-primaryGradient=headline
+    p.body= body
+
+mixin teamMember(name, title, memberImage)
+  a.team-member-container
+    .name-and-title
+      span.name=name
+      span.title=title
+    .team-image-container
+      img.member-image(src=memberImage)
+      img.arrow(src="/images/orange-right-arrow-in-white-circle.svg")      
+      
+block content
+  - var page = "company"
+  #companyPageJSIndicator
+  include ../regions/header.pug
+  .first-two-sections-container
+    .sticky-animation-container
+      .company-page-sticky-animation.gradient-mark
+        .icon-container.icon-1 
+          img(src="/images/Logomark - Gradient 1.svg")
+      .company-page-sticky-animation.grey-mark
+        .icon-container.icon-2 
+          img(src="/images/Logomark - Grey.svg")
+    .company-page-section.who-we-are
+      .scrolling-sidebar
+        span Who We Are
+      .section-copy
+        h1.big.text-primaryGradient.large-up Who We Are
+        h2.h1 TripleLift is a technology company rooted at the intersection of creative and media.  
+        p We are an advertising platform where creative fits seamlessly into every experience across desktop, mobile and video.
+        p Scroll further to learn more about who we are, how we work and explore ways to join the team.
+    .company-page-section.mission
+      .scrolling-sidebar
+        span Mission
+      .section-copy
+        h2.big.text-primaryGradient.large-up Mission
+        h3 We help make advertising work for everyone.  
+        p Advertising is important. 
+        p It gives us a free press, enables us to connect with friends and funds our favorite content. 
+        p TripleLift makes ads that work for everyone: Publishers, who seek greater monetization – Advertisers, who require better performance – Consumers, who want better ad experiences. 
+        p This has been true from the first day of our existence, and it remains true today. 
+        p We didn’t invent advertising, but we are making advertising better.
+        p Scroll further to learn more about who we are, how we work and explore ways to join the team.
+  .company-page-section.core-values
+    .scrolling-sidebar
+      span Core Values
+    .section-copy
+      h2.big.text-primaryGradient.large-up Core Values
+      h3 We have five core values that guide our work.  
+      .core-value-grid
+        +coreValue(
+          "1",
+          "Win As A Team",
+          "We are a team of great people that like who they work with and want to make everyone around them better. This means being positive, collaborative, and compassionate."
+        )
+        +coreValue(
+          "2",
+          "Embrace and Drive Change",
+          "We are in a dynamic and competitive ecosystem. This means we need to move quickly, react to change and embrace it. We continuously innovate, which means plans and processes are never static. TripleLifters are comfortable with discomfort."
+        )
+        +coreValue(
+          "3",
+          "Learn and Grow",
+          "We commit to self-improvement in both knowledge and performance. This means taking extra steps to learn about your craft and our industry. It means seeking feedback and growing from it, and proactively taking steps to improve. It also means learning about our customers, how they view the market, and how we drive their success."
+        )
+        +coreValue(
+          "4",
+          "Take Initiative",
+          "We step up whenever there’s an opportunity. When we see an issue, we take ownership. This means improving what we touch, proposing solutions, and seizing every opportunity."
+        )
+        +coreValue(
+          "5",
+          "Crush It Daily",
+          "We work harder and are hungrier than the competition. Hustle is magnified by working smarter and making sure that your efforts maximize output for yourself and those around you."
+        )      
+  .company-page-section.leadership
+    .scrolling-sidebar
+      span Leadership
+    .section-copy
+      h2.big.text-primaryGradient.large-up Leadership
+      h3 In 2012, our founders were working at a major ad tech company of the time. 
+      h3 They identified a problem worth solving.
+      p Ads were constrained — locked into fixed spaces that weren’t working. Meanwhile, Facebook and Google had cracked the code placing ads directly into the feed.  
+      p Their launch idea was to create better ads for the open web — to take what the platforms had done and bring it to everyone else.  
+      p They soon realized that their technology would benefit 3 different constituencies: advertisers, publishers and consumers.  
+      p They named the company TripleLift, because our solutions lift the fortunes of all three of these groups.  
+      p Since then, the business has grown exponentially, as measured by products, geographies, employees and revenue. 
+  .team-container 
+    h2 Scroll down to meet <br/> our leadership team.
+    .three-up
+      +teamMember(
+        "Eric Berry",
+        "CO-FOUNDER, CEO",
+        "https://mk0newtlihs9atvmilj.kinstacdn.com/wp-content/uploads/2019/12/Eric-Berry-1024x1024-1-229x268.jpg"
+      )      
+      +teamMember(
+        "Ari Lewine",
+        "CO-FOUNDER, CSO",
+        "https://mk0newtlihs9atvmilj.kinstacdn.com/wp-content/uploads/2019/12/Ari-Lewine-1024x1024-1-229x268.jpg"
+      )      
+      +teamMember(
+        "Shaun Zacharia",
+        "CO-FOUNDER, PRESIDENT",
+        "https://mk0newtlihs9atvmilj.kinstacdn.com/wp-content/uploads/2019/12/Shaun-Zacharia-1021x1024-1-229x268.jpg"
+      )            
+    .rest-of-the-team
+      +teamMember(
+        "Jacqueline Quantrell",
+        "CRO",
+        "https://mk0newtlihs9atvmilj.kinstacdn.com/wp-content/uploads/2019/12/jacqueline_quantrell-2.jpg"
+      )      
+      +teamMember(
+        "Simon Adell",
+        "CFO",
+        "https://mk0newtlihs9atvmilj.kinstacdn.com/wp-content/uploads/2020/07/Simon_873x1024-768x901.png"
+      )      
+      +teamMember(
+        "Andrew Eifler",
+        "CHIEF PRODUCT OFFICER",
+        "https://mk0newtlihs9atvmilj.kinstacdn.com/wp-content/uploads/2019/10/andre_eifler-768x900.jpg"
+      )
+      +teamMember(
+        "Jordan Bitterman",
+        "CMO",
+        "https://mk0newtlihs9atvmilj.kinstacdn.com/wp-content/uploads/2019/12/jordern_bitterman-1-768x901.jpg"
+      )
+      +teamMember(
+        "Julia Shullman",
+        "CPO & GENERAL COUNSEL",
+        "https://mk0newtlihs9atvmilj.kinstacdn.com/wp-content/uploads/2020/02/julia_shullman-768x900.jpg"
+      )                        
+      +teamMember(
+        "Jacqueline Quantrell",
+        "CRO",
+        "https://mk0newtlihs9atvmilj.kinstacdn.com/wp-content/uploads/2019/12/jacqueline_quantrell-2.jpg"
+      )      
+      +teamMember(
+        "Simon Adell",
+        "CFO",
+        "https://mk0newtlihs9atvmilj.kinstacdn.com/wp-content/uploads/2020/07/Simon_873x1024-768x901.png"
+      )      
+      +teamMember(
+        "Andrew Eifler",
+        "CHIEF PRODUCT OFFICER",
+        "https://mk0newtlihs9atvmilj.kinstacdn.com/wp-content/uploads/2019/10/andre_eifler-768x900.jpg"
+      )
+      +teamMember(
+        "Jordan Bitterman",
+        "CMO",
+        "https://mk0newtlihs9atvmilj.kinstacdn.com/wp-content/uploads/2019/12/jordern_bitterman-1-768x901.jpg"
+      )
+      +teamMember(
+        "Julia Shullman",
+        "CPO & GENERAL COUNSEL",
+        "https://mk0newtlihs9atvmilj.kinstacdn.com/wp-content/uploads/2020/02/julia_shullman-768x900.jpg"
+      )                        
+  .careers-section-container
+    .image-bg
+      .overlay
+    .section-copy
+      h2.text-primaryGradient Careers
+      h3 TripleLift believes in the power of diversity, equity and inclusion.
+      p Our culture enables individuals to share their uniqueness and contribute as part of a team. 
+      p With our DEI initiatives, TripleLift aims to be a place that works for you, and where you can feel a sense of belonging. 
+      p To drive our inclusive culture, our People team, DEI roundtable, employee resource groups, and Executive Leadership Team support efforts to break down barriers and create sustainable change in our organization.
+      a.cta.cta-style-2 
+        span Explore job openings 
+        img(src="/images/arrow-right.svg")
+  .our-offices-section-container 
+    h2.text-primaryGradient Our offices
+    img(src="/images/our-offices.png")
+
+      

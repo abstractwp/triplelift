@@ -1,0 +1,112 @@
+extends ../template.pug
+
+mixin blanditem(image, title, date, publisher)
+  a(href="https://google.com" target="_blank").bland-section-inner-item.blog-post-container.shadow-1
+    if image
+      img(src=image)
+    .copy-container
+      span.title=title
+      div
+        span.publisher=publisher
+        span.date=date
+
+
+block content
+  - var page = "ideas"
+  #ideasPageJSIndicator
+  include ../regions/header.pug
+  .ideaspage-section-transition-container.section-transition-container
+    .section-transition.white
+    .section-transition.gradientDark1
+  include ../modules/ideas-hero.pug
+  .bland-section-container.latest-blog-posts-section-container
+    .heading
+      h2.h1.text-primaryGradient Latest Blog Posts
+      p A supportive company is a company that communicates. 
+      p Here’s what we’ve been thinking about.
+    .bland-section-inner-container
+      +blanditem(
+        "/images/blog-post/TL-Women-EveryMeeting-Jan21-960x960-F2-1-768x769.jpg",
+        "Every Meeting Makes a Difference: Helping Women Back Into the Workplace",
+        "February 2, 2021"
+      )
+      +blanditem(
+        "/images/blog-post/TL_PubSpotlight_Instagram_photo-768x768.png",
+        "Educational Tools in the World of Digital Learning",
+        "January 14, 2021"
+      )
+      +blanditem(
+        "/images/blog-post/Reflection_blog_1024x1024-768x768.jpg",
+        "Reflection on 2020",
+        "January 13, 2021"
+      )
+  .bland-section-container.latest-news-section-container
+    .heading
+      h2.h1.text-primaryGradient News
+      p We’re pleased to be featured in the press from time-to-time. 
+      p Here are some of our recent mentions:
+    .bland-section-inner-container
+      +blanditem(
+        "",
+        "What Will Happen To Paid Media After The Election?",
+        "November 3, 2020",
+        "AdExchanger"
+      )
+      +blanditem(
+        "",
+        "Ad-Tech Firms Are Paying Their Bills, but Concerns Linger",
+        "October 29, 2021",
+        "Adweek"
+      )
+      +blanditem(
+        "",
+        "The Real Winners This Political Season: Savvy Publishers And Programmatic Buyers",
+        "October 7, 2020",
+        "AdExchanger"
+      )
+  .spotlessPodcastSeriesSectionContainer.explore-our-gallery-container.product-page-cta
+    a.does-not-work.explore-our-gallery
+        .animate-border-outer.shadow-3
+        .animate-border-content
+          .product-page-cta-content-inner
+            .headline-container
+              span.headline.text-primaryGradient Podcast series: <br/> Spotless
+            img.section-visual.small(src="/images/spotless.png")
+            span.cta.cta-style-2.right-text-align.small
+              span Take a listen
+              img(src="/images/arrow-right.svg")
+            p The world of television and advertising is evolving quickly. The largest content creators, distributors and brands are all vying for new ways to engage the next generation of viewers. Presented by two media innovators – TripleLift and Advertising Week – Spotless brings you in-depth conversations with the leaders who are driving this evolution.
+          .section-visual.large
+            img(src="/images/spotless.png")
+            span.cta.cta-style-2.right-text-align
+              span Take a listen
+              img(src="/images/arrow-right.svg")
+
+
+  .bland-section-container.distinctions-section-container
+    .distinctions-hero
+      .copy-container
+        h2.h1 Distinctions 
+        p.h4 We are proud of the awards & distinctions earned by our company and our people over the years.
+        p Here are some highlights:
+      .distinction-logo-grid
+        img(src="/images/distinctions/adage-trim.png")
+        img(src="/images/distinctions/50.png")
+        img(src="/images/distinctions/deloitte.png")
+        img(src="/images/distinctions/crain.png")
+        img(src="/images/distinctions/inc5000.png")
+        img(src="/images/distinctions/fastest-growing.png")
+    .distinctions-timeline 
+      .year-container
+        h2.year-header 2020
+        p.distinction Deloitte Technology Fast 500
+        p.distinction Ad Week 10 Fastest Growing Solution Providers
+        p.distinction Inc. 5000 Fastest Growing Private Companies in America
+      .year-container
+        h2.year-header 2019
+        p.distinction One of Business Insider’s 18 Hottest Ad Tech Companies
+        p.distinction A Comparably “Best Company for Women” and “Best Company for Diversity”
+        p.distinction Entrepreneur Of the Year® 2019 New York Award Winner, Marketing & Advertising – Eric Berry, Co-Founder and CEO
+        p.distinction Flatiron School’s The 30 Best Tech Companies in NYC to Work for in 2019 (Mid-Size Tech Companies)
+        p.distinction Inc. 5000 Fastest Growing Private Companies in America
+        p.distinction Crain’s Fast 50, Fastest Growing Companies in New York

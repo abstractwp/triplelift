@@ -164,9 +164,37 @@ body.menu-open {
   font-size: 13px;
   font-weight: 400;
   padding: 12px 24px;
+  position: relative;
   text-decoration: none;
   text-transform: uppercase;
   transition: 0.6s ease-out;
+
+  &.active span {
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      left: -13%;
+      top: 46%;
+      transform: translate(-50%, -50%);
+      background: $primaryGradient;
+      height: 8px;
+      width: 8px;
+      border-radius: 10px;
+  
+      @media (max-width:1023px) {
+        left: -10%;
+      }
+    }
+  }
+
+
+
+  // &.active {
+  //   color: $amplifiedOrange;
+  //   font-weight: bold;
+  // }
+
 }
 
 .menu-on-large .main-nav a {

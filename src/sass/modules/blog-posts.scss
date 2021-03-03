@@ -1,0 +1,9 @@
+.blog-post-container {
+    border-radius: 6px;
+    overflow: hidden;
+
+    img {
+        object-fit: cover;
+        width: 100%;
+    }
+}

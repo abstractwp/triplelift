@@ -1,5 +1,6 @@
 .we-work-with {
   padding-bottom: 24vw;
+  margin-top: 64px;
 
   h3 {
     font-size: 36px;
@@ -57,7 +58,7 @@
 
 @media (min-width: 1024px) {
   .we-work-with {
-    margin: 0 auto;
+    margin: 120px auto;
     max-width: 90vw;
     h3 {
       font-size: 72px;

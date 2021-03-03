@@ -1,0 +1,10 @@
+.latest-news-section-container,
+.latest-blog-posts-section-container {
+    background: white;
+}
+
+.latest-news-section-container {
+    @media (min-width: 768px) {
+        padding-bottom: 200px;        
+    }
+}

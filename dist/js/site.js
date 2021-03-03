@@ -604,6 +604,79 @@ var Lantern = (function() {
 
 })();
 
+$(window).on("load", function(){
+
+  if (document.getElementById("companyPageJSIndicator")) {
+
+    window.setTimeout(function(){$(".loading").addClass("not-loading");}, 100);
+  
+    var tl = gsap.timeline({repeat: 0});
+  
+    tl.to(".loading", {
+      opacity: 0,
+      duration: 1,
+    })
+
+    if (window.innerWidth > 1023 ) {
+      const pinTheDonkey = gsap.timeline( {
+        scrollTrigger: {
+          trigger: ".company-page-section.who-we-are",
+          pin: ".sticky-animation-container",
+          scrub: true,
+          end: "100%",
+          toggleActions: "play reverse play reverse",
+        }
+      });
+
+
+      const careersSectionParallax = gsap.timeline( {    
+        scrollTrigger: {
+          trigger: ".careers-section-container",
+          scrub: true,
+          toggleActions: "play reverse play reverse",
+        }
+      });
+    
+      careersSectionParallax
+      .to(
+        '.careers-section-container .image-bg', 
+        { 
+          backgroundPosition: "center 20%",
+          duration: 1 
+        },"transition1"
+      );
+  
+
+    }
+
+
+
+
+    const missionSectionTransition = gsap.timeline( {    
+      scrollTrigger: {
+        trigger: ".company-page-section.mission",
+        scrub: true,
+        start: "top center",
+        end: "40% center",
+        toggleActions: "play reverse play reverse",
+      }
+    });
+  
+    missionSectionTransition
+    .to(
+      '.company-page-sticky-animation.grey-mark', 
+      { 
+        opacity: 1, 
+        duration: 1 
+      },"transition1"
+    );
+
+
+
+
+  }
+});
+
 if (document.getElementById("homepageJSIndicator")) {
 gsap.config({nullTargetWarn:false});
 
@@ -756,8 +829,8 @@ exploreGalleryParallax
   .from(
     '.explore-our-gallery-container > *', 
     { 
-      opacity: 0,
-      duration: 2,
+      opacity: .5,
+      duration: .6,
   }, "exploreGallery");
 
 const weWorkWithParallax = gsap.timeline( {    
@@ -871,6 +944,50 @@ const weWorkWithGradientTL = gsap.timeline( {
 });
 
 }
+$(window).on("load", function(){
+
+  if (document.getElementById("ideasPageJSIndicator")) {
+
+    window.setTimeout(function(){$(".loading").addClass("not-loading");}, 100);
+  
+    var tl = gsap.timeline({repeat: 0});
+  
+    tl.to(".loading", {
+      opacity: 0,
+      duration: 1,
+    })
+
+    const spotlessPodcastSeriesSectionTL = gsap.timeline( {    
+      scrollTrigger: {
+        trigger: ".spotlessPodcastSeriesSectionContainer",
+        scrub: true,
+        start: "40% bottom",
+        end: "80% 95%",
+        toggleActions: "play reverse play reverse",
+      }
+    });
+  
+    spotlessPodcastSeriesSectionTL
+    .to(
+      '.ideaspage-section-transition-container .section-transition.white', 
+      { 
+        opacity: 0, 
+        duration: 1 
+      },"transition1"
+    );
+
+    spotlessPodcastSeriesSectionTL
+    .to(
+      '.ideaspage-section-transition-container .section-transition.gradientDark1', 
+      { 
+        opacity: 1, 
+        duration: 1 
+      },"transition1"
+    );
+
+  }
+});
+
 gsap.config({nullTargetWarn:false});
 
 $(window).on("load", function () {
@@ -992,14 +1109,15 @@ downarrowTL
   }, 0.5)
 ;
 
-let ctaBordersToAnimate = gsap.utils.toArray('.animate-border-outer');
+let videoBordersToAnimate = gsap.utils.toArray('.animate-video-border-outer');
 
-ctaBordersToAnimate.forEach(item =>{
+videoBordersToAnimate.forEach(item =>{
   const borderScrollItem = gsap.timeline( {    
     scrollTrigger: {
       trigger: item,
       scrub: true,
-      start: "20px, center",
+      start: "20% 80%",
+      end: "50% 10%",
       toggleActions: "play reverse play reverse",
     }
   });
@@ -1023,41 +1141,34 @@ ctaBordersToAnimate.forEach(item =>{
   
 })
 
-let texturesToAnimateRight = gsap.utils.toArray('.animated-texture-to-right');
+let ctaBordersToAnimate = gsap.utils.toArray('.animate-border-outer');
 
-texturesToAnimateRight.forEach(item =>{
-  const textureScrollItem = gsap.timeline( {    
+ctaBordersToAnimate.forEach(item =>{
+  const borderScrollItem = gsap.timeline( {    
     scrollTrigger: {
       trigger: item,
+      start: "10%, 70%",
+      end: "90% 10%",
       scrub: true,
-      end: "100%",
       toggleActions: "play reverse play reverse",
     }
   });
   
-  textureScrollItem.from(item, {
-    backgroundPosition: "-500px 0",
-    duration: 6,
-  })
-  
-})
+  borderScrollItem.from(item, {
+    x: "-100%",
+    duration: .2,
+  }, "loadin")
 
-let texturesToAnimateLeft = gsap.utils.toArray('.animated-texture-to-left');
+  borderScrollItem.to(item, {
+    opacity: 1,
+    duration: .2,
+  }, "loadin")
 
-texturesToAnimateLeft.forEach(item =>{
-  const textureScrollItem = gsap.timeline( {    
-    scrollTrigger: {
-      trigger: item,
-      scrub: true,
-      end: "100%",
-      toggleActions: "play reverse play reverse",
-    }
-  });
-  
-  textureScrollItem.from(item, {
-    backgroundPosition: "500px 0",
-    duration: 6,
-    stagger: 1
+  borderScrollItem.to(item, {
+    opacity: 0,
+    x: "100%",
+    duration: .4,
+    delay: .5,
   })
   
 })
@@ -1140,6 +1251,41 @@ $(window).on("load", function(){
     },
     "laptop-breakout"
     )
+
+    if (window.innerWidth > 1023 ) {
+      laptopBreakout.from(".laptop-breakout img:nth-child(7)", {
+        opacity: 0,
+        scale: .9,
+        y: 10,
+        x: 30,
+        duration: .4,
+        delay: .2,
+      },
+      "laptop-breakout2"
+      )
+      laptopBreakout.from(".laptop-breakout img:nth-child(6)", {
+        opacity: 0,
+        scale: .9,
+        y: 10,
+        x: 30,
+        duration: .4,
+        delay: .5,
+      },
+      "laptop-breakout2"
+      )
+      laptopBreakout.from(".laptop-breakout img:nth-child(5)", {
+        opacity: 0,
+        scale: .9,
+        y: 10,
+        x: 30,
+        duration: .4,
+        delay: .8,
+      },
+      "laptop-breakout2"
+      )
+  
+
+    }
     
     const creativeGallerySectionTL = gsap.timeline( {    
       scrollTrigger: {
@@ -1186,31 +1332,12 @@ $(window).on("load", function(){
         duration: 1 
       },"transition2"
     );
-  
-    innovationHeaderSectionTLIntro
-    .to(
-      '.innovation-header-container .bg', 
-      { 
-        opacity: 1, 
-        duration: 1 
-      },"transition2"
-    );
-  
-    innovationHeaderSectionTLIntro
-    .to(
-      '.texture-animation-container', 
-      { 
-        opacity: 0, 
-        duration: 1 
-      },"transition2"
-    );
-  
+    
     innovationHeaderSectionTLIntro
     .from(
       '.innovation-header-container .copy', 
       { 
-        opacity: 0,
-        y: -20,
+        y: -10,
         duration: .6 
       },"transition2"
     );
@@ -1233,6 +1360,86 @@ $(window).on("load", function(){
         opacity: .8, 
         duration: 1 
       },"transition5"
+    );
+  }
+});
+
+$(window).on("load", function(){
+
+  if (document.getElementById("technologyPageJSIndicator")) {
+
+    window.setTimeout(function(){$(".loading").addClass("not-loading");}, 100);
+  
+    var tl = gsap.timeline({repeat: 0});
+  
+    tl.to(".loading", {
+      opacity: 0,
+      duration: 1,
+    })
+  
+    var OTTBreakout = gsap.timeline({repeat: 0, delay: 1});
+  
+    OTTBreakout.from(".OTT-breakout", {
+      y: 20,
+      duration: .5,
+      },
+      "OTT-breakout-slide-up"
+    )
+  
+    OTTBreakout.to(".OTT-breakout", {
+      opacity: 1,
+      duration: .5,
+      },
+      "OTT-breakout-slide-up"
+    )
+    
+    OTTBreakout.from(".OTT-breakout img:nth-child(1)", {
+      x: -10,  
+      duration: .4,
+      },
+      "OTT-breakout"
+    )
+    
+    OTTBreakout.from(".OTT-breakout img:nth-child(2)", {
+      x: -10,  
+      duration: .4,
+    },
+    "OTT-breakout"
+    )
+    
+    OTTBreakout.from(".OTT-breakout img:nth-child(3)", {
+      scale: .95,
+      x: 15,
+      duration: .4,
+    },
+    "OTT-breakout"
+    )
+    
+    OTTBreakout.from(".OTT-breakout img:nth-child(4)", {
+      scale: .9,
+      y: 10,
+      x: 30,
+      duration: .4,
+    },
+    "OTT-breakout"
+    )
+
+    const computerVisionSectionTransition = gsap.timeline( {    
+      scrollTrigger: {
+        trigger: ".technologySection1",
+        scrub: true,
+        end: "5%",
+        toggleActions: "play reverse play reverse",
+      }
+    });
+  
+    computerVisionSectionTransition
+    .to(
+      '.technologypage-section-transition-container .section-transition.section2', 
+      { 
+        opacity: 1, 
+        duration: 1 
+      },"transition1"
     );
   }
 });

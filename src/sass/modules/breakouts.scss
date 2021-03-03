@@ -18,6 +18,39 @@
 .laptop-breakout {
   position: relative;
   width: 100%;
+  opacity: 0;
+  height: 200px;
+  
+  > * {
+    width: 100%;
+    object-fit: contain;
+    max-height: 200px;
+  }
+
+  @media (min-width: 768px) {
+    height: 300px;
+    > * {
+      max-height: 300px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    display: none;
+  }
+
+  &.laptop-breakout-large {
+    display: none;
+
+    @media (min-width: 1024px) {
+      display: block;
+      height: inherit;
+      > * {
+        max-height: 400px;
+      }  
+    }
+  }
+
+
 
   img {
     top: 0;
@@ -27,3 +60,33 @@
     transform: translate(-50%, -50%);
   }
 }
+
+.OTT-breakout {
+  opacity: 0;
+  height: 300px;
+  position: relative;
+  width: 90%;
+
+  @media (min-width: 768px) {
+    height: 300px;
+    > * {
+      max-height: 300px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    height: inherit;
+    > * {
+      max-height: 400px;
+    }
+  }
+
+  img {
+    top: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+

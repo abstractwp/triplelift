@@ -1,0 +1,48 @@
+.distinctions-section-container {
+    color: white;
+    
+    .distinctions-timeline {
+        margin-top: 88px;
+        .year-header {
+            margin-top: 48px;
+            font-weight: bold;
+        }
+        .distinction {
+            margin: 16px 24px 12px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid rgba(255, 255, 255, .3);
+            &:last-of-type {
+                border-bottom: 0;
+            }
+        }
+    }
+}
+
+.distinction-logo-grid {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
+    row-gap: 36px;
+    align-items: center;
+    justify-items: center;
+
+    img {
+        max-width: 100px;
+        max-height: 100px;
+    }
+}
+
+.distinctions-hero {
+    @media (min-width: 768px) {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        .copy-container {
+        }
+
+        .distinction-logo-grid {
+            padding: 0 24px;
+            width: 30%;
+        }
+    }
+}

@@ -12,11 +12,6 @@
       padding: 0 24px 24px;
     }
 
-    .laptop-breakout {
-      opacity: 0;
-      height: 200px;
-    }
-
     @media (min-width: 768px) {
       .copy {
         align-self: center;
@@ -26,12 +21,6 @@
 
   .copy {
     padding: 24px;
-
-    h1 {
-      font-size: 44px;
-      font-weight: 600;
-      line-height: 1.3;
-    }
 
     p {
       font-size: 20px;
@@ -52,9 +41,6 @@
   }
 
   .homepage-hero .copy {
-    h1 {
-      font-size: 36px;
-    }
     p {
       font-size: 24px;
     }
@@ -63,9 +49,6 @@
 
 @media (min-width: 1440px) {
   .homepage-hero .copy {
-    h1 {
-      font-size: 48px;
-    }
     p {
       font-size: 28px;
     }
@@ -77,9 +60,6 @@
     max-width: 80vw;
     margin: 0 auto;
     .homepage-hero .copy {
-      h1 {
-        font-size: 60px;
-      }
       p {
         font-size: 32px;
       }
@@ -100,16 +80,67 @@
       width: 100%;
     }
   }
-  .hero.not-homepage .laptop-breakout {
-    height: inherit;
-  }
 }
 
 @media (min-width: 1280px) {
   .hero.not-homepage {
     margin: 0 4vw;
-    h1 {
-      font-size: 80px;
+  }
+}
+
+
+.hero.not-homepage.ideas-hero {
+  background: $gradientDark1;
+  margin: 0;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  padding-bottom: 4vw;
+  min-height: auto;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    > * {
+      width: 50%;
+    }
+  }
+
+  .hero-visual.ideas {
+    margin: 24px 12px 48px;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 48px;
+
+    @media (min-width: 768px) {
+      margin-left: 4vw;
+      margin-right: 4vw;
+      align-items: center;
+    }
+  
+    .between-product-page-ctas {
+      height: 72px;
+
+      @media (min-width: 768px) {
+        height: 260px;
+      }
+
+      @media (min-width: 1024px) {
+        height: 340px;
+      }
+
+      @media (min-width: 1280px) {
+        height: 450px;
+      }
+
+      @media (min-width: 1440px) {
+        height: 510px;
+      }
+
+    }
+  
+    .texture {
+      background-size: 100%;
     }
   }
 }

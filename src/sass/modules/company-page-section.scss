@@ -1,0 +1,138 @@
+.company-page-section {
+    background: $heritageBlue;
+    min-height: 300px;
+    display: flex;
+    color: white;
+
+    .section-copy {
+        padding: 0 24px 80px;
+
+        @media (min-width: 1024px) {
+            padding-bottom: 0;
+        }
+
+
+        h3 {
+            padding-top: 40px;
+        }
+        
+        h1, h2, h3 {
+            font-size: 24px;
+            padding-top: 24px;
+            font-size: 24px;
+            font-weight: bold;;
+            @media (min-width: 1024px) {
+                padding-top: 0;
+            }
+        }
+
+        p {
+            margin-top: 24px;
+            font-size: 20px;
+            line-height: 1.4;
+        }
+    }
+
+    &.who-we-are {
+        padding-top: 80px;
+    }
+
+    &.leadership,
+    &.mission {
+        background: white;
+        color: $heritageBlue;
+    }
+}
+
+.company-page-sticky-animation {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    
+    .sticky-animation-container {
+        position: absolute;
+        z-index: 6;
+        top: 20%;
+        right: 0;
+    }
+
+
+    .company-page-sticky-animation {
+        display: block;
+
+        &.gradient-mark {
+            z-index: 5;
+        }
+
+        &.grey-mark {
+            z-index: 6;
+            opacity: 0;
+        }
+
+        .icon-container {
+            position: absolute;
+            top: 40%;
+            right: 0;
+            transform: translate(0, -50%);
+            width: 400px;
+
+            @media (min-width: 1280px) {
+                right: 40px;
+            }
+
+            @media (min-width: 1440px) {
+                right: 160px;
+            }
+
+            > * {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 400px;
+            }
+            img {
+                width: 80%;
+            }
+        }
+
+    }
+    .company-page-section {
+        .section-copy .big {
+            font-size: 48px;
+        }
+    }
+    
+
+    .who-we-are,
+    .mission {
+        align-items: center;
+        > * {
+            width: 50%;
+        }
+    }
+
+    .who-we-are {
+        position: relative;
+        min-height: 580px;
+        padding: 0 48px 48px;
+    }
+
+    .mission {
+        padding: 80px 0;
+        margin: 0 48px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .company-page-section {
+        padding-left: 8vw;
+        padding-right: 8vw;
+        margin: 0 auto;
+    }
+
+    .company-page-section.leadership, .company-page-section.mission {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
