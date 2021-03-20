@@ -23,18 +23,25 @@
   }
 
   p {
-    border-bottom: 6px solid $amplifiedOrange;
+    border-bottom: 6px solid;
     padding-bottom: 24px;
   }
 
-  img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    opacity: .4;
-    width: 20px;
-    padding: 10px;
-    display: none;
+  .why-triplelift-section {
+    &:nth-child(1) {
+      h3 { color: $amplifiedOrange; }
+      p {border-bottom-color: $amplifiedOrange; }
+    }
+
+    &:nth-child(2) {
+      h3 { color: $heritageOrange; }
+      p {border-bottom-color: $heritageOrange; }
+    }
+
+    &:nth-child(3) {
+      h3 { color: $pink; }
+      p {border-bottom-color: $pink; }
+    }
   }
 
 }

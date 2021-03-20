@@ -15,31 +15,34 @@
   }
 }
 
-.section-transition.section1 {
+.section-transition.transition1 {
   z-index: 1;
 }
 
-.section-transition.section2 {
+.section-transition.transition2 {
   z-index: 2;
 }
 
-.section-transition.section3 {
+.section-transition.transition3 {
   z-index: 3;
 }
 
 .homepage-section-transition-container {
-  .section-transition.section1 {
-    background: $gradientDark1;
+  .section-transition {
+    opacity: 0;
+  }
+  .section-transition.transition1 {
+    background-image: url(/images/vapors/TripleLift_Vapors_RedPinkOrange_Sm.png);
+    background-size: cover;
+    opacity: 1;
   }
 
-  .section-transition.section2 {
+  .section-transition.transition2 {
     background: black;
-    opacity: 0;
   }
 
   .section-transition.section3 {
     background: white;
-    opacity: 0;
   }
 }
 

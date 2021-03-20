@@ -1,7 +1,8 @@
 .not-home,
 html:not([data-scroll="0"]) {
   .burger-and-fries-container {
-    background: $gradientDark1;
+    background-image: url(/images/vapors/TripleLift_Vapors_RedPinkOrange_Sm.png);
+    background-size: cover;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.75);
     transition: 0.6s;
   }

@@ -1,27 +1,21 @@
-mixin why-triplelift-section(icon, title, body)
+mixin why-triplelift-section(title, body)
   .why-triplelift-section.flex.flex-column
-    img(
-        src=icon
-      )
     .flex.items-end
-      h3.text-primaryGradient= title 
+      h3= title 
     p.pt3= body 
 
 .why-triplelift
   h2 Why TripleLift?
   .why-triplelift-section-container
     +why-triplelift-section(
-      "/images/Direct-Orange.svg", 
       "Direct", 
       "We build relationships directly with publishers to deliver brand safe environments and better performance."
     )
     +why-triplelift-section(
-      "/images/Diverse-Orange.svg", 
       "Diverse", 
       "We offer products across channels, formats, publishers and partners."
     )
     +why-triplelift-section(
-      "/images/Designed-Yellow.svg", 
       "Designed", 
       "We apply technologies to ensure that the delivery of your creative is worthy of your brand."
     )

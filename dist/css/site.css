@@ -1040,12 +1040,12 @@ h4 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(77.24deg, #f47b20 14.56%, #f15c2c 88.29%);
+  background: linear-gradient(142.86deg, #f47b20 2.47%, #f15c2c 43.9%, #ed79b0 95.24%);
   z-index: 2;
   opacity: 0; }
 
 .animate-border-content {
-  background-color: white;
+  background-color: black;
   padding: 24px;
   margin: 12px;
   z-index: 3; }
@@ -1181,7 +1181,8 @@ h4 {
 
 .not-home .burger-and-fries-container,
 html:not([data-scroll="0"]) .burger-and-fries-container {
-  background: linear-gradient(122.97deg, #0e3d52 0%, #000000 95.81%);
+  background-image: url(/images/vapors/TripleLift_Vapors_RedPinkOrange_Sm.png);
+  background-size: cover;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.75);
   transition: 0.6s; }
 
@@ -2174,25 +2175,28 @@ button.triggerGalleryMenu {
     bottom: 0;
     left: 0; }
 
-.section-transition.section1 {
+.section-transition.transition1 {
   z-index: 1; }
 
-.section-transition.section2 {
+.section-transition.transition2 {
   z-index: 2; }
 
-.section-transition.section3 {
+.section-transition.transition3 {
   z-index: 3; }
 
-.homepage-section-transition-container .section-transition.section1 {
-  background: linear-gradient(122.97deg, #0e3d52 0%, #000000 95.81%); }
-
-.homepage-section-transition-container .section-transition.section2 {
-  background: black;
+.homepage-section-transition-container .section-transition {
   opacity: 0; }
+
+.homepage-section-transition-container .section-transition.transition1 {
+  background-image: url(/images/vapors/TripleLift_Vapors_RedPinkOrange_Sm.png);
+  background-size: cover;
+  opacity: 1; }
+
+.homepage-section-transition-container .section-transition.transition2 {
+  background: black; }
 
 .homepage-section-transition-container .section-transition.section3 {
-  background: white;
-  opacity: 0; }
+  background: white; }
 
 .productpage-section-transition-container .section-transition.section1 {
   background: linear-gradient(122.97deg, #0e3d52 0%, #000000 95.81%); }
@@ -2516,16 +2520,20 @@ button.triggerGalleryMenu {
     font-weight: 500;
     text-align: center; }
   .why-triplelift p {
-    border-bottom: 6px solid #f15c2c;
+    border-bottom: 6px solid;
     padding-bottom: 24px; }
-  .why-triplelift img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    opacity: .4;
-    width: 20px;
-    padding: 10px;
-    display: none; }
+  .why-triplelift .why-triplelift-section:nth-child(1) h3 {
+    color: #f15c2c; }
+  .why-triplelift .why-triplelift-section:nth-child(1) p {
+    border-bottom-color: #f15c2c; }
+  .why-triplelift .why-triplelift-section:nth-child(2) h3 {
+    color: #f47b20; }
+  .why-triplelift .why-triplelift-section:nth-child(2) p {
+    border-bottom-color: #f47b20; }
+  .why-triplelift .why-triplelift-section:nth-child(3) h3 {
+    color: #ed79ca; }
+  .why-triplelift .why-triplelift-section:nth-child(3) p {
+    border-bottom-color: #ed79ca; }
 
 @media (min-width: 1024px) {
   .why-triplelift {
