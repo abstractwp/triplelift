@@ -2326,6 +2326,10 @@ button.triggerGalleryMenu {
     padding-left: calc(8vw + 24px);
     padding-right: calc(8vw + 24px); } }
 
+.technology-breakouts {
+  background: white;
+  padding: 64px 0; }
+
 .technologySectionContainer {
   padding: 96px 24px;
   color: white; }
@@ -2433,8 +2437,9 @@ button.triggerGalleryMenu {
   background-size: cover; }
 
 .we-work-with {
+  background: white;
   padding-bottom: 24vw;
-  margin-top: 64px; }
+  padding-top: 64px; }
   .we-work-with h3 {
     font-size: 36px;
     font-weight: bold;

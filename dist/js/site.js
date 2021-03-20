@@ -854,11 +854,6 @@ weWorkWithParallax.to(".explore-our-gallery-container ", {
   duration: .6,
 }, "weWorkWith")
 
-weWorkWithParallax.from(".we-work-with", {
-  opacity: 0,
-  duration: .3,
-}, "weWorkWith")
-
 weWorkWithParallax.from(".we-work-with .logo-grid", {
   opacity: 0,
   y: 20,
