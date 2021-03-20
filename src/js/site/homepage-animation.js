@@ -49,6 +49,38 @@ tl.from(".homepage .phone-breakout img:nth-child(4)", {
 "phone-breakout"
 )
 
+tl.from(".homepage .phone-breakout img:nth-child(5)", {
+  opacity: 0,
+  scale: .9,
+  y: 10,
+  x: 30,
+  duration: .4,
+},
+"phone-breakout"
+)
+
+tl.from(".homepage .phone-breakout img:nth-child(6)", {
+  opacity: 0,
+  scale: .9,
+  y: 10,
+  x: 30,
+  duration: .4,
+  delay: .3
+},
+"phone-breakout"
+)
+
+tl.from(".homepage .phone-breakout .video", {
+  opacity: 0,
+  scale: .95,
+  y: 5,
+  x: 10,
+  duration: 2,
+  delay: 1
+},
+"phone-breakout"
+)
+
 tl.from(".homepage-hero .copy *", {
   opacity: 0,
   y: 10,

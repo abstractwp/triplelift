@@ -1,19 +1,40 @@
 .phone-breakout {
   position: relative;
-  margin-top: 4vh;
-  height: 40vh;
+  margin-top: 0vh;
+  height: 55vh;
   width: 100%;
 
   img {
-    top: 0;
-    width: 87%;
+    width: 183%;
     position: absolute;
-    left: 59%;
+    left: 83%;
     top: 50%;
     transform: translate(-50%, -50%);
-    max-width: 330px;
+    max-width: inherit;
   }
+
+  .video {
+    position: absolute;
+    width: 48%;
+    top: -10%;
+    left: 22%;
+    transform: skew(-7deg, 0deg);
+  }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .laptop-breakout {
   position: relative;

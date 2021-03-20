@@ -50,6 +50,7 @@
   }
 
   .slide-content-container {
+    overflow-x: hidden;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
