@@ -2729,7 +2729,7 @@ Demo Animation Style
 @media (min-width: 1024px) {
   .why-triplelift {
     padding-top: 0;
-    margin: 0 auto 100px;
+    margin: -10vw auto 100px;
     max-width: 90vw; }
     .why-triplelift h2 {
       text-align: left; }
