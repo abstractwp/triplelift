@@ -796,67 +796,85 @@ tl.from(".homepage-hero .swiper-pagination", {
 const parallaxHomePageHero = gsap.timeline( {    
     scrollTrigger: {
       trigger: ".homepage-hero",
+      pin: ".swiper-container",
       start: "top top",
       end: "100% center",
+      markers: true,
       scrub: true,
-    },
-    yoyo: true
+    }
   });
 
-  parallaxHomePageHero
-  .to(
-    ".homepage-hero .swiper-pagination", 
-    { 
-      delay: 1,
-      opacity: 0, 
-      duration: 1,
-      y: -20
-    }, "first")
-  ;
+const parallaxHomePageHero2 = gsap.timeline( {    
+    scrollTrigger: {
+      trigger: ".homepage-hero",
+      start: "top top",
+      end: "100% center",
+      markers: true,
+      scrub: true,
+    }
+  });
 
-  parallaxHomePageHero
-  .to(
-    '.homepage-hero .cta', 
-    { 
-      opacity: 0, 
-      duration: 1,
-      y: -20
-    }, "first")
-  ;
-
-  parallaxHomePageHero
-  .to(
-    '.homepage-hero .copy > *', 
-    { 
-      delay: 2,
-      opacity: 0, 
-      duration: 1,
-      y: -20,
-      stagger: .3
-    }, "copy")
-    ;
-
-
-  parallaxHomePageHero
-  .to(
-    '.homepage-hero .phone-breakout', 
-    { 
-      duration: 6,
-      y: 100,
-    }, "first")
-  ;
-
-  parallaxHomePageHero
+parallaxHomePageHero2
   .to(
     '.homepage-hero .phone-breakout > *', 
     { 
-      delay: 1,
-      y: -20,
+      y: -100,
       opacity: 0,
-      duration: 2,
+      duration: 1,
       stagger: -.5
-    }, "first")
+    }, "a")
   ;
+
+  // parallaxHomePageHero
+  // .to(
+  //   ".homepage-hero", 
+  //   { 
+  //     duration: 5,
+  //     y: 500
+  //   }, "a")
+  // ;
+  
+  // parallaxHomePageHero
+  // .to(
+  //   ".homepage-hero .swiper-pagination", 
+  //   { 
+  //     delay: 1,
+  //     opacity: 0, 
+  //     duration: 1,
+  //     y: -20
+  //   }, "first")
+  // ;
+
+  // parallaxHomePageHero
+  // .to(
+  //   '.homepage-hero .cta', 
+  //   { 
+  //     opacity: 0, 
+  //     duration: 1,
+  //     y: -20
+  //   }, "first")
+  // ;
+
+  // parallaxHomePageHero
+  // .to(
+  //   '.homepage-hero .copy > *', 
+  //   { 
+  //     opacity: 0, 
+  //     duration: 1,
+  //     y: -20,
+  //     stagger: .3
+  //   }, "a")
+  //   ;
+
+
+  // parallaxHomePageHero
+  // .to(
+  //   '.homepage-hero .phone-breakout', 
+  //   { 
+  //     duration: 6,
+  //     y: 100,
+  //   }, "first")
+  // ;
 
 
   // const parallaxHomePageHeroPhoneBreakOut = gsap.timeline( {    

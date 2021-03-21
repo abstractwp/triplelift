@@ -2358,16 +2358,15 @@ Demo Animation Style
   opacity: 0; }
 
 .homepage-section-transition-container .section-transition.transition1 {
-  background-image: url(/images/vapors/TripleLift_Vapors_RHBlue_Sm.png);
+  background-image: url(/images/vapors/Vapors_100x100_PinkOrange.png);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
   opacity: 1; }
   @media (min-width: 1024px) {
     .homepage-section-transition-container .section-transition.transition1 {
       background-size: 83%;
-      background-color: black;
-      background-repeat: no-repeat;
-      opacity: 1;
-      background-position: 130% center; } }
+      background-position: 160%; } }
 
 .homepage-section-transition-container .section-transition.transition2 {
   background: black; }
@@ -2702,7 +2701,7 @@ Demo Animation Style
     max-width: 60vw; } }
 
 .why-triplelift {
-  padding: 24px 24px 0vw;
+  padding: 50vh 24px 0vw;
   margin-bottom: 48px; }
   .why-triplelift h2 {
     color: white;
