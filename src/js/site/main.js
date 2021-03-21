@@ -15,6 +15,18 @@ $(window).on("load", function () {
     alert("This does not work yet");
   })
 
+  // Instantiate modals
+
+  MicroModal.init({
+    onShow: modal => console.info(`${modal.id} is shown`), // [1]
+    onClose: modal => console.info(`${modal.id} is hidden`), // [2]
+    openClass: 'is-open', // [5]
+    disableScroll: true, // [6]
+    disableFocus: false, // [7]
+    awaitOpenAnimation: false, // [8]
+    awaitCloseAnimation: true, // [9]
+  });
+
 });
 
 

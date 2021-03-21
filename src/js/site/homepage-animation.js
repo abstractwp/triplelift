@@ -26,6 +26,7 @@ tl.from(".homepage .phone-breakout img:nth-child(1)", {
 )
 
 tl.from(".homepage .phone-breakout img:nth-child(2)", {
+  opacity: 0,
   x: -10,  
   duration: .4,
 },
@@ -75,8 +76,8 @@ tl.from(".homepage .phone-breakout .video", {
   scale: .95,
   y: 5,
   x: 10,
-  duration: 2,
-  delay: 1
+  duration: 1,
+  delay: .5
 },
 "phone-breakout"
 )
@@ -112,8 +113,8 @@ tl.from(".homepage-hero .cta", {
 const parallaxHomePageHero = gsap.timeline( {    
     scrollTrigger: {
       trigger: ".homepage-hero",
-      start: "100% center",
-      end: "+=100 center",
+      start: "center center",
+      end: "130% center",
       scrub: true,
       toggleActions: "play",
     }
@@ -121,11 +122,34 @@ const parallaxHomePageHero = gsap.timeline( {
 
 parallaxHomePageHero
   .to(
-    '.homepage-hero > *', 
+    '.homepage-hero .phone-breakout > *', 
     { 
       opacity: 0, 
-      duration: 1,
+      duration: .6,
+      y: -20,
+      stagger: .1
+    })
+  ;
+
+  parallaxHomePageHero
+  .to(
+    '.homepage-hero .cta', 
+    { 
+      opacity: 0, 
+      duration: .5,
       y: -20
+    })
+  ;
+
+
+  parallaxHomePageHero
+  .to(
+    '.homepage-hero .copy > *', 
+    { 
+      opacity: 0, 
+      duration: .5,
+      y: -20,
+      stagger: .3
     })
   ;
 
