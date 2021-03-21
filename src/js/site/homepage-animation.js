@@ -108,6 +108,12 @@ tl.from(".homepage-hero .cta", {
 }
 )
 
+tl.from(".homepage-hero .swiper-pagination", {
+  opacity: 0,
+  y: -10,
+}
+)
+
 const parallaxHomePageHero = gsap.timeline( {    
     scrollTrigger: {
       trigger: ".homepage-hero",
