@@ -27,6 +27,23 @@ $(window).on("load", function () {
     awaitCloseAnimation: true, // [9]
   });
 
+  // Instantiate swipers
+  const swiper = new Swiper('.swiper-container', {
+    loop: true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.slider-arrow.right',
+      prevEl: '.slider-arrow.left',
+    },
+  
+  });
+
 });
 
 

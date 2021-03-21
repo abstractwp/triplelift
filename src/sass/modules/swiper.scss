@@ -1,0 +1,22 @@
+.hero.homepage-hero {
+
+    .arrows {
+        display: none;
+    }
+
+    .swiper-pagination {
+        position: absolute;
+        top: 51vh;
+
+        .swiper-pagination-bullet {
+            background: #fff;
+            opacity: .5;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: $amplifiedOrange !important;
+            opacity: 1;
+        }
+
+    }
+}

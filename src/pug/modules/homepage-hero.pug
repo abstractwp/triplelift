@@ -1,16 +1,21 @@
 .hero.homepage-hero
-  .arrows
-    a.does-not-work.slider-arrow.left 
-      img(src="/images/arrow-left.svg")
-    a.does-not-work.slider-arrow.right 
-      img(src="/images/arrow-right.svg")      
-  .slide-content-container
-    .slide-1
-      .flex.items-center.slider-static
-        include ../modules/phone-breakout.pug
-      a.cta.cta-style-3(data-micromodal-trigger="modal-1")
-        span Watch show reel 
-        img(src="/images/triangle-inside-circle.svg")
-    .copy.mt3
-      h1 Reinventing ad placement, <br/> one medium at a time
-      p.mt3 Since pioneering Native advertising in 2012, we have built 4 product lines across 13 different formats, each with elements of customization not found anywhere else in the industry.
+  .swiper-container
+    .swiper-wrapper
+      .swiper-slide.slide-content-container
+        .slide-1
+          .flex.items-center.slider-static
+            include ../modules/phone-breakout.pug
+          a.cta.cta-style-3(data-micromodal-trigger="modal-1")
+            span Watch show reel 
+            img(src="/images/triangle-inside-circle.svg")
+          .copy.mt3
+            h1 Reinventing ad placement, <br/> one medium at a time
+            p.mt3 Since pioneering Native advertising in 2012, we have built 4 product lines across 13 different formats, each with elements of customization not found anywhere else in the industry.
+      .swiper-slide.slide-2
+        h1 Hello world
+    .swiper-pagination
+    .arrows
+      .slider-arrow.left 
+        img(src="/images/arrow-left.svg")
+      .slider-arrow.right 
+        img(src="/images/arrow-right.svg")      

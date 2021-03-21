@@ -1116,6 +1116,9 @@ h4 {
   margin-top: 0vh;
   height: 55vh;
   width: 100%; }
+  @media (min-width: 1024px) {
+    .phone-breakout {
+      height: 65vh; } }
   .phone-breakout img {
     width: 183%;
     position: absolute;
@@ -1982,7 +1985,7 @@ button.triggerGalleryMenu {
       padding: 0 4vw;
       top: 50%; } }
 
-.slide-content-container {
+.swiper-slide {
   overflow-x: hidden; }
 
 @media (min-width: 1024px) {
@@ -1990,13 +1993,13 @@ button.triggerGalleryMenu {
     display: flex;
     align-items: center;
     padding-top: 0; }
-  .slide-content-container {
+  .swiper-slide {
     display: flex;
     flex-direction: row-reverse;
     align-items: center; }
-    .slide-content-container .slide-1 {
+    .swiper-slide .slide-1 {
       width: 40%; }
-    .slide-content-container .copy {
+    .swiper-slide .copy {
       width: 50%; }
   .homepage-hero .copy h1 {
     font-size: 36px; }
@@ -2376,6 +2379,19 @@ Demo Animation Style
   @media (min-width: 768px) {
     .spotlessPodcastSeriesSectionContainer.explore-our-gallery-container p {
       margin-top: 24px; } }
+
+.hero.homepage-hero .arrows {
+  display: none; }
+
+.hero.homepage-hero .swiper-pagination {
+  position: absolute;
+  top: 51vh; }
+  .hero.homepage-hero .swiper-pagination .swiper-pagination-bullet {
+    background: #fff;
+    opacity: .5; }
+  .hero.homepage-hero .swiper-pagination .swiper-pagination-bullet-active {
+    background: #f15c2c !important;
+    opacity: 1; }
 
 .team-container {
   background: #EEEEEE;

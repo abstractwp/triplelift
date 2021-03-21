@@ -4,6 +4,10 @@
   height: 55vh;
   width: 100%;
 
+  @media (min-width: 1024px) {
+    height: 65vh;
+  }
+
   img {
     width: 183%;
     position: absolute;
@@ -20,20 +24,7 @@
     left: 22%;
     transform: skew(-7deg, 0deg);
   }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .laptop-breakout {

@@ -66,18 +66,16 @@ tl.from(".homepage .phone-breakout img:nth-child(6)", {
   y: 10,
   x: 30,
   duration: .4,
-  delay: .3
 },
-"phone-breakout"
+"phone-breakout-2"
 )
 
 tl.from(".homepage .phone-breakout .video", {
   opacity: 0,
   scale: .95,
   y: 5,
-  x: 10,
-  duration: 1,
-  delay: .5
+  x: 5,
+  duration: 1
 },
 "phone-breakout"
 )
@@ -124,10 +122,10 @@ parallaxHomePageHero
   .to(
     '.homepage-hero .phone-breakout > *', 
     { 
-      opacity: 0, 
-      duration: .6,
-      y: -20,
-      stagger: .1
+      opacity: 0,
+      duration: 1,
+      y: -100,
+      stagger: -.5
     })
   ;
 
