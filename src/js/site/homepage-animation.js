@@ -192,11 +192,10 @@ ScrollTrigger.matchMedia({
       .to(
         '.homepage-hero .phone-breakout > *', 
         { 
-          delay: 1,
           y: -50,
           opacity: 0,
-          duration: 1,
-          stagger: -1
+          duration: 2,
+          stagger: -.5
         }, "b")
       ;      
   },
@@ -235,7 +234,7 @@ whyTripleLiftParallax
     '.why-triplelift-section', 
     { 
       opacity: 0, 
-      duration: .5,
+      duration: 1,
       x: -20,
       stagger: .5
     });
