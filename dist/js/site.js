@@ -793,110 +793,98 @@ tl.from(".homepage-hero .swiper-pagination", {
 }
 )
 
-const parallaxHomePageHero = gsap.timeline( {    
-    scrollTrigger: {
-      trigger: ".homepage-hero",
-      pin: ".swiper-container",
-      start: "top top",
-      end: "100% center",
-      markers: true,
-      scrub: true,
-    }
-  });
 
 const parallaxHomePageHero2 = gsap.timeline( {    
-    scrollTrigger: {
-      trigger: ".homepage-hero",
-      start: "top top",
-      end: "100% center",
-      markers: true,
-      scrub: true,
-    }
-  });
+  scrollTrigger: {
+    trigger: ".homepage-hero",
+    start: "top top",
+    end: "100% center",
+    scrub: true,
+  }
+});
 
-parallaxHomePageHero2
-  .to(
-    '.homepage-hero .phone-breakout > *', 
-    { 
-      y: -100,
-      opacity: 0,
-      duration: 1,
-      stagger: -.5
-    }, "a")
-  ;
 
-  // parallaxHomePageHero
-  // .to(
-  //   ".homepage-hero", 
-  //   { 
-  //     duration: 5,
-  //     y: 500
-  //   }, "a")
-  // ;
+ScrollTrigger.matchMedia({
+  "all": function() {
+    parallaxHomePageHero2
+      .to(
+        ".homepage-hero .swiper-pagination", 
+        { 
+          opacity: 0, 
+          duration: 1,
+          y: -20
+        }, "a")
+      ;
+      parallaxHomePageHero2
+      .to(
+        '.homepage-hero .cta', 
+        { 
+          opacity: 0, 
+          duration: 1,
+          y: -20
+        }, "a")
+      ;     
+      parallaxHomePageHero2
+      .to(
+        '.homepage-hero .arrows', 
+        { 
+          opacity: 0, 
+          duration: 1,
+          y: -20
+        }, "a")
+      ;       
+  },
   
-  // parallaxHomePageHero
-  // .to(
-  //   ".homepage-hero .swiper-pagination", 
-  //   { 
-  //     delay: 1,
-  //     opacity: 0, 
-  //     duration: 1,
-  //     y: -20
-  //   }, "first")
-  // ;
+  "(min-width: 1024px)": function() {
+    const parallaxHomePageHero = gsap.timeline( {    
+      scrollTrigger: {
+        trigger: ".homepage-hero",
+        pin: ".swiper-container",
+        start: "top top",
+        end: "100% center",
+        scrub: true,
+      }
+    });
 
-  // parallaxHomePageHero
-  // .to(
-  //   '.homepage-hero .cta', 
-  //   { 
-  //     opacity: 0, 
-  //     duration: 1,
-  //     y: -20
-  //   }, "first")
-  // ;
+    const parallaxHomePageHero2Large = gsap.timeline( {    
+      scrollTrigger: {
+        trigger: ".homepage-hero",
+        start: "top top",
+        end: "100% center",
+        scrub: true,
+      }
+    });
 
-  // parallaxHomePageHero
-  // .to(
-  //   '.homepage-hero .copy > *', 
-  //   { 
-  //     opacity: 0, 
-  //     duration: 1,
-  //     y: -20,
-  //     stagger: .3
-  //   }, "a")
-  //   ;
+    parallaxHomePageHero2Large
+    .to(
+      '.homepage-hero .copy > *', 
+      { 
+        opacity: 0, 
+        duration: 1,
+        y: -20,
+        stagger: .3
+      }, "a")
+      ;
 
+      parallaxHomePageHero2
+      .to(
+        '.homepage-hero .phone-breakout > *', 
+        { 
+          delay: 1,
+          y: -20,
+          opacity: 0,
+          duration: 1,
+          stagger: -.5
+        }, "b")
+      ;      
+  },
+  "(max-width: 1023px)": function() {
+    
+  },
 
-  // parallaxHomePageHero
-  // .to(
-  //   '.homepage-hero .phone-breakout', 
-  //   { 
-  //     duration: 6,
-  //     y: 100,
-  //   }, "first")
-  // ;
-
-
-  // const parallaxHomePageHeroPhoneBreakOut = gsap.timeline( {    
-  //   scrollTrigger: {
-  //     trigger: ".homepage-hero",
-  //     pin: ".slider-static",
-  //     start: "top top",
-  //     end: "+=500",
-  //     markers: true,
-  //     scrub: true
-  //   }
-  // });
-
-
-  // parallaxHomePageHeroPhoneBreakOut
-  // .to(
-  //   '.homepage-hero .phone-breakout', 
-  //   { 
-  //     duration: 2,
-  //     y: 200,
-  //   })
-  // ;
+  
+  
+})
 
 
 const whyTripleLiftParallax = gsap.timeline( {    
