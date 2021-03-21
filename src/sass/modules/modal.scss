@@ -5,14 +5,14 @@ top: 0;
 left: 0;
 right: 0;
 bottom: 0;
-background: rgba(0,0,0,0.6);
+background: rgba(0,0,0,0.8);
 display: flex;
 justify-content: center;
 align-items: center;
 }
 
 .modal__container {
-    background: $secondaryGradient1;
+    background: $gradientDark1;
     max-width: 500px;
     max-height: 100vh;
     border-radius: 4px;
@@ -53,17 +53,6 @@ margin-top: 2rem;
 margin-bottom: 2rem;
 line-height: 1.5;
 color: rgba(0,0,0,.8);
-}
-
-
-.modal__btn:focus, .modal__btn:hover {
--webkit-transform: scale(1.05);
-transform: scale(1.05);
-}
-
-.modal__btn-primary {
-background-color: #00449e;
-color: #fff;
 }
 
 

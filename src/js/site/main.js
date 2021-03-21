@@ -29,7 +29,6 @@ $(window).on("load", function () {
 
   // Instantiate swipers
   const swiper = new Swiper('.swiper-container', {
-    loop: true,
   
     // If we need pagination
     pagination: {
