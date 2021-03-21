@@ -1958,7 +1958,9 @@ button.triggerGalleryMenu {
   font-weight: 200; }
 
 .hero.homepage-hero .cta {
-  margin: 0 auto; }
+  margin: 0 auto;
+  z-index: 500;
+  position: relative; }
   @media (min-width: 1024px) {
     .hero.homepage-hero .cta {
       margin-top: 48px; } }
@@ -2111,20 +2113,21 @@ button.triggerGalleryMenu {
   align-items: center; }
 
 .modal__container {
-  background-color: #fff;
-  padding: 30px;
+  background: linear-gradient(142.86deg, #f47b20 2.47%, #f15c2c 43.9%, #ed79b0 95.24%);
   max-width: 500px;
   max-height: 100vh;
   border-radius: 4px;
   width: 92%;
-  min-height: 70vh;
   overflow-y: auto;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  align-self: flex-start;
+  margin-top: 10vh; }
 
 .modal__header {
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  padding: 24px 24px 0; }
 
 .modal__title {
   margin-top: 0;
@@ -2132,13 +2135,15 @@ button.triggerGalleryMenu {
   font-weight: 600;
   font-size: 1.25rem;
   line-height: 1.25;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  color: white; }
 
 .modal__close {
   background: transparent;
   border: 0; }
 
 .modal__header .modal__close:before {
+  color: white;
   content: "\2715"; }
 
 .modal__content {
@@ -2186,7 +2191,9 @@ Demo Animation Style
   display: none; }
 
 .micromodal-slide.is-open {
-  display: block; }
+  display: block;
+  position: relative;
+  z-index: 600; }
 
 .micromodal-slide[aria-hidden="false"] .modal__overlay {
   animation: mmfadeIn 0.3s cubic-bezier(0, 0, 0.2, 1); }
@@ -2205,6 +2212,7 @@ Demo Animation Style
   will-change: transform; }
 
 .video-in-modal {
+  height: inherit;
   width: 100%; }
 
 .our-offices-section-container {
@@ -2384,6 +2392,7 @@ Demo Animation Style
   display: none; }
 
 .hero.homepage-hero .swiper-pagination {
+  height: 10px;
   position: absolute;
   top: 51vh; }
   .hero.homepage-hero .swiper-pagination .swiper-pagination-bullet {

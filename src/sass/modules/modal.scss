@@ -12,21 +12,22 @@ align-items: center;
 }
 
 .modal__container {
-background-color: #fff;
-padding: 30px;
-max-width: 500px;
-max-height: 100vh;
-border-radius: 4px;
-width: 92%;
-min-height: 70vh;
-overflow-y: auto;
-box-sizing: border-box;
+    background: $secondaryGradient1;
+    max-width: 500px;
+    max-height: 100vh;
+    border-radius: 4px;
+    width: 92%;
+    overflow-y: auto;
+    box-sizing: border-box;
+    align-self: flex-start;
+    margin-top: 10vh;
 }
 
 .modal__header {
 display: flex;
 justify-content: space-between;
 align-items: center;
+padding: 24px 24px 0;
 }
 
 .modal__title {
@@ -36,6 +37,8 @@ font-weight: 600;
 font-size: 1.25rem;
 line-height: 1.25;
 box-sizing: border-box;
+color: white;
+
 }
 
 .modal__close {
@@ -43,7 +46,7 @@ background: transparent;
 border: 0;
 }
 
-.modal__header .modal__close:before { content: "\2715"; }
+.modal__header .modal__close:before { color: white; content: "\2715"; }
 
 .modal__content {
 margin-top: 2rem;
@@ -93,7 +96,9 @@ display: none;
 }
 
 .micromodal-slide.is-open {
-display: block;
+    display: block;
+    position: relative;
+    z-index: 600;
 }
 
 .micromodal-slide[aria-hidden="false"] .modal__overlay {
@@ -118,5 +123,6 @@ will-change: transform;
 }
 
 .video-in-modal {
+    height: inherit;
     width: 100%;
 }
