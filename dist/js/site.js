@@ -796,22 +796,24 @@ tl.from(".homepage-hero .swiper-pagination", {
 const parallaxHomePageHero = gsap.timeline( {    
     scrollTrigger: {
       trigger: ".homepage-hero",
-      start: "center center",
-      end: "130% center",
+      start: "top top",
+      end: "100% center",
       scrub: true,
-      toggleActions: "play",
-    }
+      markers: true,
+    },
+    yoyo: true,
+    delay: 2
   });
 
-parallaxHomePageHero
+  parallaxHomePageHero
   .to(
-    '.homepage-hero .phone-breakout > *', 
+    ".homepage-hero .swiper-pagination", 
     { 
-      opacity: 0,
+      delay: 1,
+      opacity: 0, 
       duration: 1,
-      y: -100,
-      stagger: -.5
-    })
+      y: -20
+    }, "first")
   ;
 
   parallaxHomePageHero
@@ -819,22 +821,65 @@ parallaxHomePageHero
     '.homepage-hero .cta', 
     { 
       opacity: 0, 
-      duration: .5,
+      duration: 1,
       y: -20
-    })
+    }, "first")
   ;
-
 
   parallaxHomePageHero
   .to(
     '.homepage-hero .copy > *', 
     { 
+      delay: 2,
       opacity: 0, 
-      duration: .5,
+      duration: 1,
       y: -20,
       stagger: .3
-    })
+    }, "copy")
+    ;
+
+
+  parallaxHomePageHero
+  .to(
+    '.homepage-hero .phone-breakout', 
+    { 
+      duration: 10,
+      y: 300,
+    }, "first")
   ;
+
+  parallaxHomePageHero
+  .to(
+    '.homepage-hero .phone-breakout > *', 
+    { 
+      y: -20,
+      opacity: 0,
+      duration: 2,
+      stagger: -.5
+    }, "each-element")
+  ;
+
+
+  // const parallaxHomePageHeroPhoneBreakOut = gsap.timeline( {    
+  //   scrollTrigger: {
+  //     trigger: ".homepage-hero",
+  //     pin: ".slider-static",
+  //     start: "top top",
+  //     end: "+=500",
+  //     markers: true,
+  //     scrub: true
+  //   }
+  // });
+
+
+  // parallaxHomePageHeroPhoneBreakOut
+  // .to(
+  //   '.homepage-hero .phone-breakout', 
+  //   { 
+  //     duration: 2,
+  //     y: 200,
+  //   })
+  // ;
 
 
 const whyTripleLiftParallax = gsap.timeline( {    
@@ -1087,6 +1132,9 @@ $(window).on("load", function () {
     },
   
   });
+
+  // // Initialize sticky
+  // var sticky = new Sticky('.phone-breakout');
 
 });
 

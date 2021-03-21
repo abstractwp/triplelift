@@ -1116,26 +1116,51 @@ h4 {
   margin-top: 0vh;
   height: 410px;
   width: 100%; }
-  .phone-breakout img {
+  @media (min-width: 768px) {
+    .phone-breakout {
+      height: 540px; } }
+  .phone-breakout img,
+  .phone-breakout .video-container {
     width: 520px;
     position: absolute;
     left: 83%;
     top: 50%;
     transform: translate(-50%, -50%);
     max-width: inherit; }
+    @media (min-width: 375px) {
+      .phone-breakout img,
+      .phone-breakout .video-container {
+        left: 75%; } }
+    @media (min-width: 500px) {
+      .phone-breakout img,
+      .phone-breakout .video-container {
+        left: 63%; } }
+    @media (min-width: 768px) {
+      .phone-breakout img,
+      .phone-breakout .video-container {
+        width: 680px; } }
+    @media (min-width: 1024px) {
+      .phone-breakout img,
+      .phone-breakout .video-container {
+        left: 90%; } }
+    @media (min-width: 1280px) {
+      .phone-breakout img,
+      .phone-breakout .video-container {
+        left: 26vw; } }
   .phone-breakout .video-container {
-    width: 520px;
-    height: 368px;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    left: 83%;
-    top: 50%; }
+    height: 368px; }
+    @media (min-width: 768px) {
+      .phone-breakout .video-container {
+        height: 410px; } }
   .phone-breakout .video {
     position: absolute;
     width: 130px;
     top: -24%;
     left: 16.5%;
     transform: skew(-7deg, 0deg); }
+    @media (min-width: 768px) {
+      .phone-breakout .video {
+        width: 174px; } }
 
 .laptop-breakout {
   position: relative;
@@ -1966,13 +1991,21 @@ button.triggerGalleryMenu {
   z-index: 500;
   position: relative;
   text-decoration: none; }
-  @media (min-width: 1024px) {
-    .hero.homepage-hero .cta {
-      margin-top: 48px; } }
+
+@media (min-width: 1024px) {
+  .hero.homepage-hero .hero-copy-cta-container {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 70%; }
+    .hero.homepage-hero .hero-copy-cta-container .cta {
+      margin: 0px 0px 0px 24px; } }
 
 .hero.homepage-hero .slider-static {
   justify-content: space-between;
   margin: 0 auto 24px; }
+  @media (min-width: 1024px) {
+    .hero.homepage-hero .slider-static {
+      width: 50%; } }
 
 .hero.homepage-hero .arrows {
   position: absolute;
@@ -2003,11 +2036,8 @@ button.triggerGalleryMenu {
   .swiper-slide {
     display: flex;
     flex-direction: row-reverse;
-    align-items: center; }
-    .swiper-slide .slide-1 {
-      width: 40%; }
-    .swiper-slide .copy {
-      width: 50%; }
+    align-items: center;
+    padding: 0 84px; }
   .homepage-hero .copy h1 {
     font-size: 36px; }
   .homepage-hero .copy p {
@@ -2124,7 +2154,6 @@ button.triggerGalleryMenu {
 
 .modal__container {
   background: linear-gradient(122.97deg, #0e3d52 0%, #000000 95.81%);
-  max-width: 500px;
   max-height: 100vh;
   border-radius: 4px;
   width: 92%;
@@ -2327,9 +2356,16 @@ Demo Animation Style
   opacity: 0; }
 
 .homepage-section-transition-container .section-transition.transition1 {
-  background-image: url(/images/vapors/TripleLift_Vapors_RedPinkOrange_Sm.png);
+  background-image: url(/images/vapors/TripleLift_Vapors_RHBlue_Sm.png);
   background-size: cover;
   opacity: 1; }
+  @media (min-width: 1024px) {
+    .homepage-section-transition-container .section-transition.transition1 {
+      background-size: 83%;
+      background-color: black;
+      background-repeat: no-repeat;
+      opacity: 1;
+      background-position: 130% center; } }
 
 .homepage-section-transition-container .section-transition.transition2 {
   background: black; }
@@ -2394,6 +2430,12 @@ Demo Animation Style
   height: 10px;
   position: absolute;
   top: 400px; }
+  @media (min-width: 768px) {
+    .hero.homepage-hero .swiper-pagination {
+      top: 510px; } }
+  @media (min-width: 1024px) {
+    .hero.homepage-hero .swiper-pagination {
+      top: 550px; } }
   .hero.homepage-hero .swiper-pagination .swiper-pagination-bullet {
     background: #fff;
     opacity: .5; }

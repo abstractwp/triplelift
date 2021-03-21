@@ -1,18 +1,17 @@
 .hero.homepage-hero
   .swiper-container
     .swiper-wrapper
-      .swiper-slide.slide-content-container
-        .slide-1
+      .swiper-slide.slide-content-container.slide-1
           .flex.items-center.slider-static
             include ../modules/phone-breakout.pug
-          a.cta.cta-style-3(data-micromodal-trigger="modal-1")
-            span Watch show reel 
-            img(src="/images/triangle-inside-circle.svg")
-          .copy.mt3
-            h1 Reinventing ad placement, <br/> one medium at a time
-            p.mt3 Since pioneering Native advertising in 2012, we have built 4 product lines across 13 different formats, each with elements of customization not found anywhere else in the industry.
-      .swiper-slide.slide-content-container
-        .slide-2
+          .hero-copy-cta-container
+            a.cta.cta-style-3(data-micromodal-trigger="modal-1")
+              span Watch show reel 
+              img(src="/images/triangle-inside-circle.svg")
+            .copy.mt3
+              h1 Reinventing ad placement, <br/> one medium at a time
+              p.mt3 Since pioneering Native advertising in 2012, we have built 4 product lines across 13 different formats, each with elements of customization not found anywhere else in the industry.
+      .swiper-slide.slide-content-container.slide-2
           .flex.items-center.slider-static
             h2 Image For Slide 2
           a.cta.cta-style-3(href="https://triplelift.com/go/we-go-beyond")
@@ -21,8 +20,7 @@
           .copy.mt3
             h1 Good enough... <br/> Is Never Enough
             p.mt3 We drive the success of every impression
-      .swiper-slide.slide-content-container
-        .slide-2
+      .swiper-slide.slide-content-container.slide-2
           .flex.items-center.slider-static
             h2 Image For Slide 3
           a.cta.cta-style-3(href="https://triplelift.com/blog/rooting-out-the-3-biggest-problems-in-programmatic-advertising/?utm_source=int&utm_medium=banner&utm_campaign=tl-promise")

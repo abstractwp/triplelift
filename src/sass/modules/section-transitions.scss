@@ -32,9 +32,18 @@
     opacity: 0;
   }
   .section-transition.transition1 {
-    background-image: url(/images/vapors/TripleLift_Vapors_RedPinkOrange_Sm.png);
+    background-image: url(/images/vapors/TripleLift_Vapors_RHBlue_Sm.png);
     background-size: cover;
     opacity: 1;
+
+    @media (min-width: 1024px) {
+      background-size: 83%;
+      background-color: black;
+      background-repeat: no-repeat;
+      opacity: 1;
+      background-position: 130% center;      
+    }
+
   }
 
   .section-transition.transition2 {

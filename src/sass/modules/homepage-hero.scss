@@ -14,15 +14,26 @@
     z-index: 500;
     position: relative;
     text-decoration: none;
-    
+  }
+
+  .hero-copy-cta-container {
     @media (min-width: 1024px) {
-      margin-top: 48px;
+      display: flex;
+      flex-direction: column-reverse;
+      width: 70%;
+      .cta {
+        margin: 0px 0px 0px 24px;
+      }
     }
   }
 
   .slider-static {
     justify-content: space-between;
     margin: 0 auto 24px;
+
+    @media (min-width: 1024px) {
+      width: 50%;
+    }
   }
 
   .arrows {
@@ -63,14 +74,7 @@
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-
-    .slide-1 {
-      width: 40%;
-    }
-
-    .copy {
-      width: 50%;
-    }
+    padding: 0 84px;
   }
 
   .homepage-hero .copy {
@@ -110,4 +114,3 @@
   
   }
 }
-
