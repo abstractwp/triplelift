@@ -1786,6 +1786,8 @@ button.triggerGalleryMenu {
   font-size: 14px;
   font-weight: 600;
   width: fit-content; }
+  .cta:hover {
+    cursor: pointer; }
   .cta > span {
     line-height: 1;
     margin-top: 3px;

@@ -120,10 +120,8 @@ const parallaxHomePageHero = gsap.timeline( {
       start: "top top",
       end: "100% center",
       scrub: true,
-      markers: true,
     },
-    yoyo: true,
-    delay: 2
+    yoyo: true
   });
 
   parallaxHomePageHero
@@ -164,8 +162,8 @@ const parallaxHomePageHero = gsap.timeline( {
   .to(
     '.homepage-hero .phone-breakout', 
     { 
-      duration: 10,
-      y: 300,
+      duration: 6,
+      y: 100,
     }, "first")
   ;
 
@@ -173,11 +171,12 @@ const parallaxHomePageHero = gsap.timeline( {
   .to(
     '.homepage-hero .phone-breakout > *', 
     { 
+      delay: 1,
       y: -20,
       opacity: 0,
       duration: 2,
       stagger: -.5
-    }, "each-element")
+    }, "first")
   ;
 
 
