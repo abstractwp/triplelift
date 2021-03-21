@@ -1413,13 +1413,16 @@ body.menu-open {
     padding: 0 12vw; } }
 
 .header-vapor-background {
-  background-image: url(/images/vapors/TripleLift_Vapors_RedPinkOrange_Sm.png);
+  background-image: url(/images/vapors/Vapors_100x100_DarkorangePink.png);
   background-size: cover;
   height: 100%;
   opacity: 0;
   position: absolute;
   transition: 0.6s;
   width: 100%; }
+  @media (min-width: 1024px) {
+    .header-vapor-background {
+      background-position: 0% 10%; } }
 
 .careers-section-container {
   padding: 24px;
@@ -2617,18 +2620,6 @@ Demo Animation Style
       left: inherit;
       right: 0; } }
 
-.vapor-background.a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  aspect-ratio: 1;
-  object-fit: cover;
-  object-position: top;
-  background-image: url(/images/vapors/TripleLift_Vapors_RedPinkOrange_Sm.png);
-  background-size: cover; }
-
 .we-work-with {
   background: white;
   padding-bottom: 24vw;
@@ -2702,7 +2693,9 @@ Demo Animation Style
 
 .why-triplelift {
   padding: 20vh 24px 0vw;
-  margin-bottom: 48px; }
+  margin-bottom: 48px;
+  z-index: 2;
+  position: relative; }
   .why-triplelift h2 {
     color: white;
     font-weight: 500;
@@ -2735,6 +2728,7 @@ Demo Animation Style
 
 @media (min-width: 1024px) {
   .why-triplelift {
+    padding-top: 0;
     margin: 0 auto 100px;
     max-width: 90vw; }
     .why-triplelift h2 {

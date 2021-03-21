@@ -155,7 +155,7 @@ ScrollTrigger.matchMedia({
         }, "a")
       ;       
   },
-  
+
   "(min-width: 1024px)": function() {
     const parallaxHomePageHero = gsap.timeline( {    
       scrollTrigger: {
@@ -195,7 +195,7 @@ ScrollTrigger.matchMedia({
           y: -20,
           opacity: 0,
           duration: 1,
-          stagger: -.5
+          stagger: -1
         }, "b")
       ;      
   },
@@ -212,7 +212,8 @@ const whyTripleLiftParallax = gsap.timeline( {
   scrollTrigger: {
     trigger: ".why-triplelift",
     scrub: true,
-    end: "-=70%",
+    start: "-25% center",
+    end: "top center",
     toggleActions: "play",
   }
 });
