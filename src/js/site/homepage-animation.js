@@ -121,7 +121,8 @@ const parallaxHomePageHero2 = gsap.timeline( {
     start: "top top",
     end: "100% center",
     scrub: true,
-  }
+    toggleActions: "play reverse play reverse",
+  },
 });
 
 
@@ -192,7 +193,7 @@ ScrollTrigger.matchMedia({
         '.homepage-hero .phone-breakout > *', 
         { 
           delay: 1,
-          y: -20,
+          y: -50,
           opacity: 0,
           duration: 1,
           stagger: -1
@@ -234,9 +235,9 @@ whyTripleLiftParallax
     '.why-triplelift-section', 
     { 
       opacity: 0, 
-      duration: .3,
+      duration: .5,
       x: -20,
-      stagger: .05
+      stagger: .5
     });
 
 const exploreGalleryParallax = gsap.timeline( {    
@@ -315,8 +316,8 @@ headlines.forEach(item =>{
 const whyTLGradientTL = gsap.timeline( {    
   scrollTrigger: {
     trigger: ".why-triplelift",
-    start: "top bottom",
-    end: "60% bottom",
+    start: "-25% center",
+    end: "top center",
     scrub: true,
     toggleActions: "play reverse play reverse",
   }
@@ -327,7 +328,7 @@ whyTLGradientTL
     '.homepage-section-transition-container .section-transition.transition2', 
     { 
       opacity: 1, 
-      duration: 1 
+      duration: 1
     }, "why-triplelift"
 );
 
