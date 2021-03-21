@@ -1983,6 +1983,8 @@ button.triggerGalleryMenu {
   left: 50%;
   padding: 0 16px;
   z-index: 1; }
+  .hero.homepage-hero .arrows [aria-disabled="true"] {
+    opacity: .3 !important; }
   @media (min-width: 1024px) {
     .hero.homepage-hero .arrows {
       padding: 0 4vw;
