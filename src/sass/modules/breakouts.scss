@@ -1,15 +1,11 @@
 .phone-breakout {
   position: relative;
   margin-top: 0vh;
-  height: 55vh;
+  height: 410px;
   width: 100%;
 
-  @media (min-width: 1024px) {
-    height: 65vh;
-  }
-
   img {
-    width: 183%;
+    width: 520px;
     position: absolute;
     left: 83%;
     top: 50%;
@@ -17,11 +13,20 @@
     max-width: inherit;
   }
 
+  .video-container {
+    width: 520px;
+    height: 368px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 83%;
+    top: 50%;
+  }
+  
   .video {
     position: absolute;
-    width: 48%;
-    top: -10%;
-    left: 22%;
+    width: 130px;
+    top: -24%;
+    left: 16.5%;
     transform: skew(-7deg, 0deg);
   }
 }
