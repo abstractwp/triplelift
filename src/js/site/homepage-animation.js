@@ -378,12 +378,21 @@ document.addEventListener("DOMContentLoaded", function(event) {
         .to(
           '.technology-breakouts .plusses', 
           { 
-            backgroundPosition: "center -100px",
-            opacity: .3,
+            backgroundPosition: "-15% -100px",
+            opacity: .2,
           }, "plusses"
         );
       
-      
+        moveSectionBackground2
+        .to(
+          '.technology-breakouts .plusses-2x', 
+          { 
+            backgroundPosition: "10% -200px",
+            opacity: .3,
+          }, "plusses"
+        );
+
+        
       // exploreGalleryGradientTL
       //   .to(
       //     '.homepage-section-transition-container .section-transition.section3', 
