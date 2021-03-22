@@ -1071,6 +1071,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
           }, "plusses"
         );
 
+        moveSectionBackground2
+        .to(
+          '.technology-breakouts .plusses-4x', 
+          { 
+            backgroundPosition: "10% -100px",
+            opacity: .1,
+          }, "plusses"
+        );
         
       // exploreGalleryGradientTL
       //   .to(
