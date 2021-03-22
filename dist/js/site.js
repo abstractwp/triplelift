@@ -1183,6 +1183,7 @@ $(window).on("load", function () {
 
   // Instantiate swipers
   const swiper = new Swiper('.swiper-container', {
+    speed: 900,
   
     // If we need pagination
     pagination: {
@@ -1193,6 +1194,9 @@ $(window).on("load", function () {
     navigation: {
       nextEl: '.slider-arrow.right',
       prevEl: '.slider-arrow.left',
+    },
+    autoplay: {
+      delay: 9000,
     },
   
   });
