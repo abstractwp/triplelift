@@ -3,6 +3,10 @@
   padding-bottom: 24vw;
   padding-top: 164px;
 
+  @media (min-width: 1024px) {
+      padding-top: 236px;
+  }
+
   h3 {
     font-size: 36px;
     font-weight: bold;

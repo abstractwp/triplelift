@@ -2760,6 +2760,9 @@ Demo Animation Style
   background: white;
   padding-bottom: 24vw;
   padding-top: 164px; }
+  @media (min-width: 1024px) {
+    .we-work-with {
+      padding-top: 236px; } }
   .we-work-with h3 {
     font-size: 36px;
     font-weight: bold;
