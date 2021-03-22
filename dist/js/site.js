@@ -1198,13 +1198,13 @@ $(window).on("load", function () {
     },
     autoplay: {
       delay: 9000,
+      disableOnInteraction: true
     },
   
   });
-
-
-
-  
+  $("body").click(function(){
+    swiper.autoplay.stop();
+  })
 });
 
 
