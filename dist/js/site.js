@@ -1017,24 +1017,24 @@ document.addEventListener("DOMContentLoaded", function(event) {
           }, "why-triplelift"
       );
       
-      // const exploreGalleryGradientTL = gsap.timeline( {    
-      //   scrollTrigger: {
-      //     trigger: ".explore-our-gallery-container",
-      //     start: "-100% center",
-      //     end: "20% center",
-      //     scrub: true,
-      //     toggleActions: "play reverse play reverse",
-      //   }
-      // });
+      const moveSectionBackground1 = gsap.timeline( {    
+        scrollTrigger: {
+          trigger: ".why-triplelift",
+          start: "top center",
+          end: "200% center",
+          scrub: true,
+          toggleActions: "play reverse play reverse",
+        }
+      });
       
-      // exploreGalleryGradientTL
-      //   .to(
-      //     '.homepage-section-transition-container .section-transitions.section2', 
-      //     { 
-      //       opacity: 0, 
-      //       duration: .5 
-      //     }, "explore"
-      // );
+      moveSectionBackground1
+        .to(
+          '.homepage-section-transition-container .section-transition.transition2', 
+          { 
+            backgroundPosition: "150% 0px",
+            duration: 15
+            }, "explore"
+      );
       
       
       // exploreGalleryGradientTL
