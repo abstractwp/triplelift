@@ -678,14 +678,11 @@ $(window).on("load", function(){
 });
 
 if (document.getElementById("homepageJSIndicator")) {
-gsap.config({nullTargetWarn:false});
 
-window.setTimeout(function(){$(".loading").addClass("not-loading");}, 100);
+gsap.config({nullTargetWarn:false});
 
 document.addEventListener("DOMContentLoaded", function(event) {
   
-  // wait until window is loaded - all images, styles-sheets, fonts, links, and other media assets
-  // you could also use addEventListener() instead
   window.onload = function() {
     
      // OPTIONAL - waits til next tick render to run code (prevents running in the middle of render tick)
@@ -693,9 +690,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     
       var tl = gsap.timeline({repeat: 0});
 
-      tl.to(".loading", {
-        opacity: 0,
-        duration: .5,
+      tl.from(".homepage", {
+        autoAlpha: 0,
       })
       
       tl.from(".homepage .phone-breakout", {
@@ -765,7 +761,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         x: 5,
         duration: 1
       },
-      "phone-breakout"
+      "phone-breakout-2"
       )
       
       tl.from(".homepage-hero .copy *", {
@@ -773,8 +769,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
         y: 10,
         duration: .6,
         stagger: .2
-      }, "loadTheRest")
-      
+      }, "copy")
+
+      tl.from(".homepage-hero .cta", {
+        opacity: 0,
+        y: -10,
+      }, "arrows")
       
       tl.from(".homepage .slider-arrow.left", {
         opacity: 0,
@@ -789,18 +789,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
         duration: .3,
         x: -50,
       }, "arrows")
-      
-      tl.from(".homepage-hero .cta", {
-        opacity: 0,
-        y: -10,
-      }
-      )
-      
+            
       tl.from(".homepage-hero .swiper-pagination", {
         opacity: 0,
         y: -10,
-      }
-      )
+      }, "arrows")
+
       
       
       const parallaxHomePageHero2 = gsap.timeline( {    

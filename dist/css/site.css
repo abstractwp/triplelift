@@ -2138,7 +2138,7 @@ button.triggerGalleryMenu {
     padding-bottom: 200px; } }
 
 .loading {
-  background: linear-gradient(122.97deg, #0e3d52 0%, #000000 95.81%);
+  background: black;
   width: 100vw;
   height: 100vh;
   position: absolute;
@@ -2220,7 +2220,7 @@ Demo Animation Style
 
 @keyframes mmslideIn {
   from {
-    transform: translateY(15%); }
+    transform: translateY(-15%); }
   to {
     transform: translateY(0); } }
 
@@ -2699,7 +2699,7 @@ Demo Animation Style
     max-width: 60vw; } }
 
 .why-triplelift {
-  padding: 20vh 24px 0vw;
+  padding: 20vh 0 0vw;
   margin-bottom: 48px;
   z-index: 2;
   position: relative; }
@@ -2822,3 +2822,9 @@ Demo Animation Style
   @media (min-width: 1024px) {
     .large-up {
       display: block; } }
+
+body {
+  background: black; }
+
+.homepage {
+  visibility: hidden; }
