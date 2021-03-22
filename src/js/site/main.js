@@ -30,6 +30,7 @@ $(window).on("load", function () {
   // Instantiate swipers
   const swiper = new Swiper('.swiper-container', {
     speed: 900,
+    touchMoveStopPropagation: true,
   
     // If we need pagination
     pagination: {
@@ -47,9 +48,9 @@ $(window).on("load", function () {
   
   });
 
-  // // Initialize sticky
-  // var sticky = new Sticky('.phone-breakout');
 
+
+  
 });
 
 

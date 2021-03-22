@@ -20,6 +20,7 @@ align-items: center;
     box-sizing: border-box;
     align-self: flex-start;
     margin-top: 10vh;
+    position: relative;
     @media (min-width: 1024px) {
         align-self: center;
         margin-top: 4vh;
@@ -51,10 +52,16 @@ text-align: center;
     right: 0;
     top: 0;
     background: transparent;
-    padding: 20px;
-    font-size: 40px;
-border: 0;
-&:before { color: white; content: "\2715"; }
+    padding: 24px 12px;
+    font-size: 28px;
+    border: 0;
+    
+    &:before { color: white; content: "\2715"; }
+
+    @media (min-width: 1024px) {
+        padding: 24px 28px;
+        font-size: 40px;
+    }
 }
 
 .modal__content {
@@ -121,7 +128,6 @@ will-change: transform;
 }
 
 .embed-container {
-
     position: relative;
   padding-bottom: calc(56.25vw); /* 41.66666667% */
   overflow: hidden;

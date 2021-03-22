@@ -2170,7 +2170,8 @@ button.triggerGalleryMenu {
   overflow-y: auto;
   box-sizing: border-box;
   align-self: flex-start;
-  margin-top: 10vh; }
+  margin-top: 10vh;
+  position: relative; }
   @media (min-width: 1024px) {
     .modal__container {
       align-self: center;
@@ -2198,12 +2199,16 @@ button.triggerGalleryMenu {
   right: 0;
   top: 0;
   background: transparent;
-  padding: 20px;
-  font-size: 40px;
+  padding: 24px 12px;
+  font-size: 28px;
   border: 0; }
   .modal__close:before {
     color: white;
     content: "\2715"; }
+  @media (min-width: 1024px) {
+    .modal__close {
+      padding: 24px 28px;
+      font-size: 40px; } }
 
 .modal__content {
   margin-top: 2rem;
