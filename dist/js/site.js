@@ -1061,14 +1061,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
           { 
             opacity: .2,
             y: -700,
+            x: 100,
           }, "plusses"
         );
 
       moveSectionBackground2
-        .from(
+        .to(
           '.technology-breakouts .plusses-2x', 
           { 
-            y: -300,
+            y: -600,
+            x: -100,
           }, "plusses"
         );
       
@@ -1077,6 +1079,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
           '.technology-breakouts .plusses-4x', 
           { 
             y: -500,
+            x: 50,
             opacity: .3,
           }, "plusses"
         );
