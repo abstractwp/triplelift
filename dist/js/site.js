@@ -1039,7 +1039,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         .to(
           '.homepage-section-transition-container .section-transition.transition2', 
           { 
-            backgroundPosition: "300% -100%",
+            backgroundPosition: "300% 0%",
             }, "explore"
       );
 
@@ -1083,15 +1083,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
             opacity: .3,
           }, "plusses"
         );
-
-      //   moveSectionBackground2
-      //   .to(
-      //     '.technology-breakouts .plusses-4x', 
-      //     { 
-      //       backgroundPosition: "10% -100px",
-      //       opacity: .1,
-      //     }, "plusses"
-      //   );
        
      });
     
