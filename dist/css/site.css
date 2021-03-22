@@ -2574,7 +2574,7 @@ Demo Animation Style
     top: 0;
     left: 0;
     background-image: url(/images/bgs/PlusPlus2@3x.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: repeat-y;
     z-index: 0;
     background-position: center bottom;
