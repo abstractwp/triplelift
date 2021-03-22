@@ -1057,7 +1057,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         .to(
           '.technology-breakouts .plusses', 
           { 
-            backgroundPosition: "-200px -100px",
+            backgroundPosition: "-200px -50px",
             opacity: .2,
           }, "plusses"
         );
@@ -1066,7 +1066,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         .to(
           '.technology-breakouts .plusses-2x', 
           { 
-            backgroundPosition: "10% -200px",
+            backgroundPosition: "10% -100px",
             opacity: .3,
           }, "plusses"
         );
