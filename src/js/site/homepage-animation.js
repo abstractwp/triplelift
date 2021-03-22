@@ -367,7 +367,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       const moveSectionBackground2 = gsap.timeline( {    
         scrollTrigger: {
           trigger: ".technology-breakouts",
-          start: "-100% center",
+          start: "top bottom",
           end: "300% bottom",
           scrub: true,
           markers: true,
@@ -375,14 +375,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }
       });
       
-      // moveSectionBackground2
-      //   .to(
-      //     '.homepage-section-transition-container .section-transition.plusses', 
-      //     { 
-      //       opacity: 1,
-      //     }, "plusses"
-      //   );
-
       moveSectionBackground2
         .to(
           '.technology-breakouts .plusses', 
