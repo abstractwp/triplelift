@@ -2172,12 +2172,14 @@ button.triggerGalleryMenu {
   box-sizing: border-box;
   align-self: flex-start;
   margin-top: 10vh;
-  position: relative; }
+  position: relative;
+  padding-top: 30px; }
   @media (min-width: 1024px) {
     .modal__container {
       align-self: center;
       margin-top: 4vh;
-      width: 70vw; } }
+      width: 70vw;
+      padding-top: 50px; } }
 
 .modal__header {
   display: flex;

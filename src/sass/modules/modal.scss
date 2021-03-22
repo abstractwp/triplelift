@@ -21,10 +21,13 @@ align-items: center;
     align-self: flex-start;
     margin-top: 10vh;
     position: relative;
+    padding-top: 30px;
+
     @media (min-width: 1024px) {
         align-self: center;
         margin-top: 4vh;
         width: 70vw;
+        padding-top: 50px;
     }
 }
 
