@@ -378,7 +378,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         .to(
           '.technology-breakouts .plusses', 
           { 
-            backgroundPosition: "-15% -100px",
+            backgroundPosition: "-200px -100px",
             opacity: .2,
           }, "plusses"
         );

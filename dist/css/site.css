@@ -2581,7 +2581,7 @@ Demo Animation Style
     background-size: cover;
     background-repeat: repeat-y;
     z-index: 0;
-    background-position: -10% bottom;
+    background-position: 0% bottom;
     width: 100%;
     height: 100%;
     opacity: .3; }
@@ -2807,10 +2807,6 @@ Demo Animation Style
     margin-top: 4vw; }
   .we-work-with .we-work-with-section-container:nth-child(4) {
     margin-top: 9vw; } }
-
-@media (min-width: 1600px) {
-  .we-work-with {
-    max-width: 60vw; } }
 
 .why-triplelift {
   padding: 20vh 0 0vw;
