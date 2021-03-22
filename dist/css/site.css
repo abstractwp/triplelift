@@ -2024,7 +2024,12 @@ button.triggerGalleryMenu {
   top: 35%;
   left: 50%;
   padding: 0 16px;
-  z-index: 1; }
+  z-index: 1;
+  transition: .6s; }
+  .hero.homepage-hero .arrows :focus {
+    outline: none; }
+  .hero.homepage-hero .arrows [aria-disabled="false"] {
+    opacity: 1 !important; }
   .hero.homepage-hero .arrows [aria-disabled="true"] {
     opacity: .3 !important; }
   @media (min-width: 1024px) {

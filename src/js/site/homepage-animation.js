@@ -88,33 +88,33 @@ document.addEventListener("DOMContentLoaded", function(event) {
       tl.from(".homepage-hero .copy *", {
         opacity: 0,
         y: 10,
-        duration: .6,
-        stagger: .2
-      }, "copy")
+        duration: .3,
+        stagger: .1
+      }, "a")
 
       tl.from(".homepage-hero .cta", {
         opacity: 0,
         y: -10,
-      }, "arrows")
+      }, "a")
       
       tl.from(".homepage .slider-arrow.left", {
         opacity: 0,
         scale: 0,
         duration: .3,
         x: 50,
-      }, "arrows")
+      }, "a")
       
       tl.from(".homepage .slider-arrow.right", {
         opacity: 0,
         scale: 0,
         duration: .3,
         x: -50,
-      }, "arrows")
+      }, "a")
             
       tl.from(".homepage-hero .swiper-pagination", {
         opacity: 0,
         y: -10,
-      }, "arrows")
+      }, "a")
 
       
       
@@ -204,6 +204,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             .to(
               '.homepage-hero .phone-breakout > *', 
               { 
+                delay: 1,
                 y: -50,
                 opacity: 0,
                 duration: 2,
