@@ -368,7 +368,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         scrollTrigger: {
           trigger: ".technology-breakouts",
           start: "top bottom",
-          end: "300% bottom",
+          end: "500% bottom",
           scrub: true,
           toggleActions: "play reverse play reverse",
         }
