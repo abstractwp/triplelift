@@ -275,6 +275,8 @@ body.menu-open {
   position: absolute;
   transition: 0.6s;
   width: 100%;
+  top: 0;
+  left: 0;
 
   @media (min-width: 1024px) {
     background-position: 0% 10%;    

@@ -40,6 +40,10 @@
     .animate-border-content {
       display: flex;
       flex-direction: column;
+      background-image: url(/images/vapors/Vapors_100x100_Heritageblue.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      
       .cta {
         align-self: flex-end;
         margin-top: 36px;

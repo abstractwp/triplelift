@@ -31,6 +31,7 @@
   .section-transition {
     opacity: 0;
   }
+
   .section-transition.transition1 {
     background-image: url(/images/vapors/Vapors_100x100_PinkOrange.png);
     background-size: cover;
@@ -46,7 +47,10 @@
   }
 
   .section-transition.transition2 {
-    background: black;
+    background-image: url(/images/vapors/Vapors_100x100_Heritageblue.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
   }
 
   .section-transition.section3 {

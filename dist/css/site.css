@@ -1419,7 +1419,9 @@ body.menu-open {
   opacity: 0;
   position: absolute;
   transition: 0.6s;
-  width: 100%; }
+  width: 100%;
+  top: 0;
+  left: 0; }
   @media (min-width: 1024px) {
     .header-vapor-background {
       background-position: 0% 10%; } }
@@ -1881,7 +1883,10 @@ button.triggerGalleryMenu {
       font-size: 18px; }
     .explore-our-gallery-container a.explore-our-gallery .animate-border-content {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      background-image: url(/images/vapors/Vapors_100x100_Heritageblue.png);
+      background-size: cover;
+      background-repeat: no-repeat; }
       .explore-our-gallery-container a.explore-our-gallery .animate-border-content .cta {
         align-self: flex-end;
         margin-top: 36px; }
@@ -2410,7 +2415,10 @@ Demo Animation Style
       background-position: 160%; } }
 
 .homepage-section-transition-container .section-transition.transition2 {
-  background: black; }
+  background-image: url(/images/vapors/Vapors_100x100_Heritageblue.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black; }
 
 .homepage-section-transition-container .section-transition.section3 {
   background: white; }
@@ -2561,8 +2569,38 @@ Demo Animation Style
     padding-right: calc(8vw + 24px); } }
 
 .technology-breakouts {
-  background: white;
-  padding: 64px 0; }
+  padding: 0 0;
+  margin-bottom: -100px;
+  color: white;
+  display: flex; }
+  .technology-breakouts .breakout-container {
+    width: 100%; }
+    .technology-breakouts .breakout-container .title {
+      font-size: 15px;
+      font-weight: bold;
+      text-align: center;
+      margin: 24px auto;
+      display: block; }
+    .technology-breakouts .breakout-container .image-container {
+      position: relative;
+      width: 100%;
+      height: 500px; }
+      .technology-breakouts .breakout-container .image-container img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%; }
+      .technology-breakouts .breakout-container .image-container .video-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 500px;
+        width: 100%; }
+        .technology-breakouts .breakout-container .image-container .video-container .video {
+          position: absolute;
+          top: 20px;
+          height: 230px; }
 
 .technologySectionContainer {
   padding: 96px 24px;
@@ -2661,7 +2699,7 @@ Demo Animation Style
 .we-work-with {
   background: white;
   padding-bottom: 24vw;
-  padding-top: 64px; }
+  padding-top: 164px; }
   .we-work-with h3 {
     font-size: 36px;
     font-weight: bold;
@@ -2699,31 +2737,28 @@ Demo Animation Style
         transform: scale(0.8) !important; }
 
 @media (min-width: 1024px) {
-  .we-work-with {
-    margin: 120px auto;
-    max-width: 90vw; }
-    .we-work-with h3 {
-      font-size: 72px; }
-    .we-work-with h4 {
-      font-size: 32px; }
-    .we-work-with > .container {
-      display: grid;
-      margin: 0 auto;
-      max-width: 90vw;
-      grid-template-columns: 1fr 1fr;
-      column-gap: 3vw;
-      margin-top: 4vw; }
-    .we-work-with .we-work-with-section-container {
-      margin-bottom: -4vw; }
-    .we-work-with .we-work-with-section-container:nth-child(1) {
-      margin-bottom: 4vw; }
-    .we-work-with .we-work-with-section-container:nth-child(1) {
-      margin-top: 4vw; }
-    .we-work-with .we-work-with-section-container:nth-child(3) {
-      margin-bottom: 8vw;
-      margin-top: 4vw; }
-    .we-work-with .we-work-with-section-container:nth-child(4) {
-      margin-top: 9vw; } }
+  .we-work-with h3 {
+    font-size: 72px; }
+  .we-work-with h4 {
+    font-size: 32px; }
+  .we-work-with > .container {
+    display: grid;
+    margin: 0 auto;
+    max-width: 90vw;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3vw;
+    margin-top: 4vw; }
+  .we-work-with .we-work-with-section-container {
+    margin-bottom: -4vw; }
+  .we-work-with .we-work-with-section-container:nth-child(1) {
+    margin-bottom: 4vw; }
+  .we-work-with .we-work-with-section-container:nth-child(1) {
+    margin-top: 4vw; }
+  .we-work-with .we-work-with-section-container:nth-child(3) {
+    margin-bottom: 8vw;
+    margin-top: 4vw; }
+  .we-work-with .we-work-with-section-container:nth-child(4) {
+    margin-top: 9vw; } }
 
 @media (min-width: 1600px) {
   .we-work-with {

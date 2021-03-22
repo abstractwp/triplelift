@@ -204,20 +204,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
             .to(
               '.homepage-hero .phone-breakout > *', 
               { 
-                delay: 1,
-                y: -50,
+                delay: .5,
+                y: -100,
                 opacity: 0,
-                duration: 2,
-                stagger: -.5
+                duration: 5,
+                stagger: -.3
               }, "b")
             ;      
-        },
-        "(max-width: 1023px)": function() {
-          
-        },
-      
-        
-        
+        }
       })
       
       
@@ -248,7 +242,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
           { 
             opacity: 0, 
             duration: 1,
-            x: -20,
+            x: -10,
             stagger: .5
           });
       
