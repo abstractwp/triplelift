@@ -380,28 +380,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         .to(
           '.technology-breakouts .plusses', 
           { 
-            opacity: .2,
-            y: -700,
-            x: 100,
-          }, "plusses"
-        );
-
-      moveSectionBackground2
-        .to(
-          '.technology-breakouts .plusses-2x', 
-          { 
-            y: -600,
-            x: -100,
-          }, "plusses"
-        );
-      
-        moveSectionBackground2
-        .to(
-          '.technology-breakouts .plusses-4x', 
-          { 
-            y: -500,
-            x: 50,
-            opacity: .3,
+            y: -300,
           }, "plusses"
         );
        
