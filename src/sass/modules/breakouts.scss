@@ -51,13 +51,13 @@
   
   .video {
     position: absolute;
-    width: 130px;
-    top: -24%;
-    left: 16.5%;
+    width: 115px;
+    top: -26%;
+    left: 19.5%;
     transform: skew(-7deg, 0deg);
 
     @media (min-width: 768px) {
-      width: 174px;
+      width: 144px;
     }
 
   }
