@@ -1,5 +1,11 @@
-.slide-2 h2 {
-    height: 55vh;
-    display: flex;
-    align-items: center;
+.inner-slide {
+    height: 410px;
+    .image-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 24px;
+    }
 }

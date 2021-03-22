@@ -154,6 +154,15 @@ ScrollTrigger.matchMedia({
           duration: 1,
           y: -20
         }, "a")
+      ;
+      parallaxHomePageHero2
+      .to(
+        '.homepage-hero .inner-slide', 
+        { 
+          opacity: 0, 
+          duration: 1,
+          y: -20
+        }, "a")
       ;       
   },
 

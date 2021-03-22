@@ -1801,6 +1801,8 @@ button.triggerGalleryMenu {
   .cta.cta-style-3 {
     background: linear-gradient(77.24deg, #f47b20 14.56%, #f15c2c 88.29%);
     color: white; }
+    .cta.cta-style-3 img {
+      width: 16px; }
   .cta.cta-style-2 {
     background: linear-gradient(77.24deg, #f47b20 14.56%, #f15c2c 88.29%);
     color: white;
@@ -2063,10 +2065,15 @@ button.triggerGalleryMenu {
     .homepage-hero .homepage-hero .copy p {
       font-size: 32px; } }
 
-.slide-2 h2 {
-  height: 55vh;
-  display: flex;
-  align-items: center; }
+.inner-slide {
+  height: 410px; }
+  .inner-slide .image-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 24px; }
 
 .innovation-header-container {
   position: relative;

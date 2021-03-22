@@ -27,6 +27,9 @@
   &.cta-style-3 {
     background: $primaryGradient;
     color: white;
+    img {
+      width: 16px;
+    }
   }
 
   &.cta-style-2 {
