@@ -199,16 +199,24 @@ document.addEventListener("DOMContentLoaded", function(event) {
               stagger: .3
             }, "a")
             ;
-      
-            parallaxHomePageHero2
+
+            const parallaxHomePageHero3Large = gsap.timeline( {    
+              scrollTrigger: {
+                trigger: ".homepage-hero",
+                start: "20% top",
+                end: "100% center",
+                scrub: true,
+              }
+            });
+        
+            parallaxHomePageHero3Large
             .to(
               '.homepage-hero .phone-breakout > *', 
               { 
-                delay: .5,
                 y: -100,
                 opacity: 0,
                 duration: 5,
-                stagger: -.3
+                stagger: -.5
               }, "b")
             ;      
         }
@@ -323,7 +331,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         scrollTrigger: {
           trigger: ".why-triplelift",
           start: "-25% center",
-          end: "top center",
+          end: "200% center",
           scrub: true,
           toggleActions: "play reverse play reverse",
         }
@@ -342,7 +350,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         scrollTrigger: {
           trigger: ".why-triplelift",
           start: "top center",
-          end: "200% center",
+          end: "300% bottom",
           scrub: true,
           toggleActions: "play reverse play reverse",
         }
@@ -352,10 +360,36 @@ document.addEventListener("DOMContentLoaded", function(event) {
         .to(
           '.homepage-section-transition-container .section-transition.transition2', 
           { 
-            backgroundPosition: "150% 0px",
-            duration: 15
+            backgroundPosition: "300% -100%",
             }, "explore"
       );
+
+      const moveSectionBackground2 = gsap.timeline( {    
+        scrollTrigger: {
+          trigger: ".technology-breakouts",
+          start: "-50% center",
+          end: "400% bottom",
+          scrub: true,
+          markers: true,
+          toggleActions: "play reverse play reverse",
+        }
+      });
+      
+      // moveSectionBackground2
+      //   .to(
+      //     '.homepage-section-transition-container .section-transition.plusses', 
+      //     { 
+      //       opacity: 1,
+      //     }, "plusses"
+      //   );
+
+      moveSectionBackground2
+        .to(
+          '.homepage-section-transition-container .section-transition.plusses', 
+          { 
+            backgroundPosition: "0% -300%",
+          }, "plusses"
+        );
       
       
       // exploreGalleryGradientTL

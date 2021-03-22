@@ -103,7 +103,7 @@ ctaBordersToAnimate.forEach(item =>{
       start: "10%, 70%",
       end: "90% 10%",
       scrub: true,
-      toggleActions: "play reverse play reverse",
+      toggleActions: "play pause play pause",
     }
   });
   

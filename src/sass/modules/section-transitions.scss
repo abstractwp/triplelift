@@ -53,6 +53,14 @@
     background-color: black;
   }
 
+  .section-transition.plusses {
+    opacity: 1;
+    background-image: url(/images/bgs/PlusPlus2@3x.png);
+    background-size: contain;
+    background-position: center bottom;
+    z-index: 2;
+  }
+
   .section-transition.section3 {
     background: white;
   }
