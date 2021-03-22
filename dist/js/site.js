@@ -1196,9 +1196,15 @@ $(window).on("load", function () {
     },
   
   });
+
   $("body").click(function(){
     swiper.autoplay.stop();
   })
+
+  $(window).scroll(function() {
+    swiper.autoplay.stop();
+  });
+
 });
 
 
