@@ -20,13 +20,18 @@ align-items: center;
     box-sizing: border-box;
     align-self: flex-start;
     margin-top: 10vh;
+    @media (min-width: 1024px) {
+        align-self: center;
+        margin-top: 4vh;
+        width: 70vw;
+    }
 }
 
 .modal__header {
 display: flex;
-justify-content: space-between;
 align-items: center;
-padding: 24px 24px 0;
+padding: 28px 24px 0;
+justify-content: center;
 }
 
 .modal__title {
@@ -37,15 +42,20 @@ font-size: 1.25rem;
 line-height: 1.25;
 box-sizing: border-box;
 color: white;
+text-align: center;
 
 }
 
 .modal__close {
-background: transparent;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: transparent;
+    padding: 20px;
+    font-size: 40px;
 border: 0;
+&:before { color: white; content: "\2715"; }
 }
-
-.modal__header .modal__close:before { color: white; content: "\2715"; }
 
 .modal__content {
 margin-top: 2rem;
@@ -70,7 +80,7 @@ Demo Animation Style
 }
 
 @keyframes mmslideIn {
-from { transform: translateY(-15%); }
+from { transform: translateY(15%); }
     to { transform: translateY(0); }
 }
 
@@ -90,19 +100,19 @@ display: none;
 }
 
 .micromodal-slide[aria-hidden="false"] .modal__overlay {
-animation: mmfadeIn .3s cubic-bezier(0.0, 0.0, 0.2, 1);
+animation: mmfadeIn .6s cubic-bezier(0.0, 0.0, 0.2, 1);
 }
 
 .micromodal-slide[aria-hidden="false"] .modal__container {
-animation: mmslideIn .3s cubic-bezier(0, 0, .2, 1);
+animation: mmslideIn .6s cubic-bezier(0, 0, .2, 1);
 }
 
 .micromodal-slide[aria-hidden="true"] .modal__overlay {
-animation: mmfadeOut .3s cubic-bezier(0.0, 0.0, 0.2, 1);
+animation: mmfadeOut .6s cubic-bezier(0.0, 0.0, 0.2, 1);
 }
 
 .micromodal-slide[aria-hidden="true"] .modal__container {
-animation: mmslideOut .3s cubic-bezier(0, 0, .2, 1);
+animation: mmslideOut .6s cubic-bezier(0, 0, .2, 1);
 }
 
 .micromodal-slide .modal__container,
@@ -110,7 +120,25 @@ animation: mmslideOut .3s cubic-bezier(0, 0, .2, 1);
 will-change: transform;
 }
 
-.video-in-modal {
-    height: inherit;
-    width: 100%;
+.embed-container {
+
+    position: relative;
+  padding-bottom: calc(56.25vw); /* 41.66666667% */
+  overflow: hidden;
+  max-width: 100%;
+  background: transparent;
+  @media (min-width: 1024px) {
+    padding-bottom: calc(36.25vw);      
+  }
 }
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+

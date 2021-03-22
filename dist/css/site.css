@@ -2178,12 +2178,17 @@ button.triggerGalleryMenu {
   box-sizing: border-box;
   align-self: flex-start;
   margin-top: 10vh; }
+  @media (min-width: 1024px) {
+    .modal__container {
+      align-self: center;
+      margin-top: 4vh;
+      width: 70vw; } }
 
 .modal__header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 24px 24px 0; }
+  padding: 28px 24px 0;
+  justify-content: center; }
 
 .modal__title {
   margin-top: 0;
@@ -2192,15 +2197,20 @@ button.triggerGalleryMenu {
   font-size: 1.25rem;
   line-height: 1.25;
   box-sizing: border-box;
-  color: white; }
+  color: white;
+  text-align: center; }
 
 .modal__close {
+  position: absolute;
+  right: 0;
+  top: 0;
   background: transparent;
+  padding: 20px;
+  font-size: 40px;
   border: 0; }
-
-.modal__header .modal__close:before {
-  color: white;
-  content: "\2715"; }
+  .modal__close:before {
+    color: white;
+    content: "\2715"; }
 
 .modal__content {
   margin-top: 2rem;
@@ -2225,7 +2235,7 @@ Demo Animation Style
 
 @keyframes mmslideIn {
   from {
-    transform: translateY(-15%); }
+    transform: translateY(15%); }
   to {
     transform: translateY(0); } }
 
@@ -2244,24 +2254,40 @@ Demo Animation Style
   z-index: 600; }
 
 .micromodal-slide[aria-hidden="false"] .modal__overlay {
-  animation: mmfadeIn 0.3s cubic-bezier(0, 0, 0.2, 1); }
+  animation: mmfadeIn 0.6s cubic-bezier(0, 0, 0.2, 1); }
 
 .micromodal-slide[aria-hidden="false"] .modal__container {
-  animation: mmslideIn 0.3s cubic-bezier(0, 0, 0.2, 1); }
+  animation: mmslideIn 0.6s cubic-bezier(0, 0, 0.2, 1); }
 
 .micromodal-slide[aria-hidden="true"] .modal__overlay {
-  animation: mmfadeOut 0.3s cubic-bezier(0, 0, 0.2, 1); }
+  animation: mmfadeOut 0.6s cubic-bezier(0, 0, 0.2, 1); }
 
 .micromodal-slide[aria-hidden="true"] .modal__container {
-  animation: mmslideOut 0.3s cubic-bezier(0, 0, 0.2, 1); }
+  animation: mmslideOut 0.6s cubic-bezier(0, 0, 0.2, 1); }
 
 .micromodal-slide .modal__container,
 .micromodal-slide .modal__overlay {
   will-change: transform; }
 
-.video-in-modal {
-  height: inherit;
-  width: 100%; }
+.embed-container {
+  position: relative;
+  padding-bottom: calc(56.25vw);
+  /* 41.66666667% */
+  overflow: hidden;
+  max-width: 100%;
+  background: transparent; }
+  @media (min-width: 1024px) {
+    .embed-container {
+      padding-bottom: calc(36.25vw); } }
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
 
 .our-offices-section-container {
   padding: 24px; }
