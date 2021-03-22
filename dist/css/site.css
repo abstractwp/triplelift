@@ -2599,7 +2599,8 @@ Demo Animation Style
         width: 100%; }
         .technology-breakouts .breakout-container .image-container .video-container .video {
           position: absolute;
-          top: 20px;
+          left: -30px;
+          top: 70px;
           height: 230px; }
 
 .technologySectionContainer {
