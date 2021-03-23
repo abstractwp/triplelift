@@ -60,7 +60,7 @@ $(window).on("load", function(){
     .to(
       '.company-page-sticky-animation.grey-mark', 
       { 
-        opacity: 1, 
+        opacity: 0, 
         duration: 1 
       },"transition1"
     );

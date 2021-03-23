@@ -1,5 +1,4 @@
 .company-page-section {
-    background: $heritageBlue;
     min-height: 300px;
     display: flex;
     color: white;
@@ -37,8 +36,7 @@
         padding-top: 80px;
     }
 
-    &.leadership,
-    &.mission {
+    &.leadership {
         background: white;
         color: $heritageBlue;
     }

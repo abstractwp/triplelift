@@ -1021,6 +1021,12 @@ h4 {
 .f26 {
   font-size: 26px; }
 
+.amplifiedOrange {
+  color: #f15c2c; }
+
+.heritageOrange {
+  color: #f47b20; }
+
 .text-primaryGradient {
   background: linear-gradient(77.24deg, #f47b20 14.56%, #f15c2c 88.29%);
   -webkit-background-clip: text;
@@ -1461,7 +1467,6 @@ body.menu-open {
         height: 100%; } }
 
 .company-page-section {
-  background: #0e3d52;
   min-height: 300px;
   display: flex;
   color: white; }
@@ -1486,7 +1491,7 @@ body.menu-open {
       line-height: 1.4; }
   .company-page-section.who-we-are {
     padding-top: 80px; }
-  .company-page-section.leadership, .company-page-section.mission {
+  .company-page-section.leadership {
     background: white;
     color: #0e3d52; }
 
@@ -1885,6 +1890,13 @@ button.triggerGalleryMenu {
     margin: 12vw 12vw; }
     .explore-our-gallery-container a.explore-our-gallery .headline {
       font-size: 4vw; } }
+
+.first-two-sections-container {
+  background-image: url(/images/vapors/Vapors_100x100_OrangeYellow.png);
+  background-size: 160%;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-position: -90% -20%; }
 
 .hero {
   color: white;
@@ -2415,13 +2427,6 @@ Demo Animation Style
   background-size: cover;
   background-repeat: no-repeat;
   background-color: black; }
-
-.homepage-section-transition-container .section-transition.section3 {
-  background-image: url(/images/vapors/Vapors_100x100_PinkOrange.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: black;
-  opacity: 1; }
 
 .productpage-section-transition-container .section-transition.section1 {
   background: linear-gradient(122.97deg, #0e3d52 0%, #000000 95.81%); }
