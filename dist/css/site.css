@@ -1436,7 +1436,7 @@ body.menu-open {
     padding: 0 12vw; } }
 
 .header-vapor-background {
-  background-image: url(/images/vapors/Vapors_100x100_DarkorangePink.png);
+  background-color: black;
   background-size: cover;
   height: 100%;
   opacity: 0;

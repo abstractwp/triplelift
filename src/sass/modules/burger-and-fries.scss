@@ -7,7 +7,6 @@ html:not([data-scroll="0"]) {
   .header-vapor-background {
     opacity: 1;
   }
-
 }
 
 .sticky-header {
@@ -36,7 +35,7 @@ html:not([data-scroll="0"]) {
 
   .logo-in-navigation {
     padding-left: 18px;
-    
+
     * {
       transition: 0.6s;
     }
@@ -139,7 +138,7 @@ body.menu-open {
       padding: 24px 40px 24px 24px;
       font-size: 24px;
       text-transform: capitalize;
-      border-bottom: 1px solid rgba(255, 255, 255, .2);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
       &:last-of-type {
         border-bottom: 0;
       }
@@ -185,20 +184,17 @@ body.menu-open {
   //     height: 8px;
   //     width: 8px;
   //     border-radius: 10px;
-  
+
   //     @media (max-width:1023px) {
   //       left: -10%;
   //     }
   //   }
   // }
 
-
-
   &.active {
     color: $amplifiedOrange;
     font-weight: bold;
   }
-
 }
 
 .menu-on-large .main-nav a {
@@ -268,7 +264,7 @@ body.menu-open {
 }
 
 .header-vapor-background {
-  background-image: url(/images/vapors/Vapors_100x100_DarkorangePink.png);
+  background-color: black;
   background-size: cover;
   height: 100%;
   opacity: 0;
@@ -279,6 +275,6 @@ body.menu-open {
   left: 0;
 
   @media (min-width: 1024px) {
-    background-position: 0% 10%;    
+    background-position: 0% 10%;
   }
 }
