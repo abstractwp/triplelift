@@ -57,6 +57,25 @@ $(window).on("load", function () {
     swiper.autoplay.stop();
   });
 
+  $('.playVideoOnHover').each(function(){
+    var iframe = $('.videoToPlayOnHover')[0];
+    var player = $f(iframe);
+    player.api('pause');
+
+  });
+
+  $( ".playVideoOnHover" ).hover(
+    function() {
+      var iframe = $('.videoToPlayOnHover')[0];
+      var player = $f(iframe);
+      player.api('play');
+    }, function() {
+      var iframe = $('.videoToPlayOnHover')[0];
+      var player = $f(iframe);
+      player.api('pause');
+    }
+  );
+
 });
 
 

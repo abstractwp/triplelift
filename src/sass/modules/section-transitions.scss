@@ -77,7 +77,15 @@
 
 .technologypage-section-transition-container {
   .section-transition.section1 {
-    background: $gradientDark1;
+    background-image: url(/images/vapors/Vapors_100x100_Heritageblue.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+
+    @media (min-width: 1024px) {
+      background-size: 73%;
+      background-position: 140% 70%;
+    }
   }
   
   .section-transition.section2 {
