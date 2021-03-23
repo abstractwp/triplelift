@@ -27,32 +27,25 @@ $(window).on("load", function(){
       "OTT-breakout-slide-up"
     )
     
-    OTTBreakout.from(".OTT-breakout img:nth-child(1)", {
+    OTTBreakout.from(".OTT-breakout :nth-child(1)", {
       x: -10,  
       duration: .4,
       },
       "OTT-breakout"
     )
     
-    OTTBreakout.from(".OTT-breakout img:nth-child(2)", {
-      x: -10,  
+    OTTBreakout.from(".OTT-breakout :nth-child(2)", {
+      opacity: 0,
+      x: 10,  
       duration: .4,
     },
     "OTT-breakout"
     )
     
-    OTTBreakout.from(".OTT-breakout img:nth-child(3)", {
+    OTTBreakout.from(".OTT-breakout :nth-child(3)", {
+      opacity: 0,
       scale: .95,
       x: 15,
-      duration: .4,
-    },
-    "OTT-breakout"
-    )
-    
-    OTTBreakout.from(".OTT-breakout img:nth-child(4)", {
-      scale: .9,
-      y: 10,
-      x: 30,
       duration: .4,
     },
     "OTT-breakout"
