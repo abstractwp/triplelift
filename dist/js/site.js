@@ -1177,20 +1177,20 @@ $(window).on("load", function () {
 
   $('.playVideoOnHover').each(function(){
     var iframe = $('.videoToPlayOnHover')[0];
-    var player = $f(iframe);
-    player.api('pause');
+    var player = new Vimeo.Player(iframe);
+    player.pause();
 
   });
 
   $( ".playVideoOnHover" ).hover(
     function() {
       var iframe = $('.videoToPlayOnHover')[0];
-      var player = $f(iframe);
-      player.api('play');
+      var player = new Vimeo.Player(iframe);
+      player.play();
     }, function() {
       var iframe = $('.videoToPlayOnHover')[0];
-      var player = $f(iframe);
-      player.api('pause');
+      var player = new Vimeo.Player(iframe);
+      player.pause();
     }
   );
 
