@@ -58,40 +58,7 @@ $(window).on("load", function(){
     "laptop-breakout"
     )
 
-    if (window.innerWidth > 1023 ) {
-      laptopBreakout.from(".laptop-breakout img:nth-child(7)", {
-        opacity: 0,
-        scale: .9,
-        y: 10,
-        x: 30,
-        duration: .4,
-        delay: .2,
-      },
-      "laptop-breakout2"
-      )
-      laptopBreakout.from(".laptop-breakout img:nth-child(6)", {
-        opacity: 0,
-        scale: .9,
-        y: 10,
-        x: 30,
-        duration: .4,
-        delay: .5,
-      },
-      "laptop-breakout2"
-      )
-      laptopBreakout.from(".laptop-breakout img:nth-child(5)", {
-        opacity: 0,
-        scale: .9,
-        y: 10,
-        x: 30,
-        duration: .4,
-        delay: .8,
-      },
-      "laptop-breakout2"
-      )
-  
-
-    }
+    
     
     const creativeGallerySectionTL = gsap.timeline( {    
       scrollTrigger: {

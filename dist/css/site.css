@@ -1030,6 +1030,9 @@ h4 {
 .pink {
   color: #ed79ca; }
 
+.yellow {
+  color: #fcb316; }
+
 .text-primaryGradient {
   background: linear-gradient(77.24deg, #f47b20 14.56%, #f15c2c 88.29%);
   -webkit-background-clip: text;
@@ -1187,15 +1190,9 @@ h4 {
         max-height: 300px; } }
   @media (min-width: 1024px) {
     .laptop-breakout {
-      display: none; } }
-  .laptop-breakout.laptop-breakout-large {
-    display: none; }
-    @media (min-width: 1024px) {
-      .laptop-breakout.laptop-breakout-large {
-        display: block;
-        height: inherit; }
-        .laptop-breakout.laptop-breakout-large > * {
-          max-height: 400px; } }
+      height: 400px; }
+      .laptop-breakout > * {
+        max-height: 400px; } }
   .laptop-breakout img {
     top: 0;
     position: absolute;
@@ -1908,7 +1905,7 @@ button.triggerGalleryMenu {
 .hero {
   color: white;
   min-height: 100vh;
-  padding-top: 40px;
+  padding-top: 80px;
   z-index: 1; }
   .hero.not-homepage {
     display: flex;
@@ -1948,11 +1945,13 @@ button.triggerGalleryMenu {
 
 @media (min-width: 1024px) {
   .hero.not-homepage {
-    flex-direction: row; }
+    flex-direction: row;
+    align-items: center; }
   .products-hero .copy {
     width: 80%; }
   .products-hero .hero-visual {
-    width: 100%; } }
+    width: 100%;
+    right: -4vw; } }
 
 @media (min-width: 1280px) {
   .hero.not-homepage {
@@ -2439,7 +2438,14 @@ Demo Animation Style
   background-color: black; }
 
 .productpage-section-transition-container .section-transition.section1 {
-  background: linear-gradient(122.97deg, #0e3d52 0%, #000000 95.81%); }
+  background-image: url(/images/vapors/Vapors_100x100_YellowBlue.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black; }
+  @media (min-width: 1024px) {
+    .productpage-section-transition-container .section-transition.section1 {
+      background-size: 73%;
+      background-position: 180% 70%; } }
 
 .productpage-section-transition-container .section-transition.white {
   background: white;

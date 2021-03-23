@@ -1,7 +1,7 @@
 .hero {
   color: white;
   min-height: 100vh;
-  padding-top: 40px;
+  padding-top: 80px;
   z-index: 1;
 
   &.not-homepage {
@@ -70,6 +70,7 @@
 @media (min-width: 1024px) {
   .hero.not-homepage {
     flex-direction: row;
+    align-items: center;
   }
 
   .products-hero {
@@ -78,6 +79,7 @@
     }
     .hero-visual {
       width: 100%;
+      right: -4vw;
     }
   }
 }

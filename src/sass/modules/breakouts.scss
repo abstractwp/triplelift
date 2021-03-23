@@ -84,20 +84,27 @@
   }
 
   @media (min-width: 1024px) {
-    display: none;
-  }
-
-  &.laptop-breakout-large {
-    display: none;
-
-    @media (min-width: 1024px) {
-      display: block;
-      height: inherit;
-      > * {
-        max-height: 400px;
-      }  
+    height: 400px;
+    > * {
+      max-height: 400px;
     }
   }
+
+  // @media (min-width: 1024px) {
+  //   display: none;
+  // }
+
+  // &.laptop-breakout-large {
+  //   display: none;
+
+  //   @media (min-width: 1024px) {
+  //     display: block;
+  //     height: inherit;
+  //     > * {
+  //       max-height: 400px;
+  //     }  
+  //   }
+  // }
 
 
 
