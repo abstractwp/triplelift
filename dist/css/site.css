@@ -2662,6 +2662,19 @@ Demo Animation Style
           margin-bottom: 0; } }
   .technology-breakouts .breakout-container.left .image-container {
     right: -80px; }
+  .technology-breakouts .breakout-container.left .video-container {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    perspective: 1000px; }
+    .technology-breakouts .breakout-container.left .video-container .video {
+      width: 197px;
+      height: 230px;
+      top: 65px;
+      transform: rotateY(-19deg) !important;
+      position: absolute;
+      left: 12px; }
   .technology-breakouts .breakout-container.right .image-container {
     left: -80px; }
   .technology-breakouts .breakout-container.right .video-container {

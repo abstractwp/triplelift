@@ -1184,11 +1184,11 @@ $(window).on("load", function () {
 
   $( ".playVideoOnHover" ).hover(
     function() {
-      var iframe = $('.videoToPlayOnHover')[0];
+      var iframe = $(this).find('.videoToPlayOnHover')[0];
       var player = new Vimeo.Player(iframe);
       player.play();
     }, function() {
-      var iframe = $('.videoToPlayOnHover')[0];
+      var iframe = $(this).find('.videoToPlayOnHover')[0];
       var player = new Vimeo.Player(iframe);
       player.pause();
     }
