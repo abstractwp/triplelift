@@ -4,4 +4,9 @@
     background-repeat: no-repeat;
     background-color: black;
     background-position: -90% -20%;
+
+    @media (min-width: 1024px) {
+        background-position-x: -90%;
+        background-position-y: 90%;
+    }
 }

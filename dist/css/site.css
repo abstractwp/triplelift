@@ -1027,6 +1027,9 @@ h4 {
 .heritageOrange {
   color: #f47b20; }
 
+.pink {
+  color: #ed79ca; }
+
 .text-primaryGradient {
   background: linear-gradient(77.24deg, #f47b20 14.56%, #f15c2c 88.29%);
   -webkit-background-clip: text;
@@ -1897,6 +1900,10 @@ button.triggerGalleryMenu {
   background-repeat: no-repeat;
   background-color: black;
   background-position: -90% -20%; }
+  @media (min-width: 1024px) {
+    .first-two-sections-container {
+      background-position-x: -90%;
+      background-position-y: 90%; } }
 
 .hero {
   color: white;
@@ -1952,45 +1959,48 @@ button.triggerGalleryMenu {
     margin: 0 4vw; } }
 
 .hero.not-homepage.ideas-hero {
-  background: linear-gradient(122.97deg, #0e3d52 0%, #000000 95.81%);
+  background-image: url(/images/vapors/Vapors_10x10_PinkYellow.png);
+  background-size: 160%;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-position: -90% -20%;
   margin: 0;
   padding-left: 4vw;
   padding-right: 4vw;
   padding-bottom: 4vw;
-  min-height: auto; }
+  min-height: 600px;
+  padding-top: 80px;
+  position: relative; }
+  @media (min-width: 1024px) {
+    .hero.not-homepage.ideas-hero {
+      background-position-x: -50%;
+      background-position-y: 0%; } }
+  .hero.not-homepage.ideas-hero .tech-layer {
+    background-image: url(/images/bgs/Idea_Hero_Techlayer.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position-x: 120%;
+    background-position-y: -100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
   @media (min-width: 768px) {
     .hero.not-homepage.ideas-hero {
       flex-direction: row; }
       .hero.not-homepage.ideas-hero > * {
         width: 50%; } }
   .hero.not-homepage.ideas-hero .hero-visual.ideas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 24px 12px 48px;
     position: relative;
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 48px; }
-    @media (min-width: 768px) {
-      .hero.not-homepage.ideas-hero .hero-visual.ideas {
-        margin-left: 4vw;
-        margin-right: 4vw;
-        align-items: center; } }
-    .hero.not-homepage.ideas-hero .hero-visual.ideas .between-product-page-ctas {
-      height: 72px; }
-      @media (min-width: 768px) {
-        .hero.not-homepage.ideas-hero .hero-visual.ideas .between-product-page-ctas {
-          height: 260px; } }
-      @media (min-width: 1024px) {
-        .hero.not-homepage.ideas-hero .hero-visual.ideas .between-product-page-ctas {
-          height: 340px; } }
-      @media (min-width: 1280px) {
-        .hero.not-homepage.ideas-hero .hero-visual.ideas .between-product-page-ctas {
-          height: 450px; } }
-      @media (min-width: 1440px) {
-        .hero.not-homepage.ideas-hero .hero-visual.ideas .between-product-page-ctas {
-          height: 510px; } }
-    .hero.not-homepage.ideas-hero .hero-visual.ideas .texture {
-      background-size: 100%; }
+    overflow: hidden; }
+    .hero.not-homepage.ideas-hero .hero-visual.ideas img {
+      max-width: 300px;
+      transform: skew(-7deg, 0deg); }
 
 .hero.homepage-hero h1 {
   font-size: 26px;

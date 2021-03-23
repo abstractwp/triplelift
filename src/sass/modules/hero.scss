@@ -90,12 +90,37 @@
 
 
 .hero.not-homepage.ideas-hero {
-  background: $gradientDark1;
+  background-image: url(/images/vapors/Vapors_10x10_PinkYellow.png);
+  background-size: 160%;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-position: -90% -20%;
   margin: 0;
   padding-left: 4vw;
   padding-right: 4vw;
   padding-bottom: 4vw;
-  min-height: auto;
+  min-height: 600px;
+  padding-top: 80px;
+  position: relative;
+
+  @media (min-width: 1024px) {
+    background-position-x: -50%;
+    background-position-y: 0%;
+  }
+
+  .tech-layer {
+    background-image: url(/images/bgs/Idea_Hero_Techlayer.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position-x: 120%;
+    background-position-y: -100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
 
   @media (min-width: 768px) {
     flex-direction: row;
@@ -105,42 +130,17 @@
   }
 
   .hero-visual.ideas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 24px 12px 48px;
     position: relative;
     overflow: hidden;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 48px;
 
-    @media (min-width: 768px) {
-      margin-left: 4vw;
-      margin-right: 4vw;
-      align-items: center;
+    img {
+      max-width: 300px;
+      transform: skew(-7deg, 0deg);
     }
-  
-    .between-product-page-ctas {
-      height: 72px;
 
-      @media (min-width: 768px) {
-        height: 260px;
-      }
-
-      @media (min-width: 1024px) {
-        height: 340px;
-      }
-
-      @media (min-width: 1280px) {
-        height: 450px;
-      }
-
-      @media (min-width: 1440px) {
-        height: 510px;
-      }
-
-    }
-  
-    .texture {
-      background-size: 100%;
-    }
   }
 }
