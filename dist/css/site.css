@@ -2669,13 +2669,14 @@ Demo Animation Style
     height: 100%;
     perspective: 1000px; }
     .technology-breakouts .breakout-container.left .video-container .video {
-      width: 173px;
-      height: 230px;
+      width: 174px;
+      height: 231px;
       top: 65px;
       transform: rotateY(-19deg) !important;
       position: absolute;
       left: 12px;
-      border-radius: 12px; }
+      border-radius: 12px;
+      overflow: hidden; }
   .technology-breakouts .breakout-container.right .image-container {
     left: -80px; }
   .technology-breakouts .breakout-container.right .video-container {
