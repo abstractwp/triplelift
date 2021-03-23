@@ -5,8 +5,9 @@ html:not([data-scroll="0"]) {
   }
 
   .header-vapor-background {
-    opacity: 1;
-  }
+    opacity: .75;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);  }
 }
 
 .sticky-header {
@@ -264,7 +265,7 @@ body.menu-open {
 }
 
 .header-vapor-background {
-  background-color: black;
+  background-image: url(/images/vapors/Vapors_100x100_DarkorangePink.png);
   background-size: cover;
   height: 100%;
   opacity: 0;

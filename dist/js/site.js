@@ -1044,24 +1044,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
       );
 
       ScrollTrigger.refresh();
-
-      const moveSectionBackground2 = gsap.timeline( {    
-        scrollTrigger: {
-          trigger: ".technology-breakouts",
-          start: "top bottom",
-          end: "500% bottom",
-          scrub: true,
-          toggleActions: "play reverse play reverse",
-        }
-      });
-      
-      moveSectionBackground2
-        .to(
-          '.technology-breakouts .plusses', 
-          { 
-            y: -300,
-          }, "plusses"
-        );
        
      });
     
