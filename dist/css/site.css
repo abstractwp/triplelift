@@ -1389,8 +1389,17 @@ body.menu-open {
   transition: 0.6s ease-out;
   position: relative; }
   .main-nav a.active {
-    color: #f15c2c;
     font-weight: bold; }
+    .main-nav a.active.company {
+      color: #f47b20; }
+    .main-nav a.active.products {
+      color: #fcb316; }
+    .main-nav a.active.technology {
+      color: #5ea7a5; }
+    .main-nav a.active.ideas {
+      color: #ed79ca; }
+    .main-nav a.active.contact-us {
+      color: #f15c2c; }
 
 .menu-on-large .main-nav a span:after {
   content: "";

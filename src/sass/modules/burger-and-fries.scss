@@ -194,9 +194,25 @@ body.menu-open {
   // }
 
   &.active {
-    color: $amplifiedOrange;
     font-weight: bold;
+    &.company {
+      color: $heritageOrange;
+    }
+    &.products {
+      color: $yellow;
+    }
+    &.technology {
+      color: $calmingBlue;
+    }
+    &.ideas {
+      color: $pink;
+    }
+    &.contact-us {
+      color: $amplifiedOrange;
+    }
   }
+
+  
 }
 
 .menu-on-large .main-nav a {
