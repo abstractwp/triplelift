@@ -1174,7 +1174,8 @@ h4 {
     top: 40px;
     left: 17.5%;
     transform: skew(-7deg, 0deg);
-    border-radius: 8px; }
+    border-radius: 8px;
+    box-shadow: 12px 5px 27px grey; }
     @media (min-width: 768px) {
       .phone-breakout .video {
         width: 194px;
@@ -2661,12 +2662,13 @@ Demo Animation Style
     height: 100%;
     perspective: 1000px; }
     .technology-breakouts .breakout-container.left .video-container .video {
+      box-shadow: 12px 5px 27px grey;
       width: 174px;
-      height: 231px;
-      top: 65px;
+      height: 255px;
+      top: 85px;
       transform: rotateY(-19deg) !important;
       position: absolute;
-      left: 12px;
+      left: 82px;
       border-radius: 12px;
       overflow: hidden; }
   .technology-breakouts .breakout-container.right .image-container {

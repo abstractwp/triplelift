@@ -33,13 +33,15 @@
         width: 100%;
         height: 100%;
         perspective: (1000px);
+
         .video {
+          box-shadow: 12px 5px 27px grey;
           width: 174px;
-          height: 231px;
-          top: 65px;
+          height: 255px;
+          top: 85px;
           transform: rotateY(-19deg) !important;
           position: absolute;
-          left: 12px;
+          left: 82px;
           border-radius: 12px;
           overflow: hidden;
         }
