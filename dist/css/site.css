@@ -1179,7 +1179,7 @@ h4 {
     @media (min-width: 768px) {
       .phone-breakout .video {
         width: 194px;
-        height: 177px;
+        height: 179px;
         left: 20%; } }
 
 .laptop-breakout {
@@ -1474,8 +1474,7 @@ body.menu-open {
     padding: 0 12vw; } }
 
 .header-vapor-background {
-  background-image: url(/images/vapors/Vapors_100x100_DarkorangePink.png);
-  background-size: cover;
+  background-color: black;
   height: 100%;
   opacity: 0;
   position: absolute;
@@ -2673,82 +2672,92 @@ Demo Animation Style
   color: white;
   display: flex;
   justify-content: center;
-  margin-bottom: -100px;
+  margin-bottom: -32px;
   padding: 0 0;
   position: relative; }
-  @media (min-width: 1024px) {
-    .technology-breakouts .breakout-container {
-      margin-top: 100px; } }
-  .technology-breakouts .breakout-container.left, .technology-breakouts .breakout-container.right {
-    display: none; }
-    @media (min-width: 1024px) {
-      .technology-breakouts .breakout-container.left, .technology-breakouts .breakout-container.right {
-        display: block; }
-        .technology-breakouts .breakout-container.left .title, .technology-breakouts .breakout-container.right .title {
-          margin-bottom: 0; } }
-  .technology-breakouts .breakout-container.left .video-container {
-    z-index: 1;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    perspective: 1000px; }
-    .technology-breakouts .breakout-container.left .video-container .video {
-      box-shadow: 12px 5px 27px grey;
-      width: 174px;
-      height: 255px;
-      top: 85px;
-      transform: rotateY(-19deg) !important;
-      position: absolute;
-      left: 82px;
-      border-radius: 12px;
-      overflow: hidden; }
-  .technology-breakouts .breakout-container.right .image-container {
-    left: -80px; }
-  .technology-breakouts .breakout-container.right .video-container {
-    z-index: 1;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    perspective: 1000px; }
-    .technology-breakouts .breakout-container.right .video-container .video {
-      width: 155px;
-      top: 125px;
-      transform: rotateY(19deg) !important;
-      position: absolute;
-      left: 206px; }
-  .technology-breakouts .breakout-container.middle .video-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 500px;
-    width: 100%; }
-    .technology-breakouts .breakout-container.middle .video-container .video {
-      position: absolute;
-      left: 91px;
-      top: 80px;
-      height: 268px;
-      width: 190px;
-      border-radius: 12px;
-      box-shadow: 0px 0px 17px black; }
-  @media (min-width: 1024px) {
-    .technology-breakouts .breakout-container.middle {
-      transform: scale(1.3) translateY(-40px); } }
   .technology-breakouts .breakout-container .image-container {
-    position: relative;
-    width: 375px;
-    height: 500px; }
-    @media (min-width: 1024px) {
-      .technology-breakouts .breakout-container .image-container {
-        width: 340px; } }
-    @media (min-width: 1280px) {
-      .technology-breakouts .breakout-container .image-container {
-        width: 375px; } }
+    height: 500px;
+    position: relative; }
     .technology-breakouts .breakout-container .image-container img {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       width: 100%; }
+  .technology-breakouts .breakout-container.on-small {
+    margin-top: 124px;
+    height: 500px; }
+    @media (min-width: 1024px) {
+      .technology-breakouts .breakout-container.on-small {
+        display: none; } }
+    .technology-breakouts .breakout-container.on-small.middle .image-container {
+      width: 400px;
+      height: 500px;
+      position: relative; }
+      .technology-breakouts .breakout-container.on-small.middle .image-container img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%; }
+    .technology-breakouts .breakout-container.on-small.middle .video-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%; }
+      .technology-breakouts .breakout-container.on-small.middle .video-container .video {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 150px;
+        height: 323px;
+        width: 230px;
+        border-radius: 12px;
+        box-shadow: 0px 0px 17px black; }
+  .technology-breakouts .breakout-container.on-large {
+    display: none; }
+    @media (min-width: 1024px) {
+      .technology-breakouts .breakout-container.on-large {
+        display: block;
+        position: relative; }
+        .technology-breakouts .breakout-container.on-large .image-container {
+          height: 800px;
+          width: 1200px;
+          position: relative; }
+        .technology-breakouts .breakout-container.on-large .video-container {
+          z-index: 1;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0; }
+          .technology-breakouts .breakout-container.on-large .video-container.left, .technology-breakouts .breakout-container.on-large .video-container.right {
+            perspective: 1000px; }
+          .technology-breakouts .breakout-container.on-large .video-container.left .video {
+            box-shadow: 12px 5px 27px grey;
+            width: 245px;
+            height: 348px;
+            top: 215px;
+            transform: rotateY(-19deg) !important;
+            position: absolute;
+            left: 119px;
+            border-radius: 12px;
+            overflow: hidden; }
+          .technology-breakouts .breakout-container.on-large .video-container.right .video {
+            width: 155px;
+            top: 125px;
+            transform: rotateY(19deg) !important;
+            position: absolute;
+            right: 12%; }
+          .technology-breakouts .breakout-container.on-large .video-container.middle .video {
+            width: 265px;
+            position: absolute;
+            top: 202px;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            border-radius: 16px;
+            height: 372px; } }
 
 .technologySectionContainer {
   padding: 96px 24px;

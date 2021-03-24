@@ -304,8 +304,9 @@ body.menu-open {
 }
 
 .header-vapor-background {
-  background-image: url(/images/vapors/Vapors_100x100_DarkorangePink.png);
-  background-size: cover;
+  // background-image: url(/images/vapors/Vapors_100x100_DarkorangePink.png);
+  // background-size: cover;
+  background-color: black;
   height: 100%;
   opacity: 0;
   position: absolute;
