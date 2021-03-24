@@ -172,6 +172,7 @@ body.menu-open {
   text-decoration: none;
   text-transform: uppercase;
   transition: 0.6s ease-out;
+  position: relative;
 
   // &.active span {
   //   position: relative;
@@ -199,9 +200,31 @@ body.menu-open {
 }
 
 .menu-on-large .main-nav a {
-  border-bottom: 4px solid transparent;
+  span:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 45%;
+    border-bottom: 4px solid transparent;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .3s;
+  } 
 
-  &:hover {
+  &.company:hover span:after {
+    border-bottom: 4px solid $heritageOrange;
+  }
+  &.products:hover span:after {
+    border-bottom: 4px solid $yellow;
+  }
+  &.technology:hover span:after {
+    border-bottom: 4px solid $calmingBlue;
+  }
+  &.ideas:hover span:after {
+    border-bottom: 4px solid $pink;
+  }
+  &.contact-us:hover span:after {
     border-bottom: 4px solid $amplifiedOrange;
   }
 }

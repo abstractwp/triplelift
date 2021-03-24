@@ -1386,15 +1386,37 @@ body.menu-open {
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
-  transition: 0.6s ease-out; }
+  transition: 0.6s ease-out;
+  position: relative; }
   .main-nav a.active {
     color: #f15c2c;
     font-weight: bold; }
 
-.menu-on-large .main-nav a {
-  border-bottom: 4px solid transparent; }
-  .menu-on-large .main-nav a:hover {
-    border-bottom: 4px solid #f15c2c; }
+.menu-on-large .main-nav a span:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 45%;
+  border-bottom: 4px solid transparent;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: .3s; }
+
+.menu-on-large .main-nav a.company:hover span:after {
+  border-bottom: 4px solid #f47b20; }
+
+.menu-on-large .main-nav a.products:hover span:after {
+  border-bottom: 4px solid #fcb316; }
+
+.menu-on-large .main-nav a.technology:hover span:after {
+  border-bottom: 4px solid #5ea7a5; }
+
+.menu-on-large .main-nav a.ideas:hover span:after {
+  border-bottom: 4px solid #ed79ca; }
+
+.menu-on-large .main-nav a.contact-us:hover span:after {
+  border-bottom: 4px solid #f15c2c; }
 
 .login {
   border: 1px solid #fff;

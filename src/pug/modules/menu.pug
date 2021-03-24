@@ -1,14 +1,14 @@
 
 - var currentUrl = page
 .main-nav
-  a(href="company.html" class={active: currentUrl === 'company'}) 
+  a.company(href="company.html" class={active: currentUrl === 'company'}) 
     span Company
-  a(href="products.html" class={active: currentUrl === 'products'}) 
+  a.products(href="products.html" class={active: currentUrl === 'products'}) 
     span Products
-  a(href="technology.html" class={active: currentUrl === 'technology'}) 
+  a.technology(href="technology.html" class={active: currentUrl === 'technology'}) 
     span Technology
-  a(href="ideas.html" class={active: currentUrl === 'ideas'}) 
+  a.ideas(href="ideas.html" class={active: currentUrl === 'ideas'}) 
     span Ideas
-  a.does-not-work(class={active: currentUrl === 'contact'}) 
+  a.contact-us.does-not-work(class={active: currentUrl === 'contact'}) 
     span Contact us
 a.does-not-work.login(class={active: currentUrl === 'contact'}) Login
