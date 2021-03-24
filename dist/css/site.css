@@ -1169,13 +1169,17 @@ h4 {
         height: 410px; } }
   .phone-breakout .video {
     position: absolute;
-    width: 115px;
-    top: -26%;
-    left: 19.5%;
-    transform: skew(-7deg, 0deg); }
+    width: 165px;
+    height: 155px;
+    top: 40px;
+    left: 17.5%;
+    transform: skew(-7deg, 0deg);
+    border-radius: 8px; }
     @media (min-width: 768px) {
       .phone-breakout .video {
-        width: 144px; } }
+        width: 194px;
+        height: 177px;
+        left: 20%; } }
 
 .laptop-breakout {
   position: relative;
@@ -2650,8 +2654,6 @@ Demo Animation Style
         display: block; }
         .technology-breakouts .breakout-container.left .title, .technology-breakouts .breakout-container.right .title {
           margin-bottom: 0; } }
-  .technology-breakouts .breakout-container.left .image-container {
-    right: -80px; }
   .technology-breakouts .breakout-container.left .video-container {
     z-index: 1;
     position: absolute;
@@ -2691,7 +2693,7 @@ Demo Animation Style
       position: absolute;
       left: 70px;
       top: 70px;
-      height: 230px;
+      height: 236px;
       width: 170px;
       border-radius: 12px; }
   @media (min-width: 1024px) {
