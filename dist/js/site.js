@@ -958,7 +958,36 @@ document.addEventListener("DOMContentLoaded", function(event) {
             opacity: .5,
             duration: .6,
         }, "exploreGallery");
+
+      const technologyBreakoutsParralax = gsap.timeline( {    
+        scrollTrigger: {
+          trigger: ".technology-breakouts",
+          start: "-50% center",
+          end: "40% center",
+          scrub: true,
+          markers: true,
+          toggleActions: "play reverse play reverse",
+        }
+      });      
+
+      technologyBreakoutsParralax.from(".breakout-container.on-large .image-container :nth-child(1) ", {
+        opacity: .5,
+        y: 80,
+        duration: 1,
+      }, "abc")        
+
+      technologyBreakoutsParralax.from(".breakout-container.on-large .image-container :nth-child(2) ", {
+        opacity: .5,
+        y: 60,
+        duration: 1,
+      }, "abc")
       
+      technologyBreakoutsParralax.from(".breakout-container.on-large .image-container .video-container ", {
+        opacity: .5,
+        y: 40,
+        duration: 1,
+      }, "abc")
+
       const weWorkWithParallax = gsap.timeline( {    
         scrollTrigger: {
           trigger: ".we-work-with",
