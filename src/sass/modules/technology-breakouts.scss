@@ -24,6 +24,8 @@
     &.on-small {
       margin-top: 124px;
       height: 500px;
+      margin-bottom: -52px;
+
       @media (min-width: 1024px) {
         display: none;
       }
@@ -67,6 +69,7 @@
 
     &.on-large {
       display: none;
+      margin-bottom: -240px;
       @media (min-width: 1024px) {
         display: block;
         position: relative;

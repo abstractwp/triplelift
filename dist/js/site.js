@@ -962,9 +962,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
       const weWorkWithParallax = gsap.timeline( {    
         scrollTrigger: {
           trigger: ".we-work-with",
-          start: "-15% center",
+          start: "-5% center",
           end: "40% center",
           scrub: true,
+          markers: true,
           toggleActions: "play reverse play reverse",
         }
       });
