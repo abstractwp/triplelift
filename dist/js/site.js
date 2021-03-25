@@ -965,7 +965,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
           start: "-50% center",
           end: "40% center",
           scrub: true,
-          markers: true,
           toggleActions: "play reverse play reverse",
         }
       });      
