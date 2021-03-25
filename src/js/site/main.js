@@ -58,19 +58,21 @@ $(window).on("load", function () {
   });
 
   $('.playVideoOnHover').each(function(){
-    var iframe = $('.videoToPlayOnHover')[0];
+    console.log("sup");
+    var iframe = $(this);
     var player = new Vimeo.Player(iframe);
     player.pause();
 
   });
 
-  $( ".playVideoOnHover" ).hover(
+  $(".playVideoOnHover").hover(
     function() {
-      var iframe = $(this).find('.videoToPlayOnHover')[0];
+      console.log("hello");
+      var iframe = $(this);
       var player = new Vimeo.Player(iframe);
       player.play();
     }, function() {
-      var iframe = $(this).find('.videoToPlayOnHover')[0];
+      var iframe = $(this);
       var player = new Vimeo.Player(iframe);
       player.pause();
     }

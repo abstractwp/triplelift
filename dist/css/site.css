@@ -2704,7 +2704,8 @@ Demo Animation Style
       position: absolute;
       top: 0;
       left: 0;
-      width: 100%; }
+      width: 100%;
+      z-index: 2; }
       .technology-breakouts .breakout-container.on-small.middle .video-container .video {
         position: absolute;
         left: 50%;
@@ -2713,7 +2714,8 @@ Demo Animation Style
         height: 323px;
         width: 230px;
         border-radius: 12px;
-        box-shadow: 0px 0px 17px black; }
+        box-shadow: 0px 0px 17px black;
+        z-index: 3; }
   .technology-breakouts .breakout-container.on-large {
     display: none; }
     @media (min-width: 1024px) {
@@ -2732,7 +2734,15 @@ Demo Animation Style
           top: 0;
           left: 0; }
           .technology-breakouts .breakout-container.on-large .video-container.left, .technology-breakouts .breakout-container.on-large .video-container.right {
-            perspective: 1000px; }
+            perspective: 1000px;
+            width: 50%; }
+          .technology-breakouts .breakout-container.on-large .video-container.left {
+            left: 0; }
+          .technology-breakouts .breakout-container.on-large .video-container.right {
+            left: inherit;
+            right: 0; }
+          .technology-breakouts .breakout-container.on-large .video-container.middle {
+            z-index: 0; }
           .technology-breakouts .breakout-container.on-large .video-container.left .video {
             box-shadow: 12px 5px 27px grey;
             width: 245px;
@@ -2744,11 +2754,13 @@ Demo Animation Style
             border-radius: 12px;
             overflow: hidden; }
           .technology-breakouts .breakout-container.on-large .video-container.right .video {
-            width: 155px;
-            top: 125px;
-            transform: rotateY(19deg) !important;
+            height: 215px;
+            width: 217px;
+            top: 274px;
+            border-radius: 8px;
+            transform: rotateY(7deg) !important;
             position: absolute;
-            right: 12%; }
+            right: 26%; }
           .technology-breakouts .breakout-container.on-large .video-container.middle .video {
             width: 265px;
             position: absolute;
