@@ -4,7 +4,7 @@ mixin coreValue(number, headline, body)
   .core-value-container 
     .headline-container
       h4.headline.number=number
-      h4.headline.text-primaryGradient=headline
+      h4.headline=headline
     p.body= body
 
 mixin teamMember(name, title, memberImage)
@@ -52,7 +52,7 @@ block content
     .scrolling-sidebar
       span Core Values
     .section-copy
-      h2.big.text-primaryGradient.large-up Core Values
+      h2.big.large-up Core Values
       h3 We have five core values that guide our work.  
       .core-value-grid
         +coreValue(

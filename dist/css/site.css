@@ -1642,7 +1642,6 @@ body.menu-open {
     font-weight: bold;
     line-height: 1.1; }
     .core-value-container .headline.number {
-      color: #fcb316;
       margin-right: 12px;
       font-size: 44px; }
   .core-value-container p {
@@ -2118,7 +2117,8 @@ button.triggerGalleryMenu {
       top: 50%; } }
 
 .swiper-slide {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  overflow-y: visible; }
 
 @media (min-width: 1024px) {
   .homepage-hero {
