@@ -1065,6 +1065,10 @@ h4 {
   margin: 12px;
   z-index: 3; }
 
+.product-page-cta.explore-our-gallery-container a.explore-our-gallery .animate-border-content {
+  background-color: white;
+  background-image: inherit; }
+
 .between-product-page-ctas {
   position: absolute;
   bottom: 0; }
@@ -2206,7 +2210,7 @@ button.triggerGalleryMenu {
   position: relative;
   margin: 64px auto;
   max-width: 90%;
-  border-radius: 24px 24px 0 0;
+  border-radius: 8px;
   overflow: hidden; }
   @media (min-width: 1024px) {
     .innovation-header-container {
@@ -2235,11 +2239,11 @@ button.triggerGalleryMenu {
   .innovation-header-container .copy {
     padding: 24px;
     color: white; }
+    @media (min-width: 1024px) {
+      .innovation-header-container .copy {
+        padding: 36px 48px; } }
     .innovation-header-container .copy h2 {
       font-weight: bold; }
-      @media (min-width: 1024px) {
-        .innovation-header-container .copy h2 {
-          padding-top: 36px; } }
     .innovation-header-container .copy p {
       margin-top: 12px;
       font-size: 18px;
@@ -2464,7 +2468,7 @@ Demo Animation Style
 @media (min-width: 1024px) {
   .product-page-cta {
     max-width: 900px;
-    margin: 24px auto; }
+    margin: 64px auto; }
     .product-page-cta.product-page-cta-1 {
       margin-top: 0; } }
 
