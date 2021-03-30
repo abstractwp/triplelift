@@ -1534,7 +1534,8 @@ body.menu-open {
 .company-page-section {
   min-height: 300px;
   display: flex;
-  color: white; }
+  color: white;
+  position: relative; }
   .company-page-section .section-copy {
     padding: 0 24px 80px; }
     @media (min-width: 1024px) {
@@ -1630,6 +1631,16 @@ body.menu-open {
   @media (min-width: 1024px) {
     .core-value-container {
       border-bottom: 0; } }
+  .core-value-container:nth-child(1) .headline-container {
+    color: #f47b20; }
+  .core-value-container:nth-child(2) .headline-container {
+    color: #f15c2c; }
+  .core-value-container:nth-child(3) .headline-container {
+    color: #f4635d; }
+  .core-value-container:nth-child(4) .headline-container {
+    color: #f769a1; }
+  .core-value-container:nth-child(5) .headline-container {
+    color: #d894b6; }
   .core-value-container:last-of-type {
     border-bottom: 0; }
   .core-value-container img {
@@ -1651,12 +1662,43 @@ body.menu-open {
 
 @media (min-width: 1024px) {
   .company-page-section.core-values {
-    padding: 48px; }
+    margin: 48px 76px 0;
+    padding: 12px; }
+    .company-page-section.core-values::before {
+      content: "";
+      background-image: url(/images/vapors/Vapors_100x100_PinkOrange_Blur_V02.png);
+      background-repeat: no-repeat;
+      background-position: 50% 200%;
+      background-size: 140%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      opacity: .6; }
+    .company-page-section.core-values .section-copy {
+      border: 10px solid transparent;
+      -moz-border-image: -moz-linear-gradient(top left, #f47b20 2.47%, #f15c2c 43.9%, #ed79b0 95.24%);
+      -webkit-border-image: -webkit-linear-gradient(top left, #f47b20 2.47%, #f15c2c 43.9%, #ed79b0 95.24%);
+      border-image: linear-gradient(to bottom right, #f47b20 2.47%, #f15c2c 43.9%, #ed79b0 95.24%);
+      border-image-slice: 1;
+      margin-bottom: 100px;
+      padding: 64px; }
+      .company-page-section.core-values .section-copy p {
+        font-size: 32px; }
     .company-page-section.core-values .core-value-grid {
       margin-top: 48px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      column-gap: 36px; } }
+      column-gap: 36px; }
+      .company-page-section.core-values .core-value-grid .core-value-container {
+        display: grid;
+        grid-template-columns: 1fr 2.5fr;
+        column-gap: 36px; }
+      .company-page-section.core-values .core-value-grid .headline-container {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        width: 300px; } }
 
 @media (min-width: 1440px) {
   .company-page-section.core-values {
@@ -2377,6 +2419,7 @@ Demo Animation Style
   height: 100%; }
 
 .our-offices-section-container {
+  background: white;
   padding: 24px; }
   .our-offices-section-container h2 {
     font-weight: bold; }

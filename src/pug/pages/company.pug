@@ -4,7 +4,7 @@ mixin coreValue(number, headline, body)
   .core-value-container 
     .headline-container
       h4.headline.number=number
-      h4.headline=headline
+      h4.headline !{headline}
     p.body= body
 
 mixin teamMember(name, title, memberImage)
@@ -62,7 +62,7 @@ block content
         )
         +coreValue(
           "2",
-          "Embrace and Drive Change",
+          "Embrace and <br/> Drive Change",
           "We are in a dynamic and competitive ecosystem. This means we need to move quickly, react to change and embrace it. We continuously innovate, which means plans and processes are never static. TripleLifters are comfortable with discomfort."
         )
         +coreValue(
