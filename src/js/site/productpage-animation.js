@@ -96,16 +96,7 @@ $(window).on("load", function(){
         toggleActions: "play reverse play reverse",
       }
     });
-  
-    innovationHeaderSectionTLIntro
-    .to(
-      '.productpage-section-transition-container .section-transition.white', 
-      { 
-        opacity: 0, 
-        duration: 1 
-      },"transition2"
-    );
-    
+      
     innovationHeaderSectionTLIntro
     .from(
       '.innovation-header-container .copy', 

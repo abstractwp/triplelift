@@ -2204,7 +2204,7 @@ button.triggerGalleryMenu {
 
 .innovation-header-container {
   position: relative;
-  margin: 0 auto;
+  margin: 64px auto;
   max-width: 90%;
   border-radius: 24px 24px 0 0;
   overflow: hidden; }
