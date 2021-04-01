@@ -90,7 +90,6 @@
   }
 }
 
-
 .hero.not-homepage.ideas-hero {
   background-image: url(/images/vapors/Vapors_10x10_PinkYellow.png);
   background-size: 160%;
@@ -123,7 +122,6 @@
     height: 100%;
   }
 
-
   @media (min-width: 768px) {
     flex-direction: row;
     > * {
@@ -143,6 +141,45 @@
       max-width: 300px;
       transform: skew(-7deg, 0deg);
     }
+  }
+}
 
+.hero.not-homepage.company-careers-hero {
+  background-image: url(/images/vapors/Vapors_10x10_PinkYellow.png);
+  background-size: 160%;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-position: -90% -20%;
+  margin: 0;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  padding-bottom: 4vw;
+  min-height: 600px;
+  padding-top: 80px;
+  position: relative;
+
+  @media (min-width: 1024px) {
+    background-position-x: -50%;
+    background-position-y: 0%;
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    > * {
+      width: 50%;
+    }
+  }
+
+  .hero-visual.company-careers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 24px 12px 48px;
+    position: relative;
+    overflow: hidden;
+
+    img {
+      max-width: 300px;
+    }
   }
 }

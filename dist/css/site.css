@@ -1065,63 +1065,66 @@ h4 {
   margin: 12px;
   z-index: 3; }
 
-.product-page-cta.explore-our-gallery-container a.explore-our-gallery .animate-border-content {
+.product-page-cta.explore-our-gallery-container
+a.explore-our-gallery
+.animate-border-content {
   background-color: white;
   background-image: inherit; }
 
-.between-product-page-ctas {
-  position: absolute;
-  bottom: 0; }
-  @media (min-width: 1024px) {
-    .between-product-page-ctas {
-      right: 0; } }
-  .between-product-page-ctas.center {
-    left: 0; }
-    .between-product-page-ctas.center .texture {
-      left: 50%;
-      transform: translate(-50%, 0%); }
+.spotlessPodcastSeriesSectionContainer.explore-our-gallery-container.product-page-cta
+a.explore-our-gallery
+.animate-border-content {
+  background-color: transparent;
+  background: linear-gradient(122.97deg, #0e3d52 0%, #000000 95.81%); }
 
-.bland-section-container {
+.bland-section-container > * {
   padding: 64px 24px;
-  max-width: 1200px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  max-width: 1200px; }
+
+@media (min-width: 768px) {
+  .bland-section-container .bland-section-inner-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5vw;
+    margin-top: 24px; } }
+
+.bland-section-container .bland-section-inner-container .bland-section-inner-item {
+  background: white;
+  text-decoration: none;
+  color: black;
+  display: block;
+  margin-top: 24px; }
   @media (min-width: 768px) {
-    .bland-section-container .bland-section-inner-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      column-gap: 5vw;
-      margin-top: 24px; } }
-  .bland-section-container .bland-section-inner-container .bland-section-inner-item {
-    background: white;
-    text-decoration: none;
-    color: black;
-    display: block;
-    margin-top: 24px; }
-    @media (min-width: 768px) {
-      .bland-section-container .bland-section-inner-container .bland-section-inner-item {
-        margin-top: 0px;
-        display: flex;
-        flex-direction: column; } }
-  .bland-section-container .copy-container {
-    padding: 12px 16px; }
-    @media (min-width: 768px) {
-      .bland-section-container .copy-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        flex-grow: 1; } }
-  .bland-section-container span {
-    display: block; }
-  .bland-section-container .title {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1.3;
-    margin-bottom: 24px; }
-  .bland-section-container .date {
-    font-size: 14px;
-    color: #313131; }
-  .bland-section-container p {
-    margin-top: 12px; }
+    .bland-section-container .bland-section-inner-container .bland-section-inner-item {
+      margin-top: 0px;
+      display: flex;
+      flex-direction: column; } }
+
+.bland-section-container .copy-container {
+  padding: 12px 16px; }
+  @media (min-width: 768px) {
+    .bland-section-container .copy-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex-grow: 1; } }
+
+.bland-section-container span {
+  display: block; }
+
+.bland-section-container .title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-bottom: 24px; }
+
+.bland-section-container .date {
+  font-size: 14px;
+  color: #313131; }
+
+.bland-section-container p {
+  margin-top: 12px; }
 
 .blog-post-container {
   border-radius: 6px;
@@ -2114,6 +2117,38 @@ button.triggerGalleryMenu {
       max-width: 300px;
       transform: skew(-7deg, 0deg); }
 
+.hero.not-homepage.company-careers-hero {
+  background-image: url(/images/vapors/Vapors_10x10_PinkYellow.png);
+  background-size: 160%;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-position: -90% -20%;
+  margin: 0;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  padding-bottom: 4vw;
+  min-height: 600px;
+  padding-top: 80px;
+  position: relative; }
+  @media (min-width: 1024px) {
+    .hero.not-homepage.company-careers-hero {
+      background-position-x: -50%;
+      background-position-y: 0%; } }
+  @media (min-width: 768px) {
+    .hero.not-homepage.company-careers-hero {
+      flex-direction: row; }
+      .hero.not-homepage.company-careers-hero > * {
+        width: 50%; } }
+  .hero.not-homepage.company-careers-hero .hero-visual.company-careers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 24px 12px 48px;
+    position: relative;
+    overflow: hidden; }
+    .hero.not-homepage.company-careers-hero .hero-visual.company-careers img {
+      max-width: 300px; }
+
 .hero.homepage-hero h1 {
   font-size: 26px;
   font-weight: 500; }
@@ -2584,8 +2619,7 @@ Demo Animation Style
   background: white; }
 
 .ideaspage-section-transition-container .section-transition.gradientDark1 {
-  background: linear-gradient(122.97deg, #0e3d52 0%, #000000 95.81%);
-  opacity: 0; }
+  background: linear-gradient(122.97deg, #0e3d52 0%, #000000 95.81%); }
 
 .shelf {
   background: linear-gradient(77.24deg, #f47b20 14.56%, #f15c2c 88.29%);
