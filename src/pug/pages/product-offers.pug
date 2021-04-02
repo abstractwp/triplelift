@@ -1,0 +1,26 @@
+extends ../template.pug
+
+mixin coreValue(number, headline, body)
+  .core-value-container 
+    .headline-container
+      h4.headline !{headline}
+    p.body= body
+
+block content
+  - var page = "company-careers"
+  #ideasPageJSIndicator
+  include ../regions/header.pug
+  .companycareers-section-transition-container.section-transition-container
+    .section-transition.white
+  .hero.not-homepage.company-careers-hero
+    .copy.mt3
+      h1 Product offers
+      p.mt3 TripleLift offers opportunities across Native, Video, Display, and Branded Content that effectively deliver your message across premium publishers and resonate with your target audience.
+    .hero-visual.company-careers
+        img(src="https://mk0newtlihs9atvmilj.kinstacdn.com/wp-content/uploads/2021/03/SpringPackage-Square.jpg")  
+  .bland-section-container.latest-blog-posts-section-container
+    .heading
+      h2.h1 We have created a number of deals and packages tailored to advertisers like you, across multiple verticals. 
+      h3.mt3 These packages highlight consumer trends, TripleLift performance data and creative best practices to help you get the most out of your campaign. 
+  a
+
