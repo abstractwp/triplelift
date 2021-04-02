@@ -1,15 +1,53 @@
 extends ../template.pug
 
+mixin coreValue(number, headline, body)
+  .core-value-container 
+    .headline-container
+      h4.headline !{headline}
+    p.body= body
+
 block content
   - var page = "company-careers"
   #ideasPageJSIndicator
   include ../regions/header.pug
-  .ideaspage-section-transition-container.section-transition-container
+  .companycareers-section-transition-container.section-transition-container
     .section-transition.white
-    .section-transition.gradientDark1
   include ../modules/company-careers-hero.pug
-  .bland-section-container.latest-blog-posts-section-container
-    .heading
-      h2.h1 Benefits
-      p At TripleLift, we believe that to be at your best, you need balance, quality healthcare and a positive working environment. These programs are designed to support you and your goals.
+  .company-page-section.core-values.benefits
+    .scrolling-sidebar
+      span Benefits
+    .section-copy
+      h2.big.large-up Benefits
+      h3 At TripleLift, we believe that to be at your best, you need balance, quality healthcare and a positive working environment. These programs are designed to support you and your goals.
+      .core-value-grid
+        +coreValue(
+          "1",
+          "Health & Wellness",
+          "We offer 100% company paid Medical, Dental, and Vision individual plan, company paid short-term and long-term disability insurance, FSA, in-office yoga & bootcamp (NY HQ) and gym reimbursement program."
+        )
+        +coreValue(
+          "2",
+          "Tenure Celebrations",
+          "We celebrate your milestones. Enjoy a party when you reach your 3-year anniversary and a 1-month sabbatical + travel stipend when you reach your 5-year anniversary."
+        )
+        +coreValue(
+          "3",
+          "Resources to Fuel Your Life",
+          "Receive personalized medical care, financial advice and retail perks through third-party company-sponsored partnerships with One Medical, Perkspot, Personal Capital, Sofi, CommonBond, Amino and more."
+        )
+        +coreValue(
+          "4",
+          "Nourishing Work Culture",
+          "Enjoy monthly Employee Appreciation Days including free massages and birthday celebrations, overstocked kitchen with an array of options, and weekly company-wide ‘Chat and Chew’ learning sessions. NY HQ receives catered breakfast and lunch once a week."
+        )
+        +coreValue(
+          "5",
+          "Learning & Development",
+          "We encourage professional learning and development. You’ll have the opportunity to explore a 3-month rotational program to test out other roles at the company."
+        ) 
+        +coreValue(
+          "5",
+          "Work-Life Balance",
+          "We understand the need for a healthy work-life balance. We offer flexible working hours and vacation days so you can manage both."
+        )               
   

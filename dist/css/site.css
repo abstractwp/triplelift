@@ -1077,6 +1077,12 @@ a.explore-our-gallery
   background-color: transparent;
   background: linear-gradient(122.97deg, #0e3d52 0%, #000000 95.81%); }
 
+.core-values.benefits {
+  background: white;
+  color: black; }
+  .core-values.benefits .headline-container {
+    color: black !important; }
+
 .bland-section-container > * {
   padding: 64px 24px;
   margin: 0 auto;
@@ -2566,6 +2572,9 @@ Demo Animation Style
 
 .section-transition.transition3 {
   z-index: 3; }
+
+.section-transition.white {
+  background: white; }
 
 .homepage-section-transition-container .section-transition {
   opacity: 0; }
