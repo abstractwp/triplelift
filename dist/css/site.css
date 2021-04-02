@@ -2466,6 +2466,24 @@ Demo Animation Style
   width: 100%;
   height: 100%; }
 
+.ott-hero .video-container {
+  position: relative;
+  margin-top: 24px;
+  overflow: hidden;
+  width: 100%; }
+  .ott-hero .video-container iframe {
+    width: 100%;
+    max-width: calc(177.778vh);
+    height: calc(51.25vw);
+    z-index: 5;
+    position: relative; }
+    @media (min-width: 768px) {
+      .ott-hero .video-container iframe {
+        height: calc(53.25vw); } }
+    @media (min-width: 1024px) {
+      .ott-hero .video-container iframe {
+        height: calc(31.25vw); } }
+
 .our-offices-section-container {
   background: white;
   padding: 24px; }
