@@ -125,6 +125,11 @@ body.menu-open {
   right: 0;
 }
 
+.main-nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .menu-on-small {
   display: flex;
   flex-direction: column;
@@ -133,7 +138,7 @@ body.menu-open {
     display: flex;
     flex-direction: column;
 
-    a {
+    li {
       width: 100%;
       text-align: right;
       padding: 24px 40px 24px 24px;
@@ -160,59 +165,36 @@ body.menu-open {
 .menu-on-large {
   display: flex;
   align-items: center;
-}
 
-.main-nav a {
-  color: #fff;
-  letter-spacing: 1.5px;
-  font-size: 13px;
-  font-weight: 400;
-  padding: 12px 24px;
-  position: relative;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: 0.6s ease-out;
-  position: relative;
+  .main-nav li a {
+    letter-spacing: 1.5px;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 12px 24px;
+    position: relative;
+    transition: 0.6s ease-out;
+    position: relative;
+    text-transform: uppercase;
 
-  // &.active span {
-  //   position: relative;
-  //   &::before{
-  //     content: "";
-  //     position: absolute;
-  //     left: -13%;
-  //     top: 46%;
-  //     transform: translate(-50%, -50%);
-  //     background: $primaryGradient;
-  //     height: 8px;
-  //     width: 8px;
-  //     border-radius: 10px;
-
-  //     @media (max-width:1023px) {
-  //       left: -10%;
-  //     }
-  //   }
-  // }
-
-  &.active {
-    font-weight: bold;
-    &.company {
-      color: $heritageOrange;
-    }
-    &.products {
-      color: $yellow;
-    }
-    &.technology {
-      color: $calmingBlue;
-    }
-    &.ideas {
-      color: $pink;
-    }
-    &.contact-us {
-      color: $amplifiedOrange;
+    &.active {
+      font-weight: bold;
+      &.company {
+        color: $heritageOrange;
+      }
+      &.products {
+        color: $yellow;
+      }
+      &.technology {
+        color: $calmingBlue;
+      }
+      &.ideas {
+        color: $pink;
+      }
+      &.contact-us {
+        color: $amplifiedOrange;
+      }
     }
   }
-
-  
 }
 
 .menu-on-large .main-nav a {
@@ -225,8 +207,8 @@ body.menu-open {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    transition: .3s;
-  } 
+    transition: 0.3s;
+  }
 
   &.company:hover span:after {
     border-bottom: 4px solid $heritageOrange;

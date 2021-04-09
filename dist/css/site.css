@@ -1360,6 +1360,10 @@ body.menu-open {
   opacity: 1;
   right: 0; }
 
+.main-nav a {
+  text-decoration: none;
+  color: #fff; }
+
 .menu-on-small {
   display: flex;
   flex-direction: column;
@@ -1367,14 +1371,14 @@ body.menu-open {
   .menu-on-small > .main-nav {
     display: flex;
     flex-direction: column; }
-    .menu-on-small > .main-nav a {
+    .menu-on-small > .main-nav li {
       width: 100%;
       text-align: right;
       padding: 24px 40px 24px 24px;
       font-size: 24px;
       text-transform: capitalize;
       border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
-      .menu-on-small > .main-nav a:last-of-type {
+      .menu-on-small > .main-nav li:last-of-type {
         border-bottom: 0; }
   .menu-on-small .login {
     width: fit-content;
@@ -1388,30 +1392,27 @@ body.menu-open {
 .menu-on-large {
   display: flex;
   align-items: center; }
-
-.main-nav a {
-  color: #fff;
-  letter-spacing: 1.5px;
-  font-size: 13px;
-  font-weight: 400;
-  padding: 12px 24px;
-  position: relative;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: 0.6s ease-out;
-  position: relative; }
-  .main-nav a.active {
-    font-weight: bold; }
-    .main-nav a.active.company {
-      color: #f47b20; }
-    .main-nav a.active.products {
-      color: #fcb316; }
-    .main-nav a.active.technology {
-      color: #5ea7a5; }
-    .main-nav a.active.ideas {
-      color: #ed79ca; }
-    .main-nav a.active.contact-us {
-      color: #f15c2c; }
+  .menu-on-large .main-nav li a {
+    letter-spacing: 1.5px;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 12px 24px;
+    position: relative;
+    transition: 0.6s ease-out;
+    position: relative;
+    text-transform: uppercase; }
+    .menu-on-large .main-nav li a.active {
+      font-weight: bold; }
+      .menu-on-large .main-nav li a.active.company {
+        color: #f47b20; }
+      .menu-on-large .main-nav li a.active.products {
+        color: #fcb316; }
+      .menu-on-large .main-nav li a.active.technology {
+        color: #5ea7a5; }
+      .menu-on-large .main-nav li a.active.ideas {
+        color: #ed79ca; }
+      .menu-on-large .main-nav li a.active.contact-us {
+        color: #f15c2c; }
 
 .menu-on-large .main-nav a span:after {
   content: "";
@@ -1422,7 +1423,7 @@ body.menu-open {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  transition: .3s; }
+  transition: 0.3s; }
 
 .menu-on-large .main-nav a.company:hover span:after {
   border-bottom: 4px solid #f47b20; }
