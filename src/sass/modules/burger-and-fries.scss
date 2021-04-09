@@ -126,14 +126,20 @@ body.menu-open {
 }
 
 .main-nav a {
-  text-decoration: none;
   color: #fff;
+  display: block;
+  text-decoration: none;
 }
 
 .menu-on-small {
   display: flex;
   flex-direction: column;
   margin-top: 80px;
+
+  .dropdown__menu {
+    display: none;
+  }
+
   > .main-nav {
     display: flex;
     flex-direction: column;
@@ -162,9 +168,15 @@ body.menu-open {
   }
 }
 
+$transition: 280ms all 120ms ease-out;
+
 .menu-on-large {
   display: flex;
   align-items: center;
+  ul.base-level {
+    display: flex;
+    align-items: center;
+  }
 
   .main-nav li a {
     letter-spacing: 1.5px;
@@ -193,6 +205,53 @@ body.menu-open {
       &.contact-us {
         color: $amplifiedOrange;
       }
+    }
+  }
+
+  .dropdown__menu {
+    position: absolute;
+    min-width: 15ch;
+    left: 50%;
+    top: calc(100%);
+    transition: $transition;
+    transform: rotateX(-90deg) translateX(-50%);
+    transform-origin: top center;
+    visibility: hidden;
+    opacity: 0.3;
+    padding: 0.5em 0;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0.15em 0.25em rgba(black, 0.25);
+
+    width: 200px;
+
+    li a {
+      line-height: 1.3;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.dropdown {
+  position: relative;
+
+  &:hover,
+  &:focus-within {
+    .dropdown__menu {
+      opacity: 1;
+      transform: rotateX(0) translateX(-50%);
+      visibility: visible;
+      background: $mineralGray;
+
+      a {
+        opacity: 1;
+      }
+    }
+
+    &:after {
+      opacity: 1;
     }
   }
 }
@@ -286,8 +345,6 @@ body.menu-open {
 }
 
 .header-vapor-background {
-  // background-image: url(/images/vapors/Vapors_100x100_DarkorangePink.png);
-  // background-size: cover;
   background-color: transparent;
   height: 100%;
   opacity: 0;

@@ -1,13 +1,30 @@
 
 - var currentUrl = page
 nav.main-nav(aria-label="Main navigation")
-  ul
-    li
-      a.company(href="company.html" class={active: currentUrl === 'company'}) 
+  ul.base-level
+    li.dropdown
+      // aria-expanded needs managed with Javascript
+      a.company.dropdown__title(href="company.html" aria-expanded="false" controls="companyDropdown" class={active: currentUrl === 'company'}) 
         span Company
-    li
-      a.products(href="products.html" class={active: currentUrl === 'products'}) 
+      ul.dropdown__menu#companyDropdown
+        li
+          a(href="company.html#mission") Mission
+        li
+          a(href="company.html#corevalues") Core Values
+        li
+          a(href="company.html#leadership") Leadership
+        li
+          a(href="company.html#careers") Careers
+    li.dropdown
+      a.products.dropdown__title(href="products.html" aria-expanded="false" controls="company-dropdown" class={active: currentUrl === 'products'}) 
         span Products
+      ul.dropdown__menu#companyDropdown
+        li
+          a(href="products.html#creativegallery") Creative Gallery
+        li
+          a(href="products.html#innovation") Innovation
+        li
+          a(href="product-offers.html#leadership") Offers & Packages
     li
       a.technology(href="technology.html" class={active: currentUrl === 'technology'}) 
         span Technology

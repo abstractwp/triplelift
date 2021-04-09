@@ -15,9 +15,23 @@
       <div class="fries menu-hide">
         <div class="menu-on-small">
           <nav class="main-nav" aria-label="Main navigation">
-            <ul>
-              <li><a class="company" href="company.html"> <span>Company</span></a></li>
-              <li><a class="products" href="products.html"> <span>Products</span></a></li>
+            <ul class="base-level">
+              <li class="dropdown">
+                <!-- aria-expanded needs managed with Javascript--><a class="company dropdown__title" href="company.html" aria-expanded="false" controls="companyDropdown"> <span>Company</span></a>
+                <ul class="dropdown__menu" id="companyDropdown">
+                  <li><a href="company.html#mission">Mission</a></li>
+                  <li><a href="company.html#corevalues">Core Values</a></li>
+                  <li><a href="company.html#leadership">Leadership</a></li>
+                  <li><a href="company.html#careers">Careers</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a class="products dropdown__title" href="products.html" aria-expanded="false" controls="company-dropdown"> <span>Products</span></a>
+                <ul class="dropdown__menu" id="companyDropdown">
+                  <li><a href="products.html#creativegallery">Creative Gallery</a></li>
+                  <li><a href="products.html#innovation">Innovation</a></li>
+                  <li><a href="product-offers.html#leadership">Offers & Packages</a></li>
+                </ul>
+              </li>
               <li><a class="technology" href="technology.html"> <span>Technology</span></a></li>
               <li><a class="ideas" href="ideas.html"> <span>Ideas</span></a></li>
               <li><a class="contact-us active" href="contact-us.html"> <span>Contact us</span></a></li>
@@ -35,9 +49,23 @@
 </button> 
             <div class="menu-on-large">
               <nav class="main-nav" aria-label="Main navigation">
-                <ul>
-                  <li><a class="company" href="company.html"> <span>Company</span></a></li>
-                  <li><a class="products" href="products.html"> <span>Products</span></a></li>
+                <ul class="base-level">
+                  <li class="dropdown">
+                    <!-- aria-expanded needs managed with Javascript--><a class="company dropdown__title" href="company.html" aria-expanded="false" controls="companyDropdown"> <span>Company</span></a>
+                    <ul class="dropdown__menu" id="companyDropdown">
+                      <li><a href="company.html#mission">Mission</a></li>
+                      <li><a href="company.html#corevalues">Core Values</a></li>
+                      <li><a href="company.html#leadership">Leadership</a></li>
+                      <li><a href="company.html#careers">Careers</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="products dropdown__title" href="products.html" aria-expanded="false" controls="company-dropdown"> <span>Products</span></a>
+                    <ul class="dropdown__menu" id="companyDropdown">
+                      <li><a href="products.html#creativegallery">Creative Gallery</a></li>
+                      <li><a href="products.html#innovation">Innovation</a></li>
+                      <li><a href="product-offers.html#leadership">Offers & Packages</a></li>
+                    </ul>
+                  </li>
                   <li><a class="technology" href="technology.html"> <span>Technology</span></a></li>
                   <li><a class="ideas" href="ideas.html"> <span>Ideas</span></a></li>
                   <li><a class="contact-us active" href="contact-us.html"> <span>Contact us</span></a></li>

@@ -15,9 +15,23 @@
       <div class="fries menu-hide">
         <div class="menu-on-small">
           <nav class="main-nav" aria-label="Main navigation">
-            <ul>
-              <li><a class="company active" href="company.html"> <span>Company</span></a></li>
-              <li><a class="products" href="products.html"> <span>Products</span></a></li>
+            <ul class="base-level">
+              <li class="dropdown">
+                <!-- aria-expanded needs managed with Javascript--><a class="company dropdown__title active" href="company.html" aria-expanded="false" controls="companyDropdown"> <span>Company</span></a>
+                <ul class="dropdown__menu" id="companyDropdown">
+                  <li><a href="company.html#mission">Mission</a></li>
+                  <li><a href="company.html#corevalues">Core Values</a></li>
+                  <li><a href="company.html#leadership">Leadership</a></li>
+                  <li><a href="company.html#careers">Careers</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a class="products dropdown__title" href="products.html" aria-expanded="false" controls="company-dropdown"> <span>Products</span></a>
+                <ul class="dropdown__menu" id="companyDropdown">
+                  <li><a href="products.html#creativegallery">Creative Gallery</a></li>
+                  <li><a href="products.html#innovation">Innovation</a></li>
+                  <li><a href="product-offers.html#leadership">Offers & Packages</a></li>
+                </ul>
+              </li>
               <li><a class="technology" href="technology.html"> <span>Technology</span></a></li>
               <li><a class="ideas" href="ideas.html"> <span>Ideas</span></a></li>
               <li><a class="contact-us" href="contact-us.html"> <span>Contact us</span></a></li>
@@ -35,9 +49,23 @@
 </button> 
             <div class="menu-on-large">
               <nav class="main-nav" aria-label="Main navigation">
-                <ul>
-                  <li><a class="company active" href="company.html"> <span>Company</span></a></li>
-                  <li><a class="products" href="products.html"> <span>Products</span></a></li>
+                <ul class="base-level">
+                  <li class="dropdown">
+                    <!-- aria-expanded needs managed with Javascript--><a class="company dropdown__title active" href="company.html" aria-expanded="false" controls="companyDropdown"> <span>Company</span></a>
+                    <ul class="dropdown__menu" id="companyDropdown">
+                      <li><a href="company.html#mission">Mission</a></li>
+                      <li><a href="company.html#corevalues">Core Values</a></li>
+                      <li><a href="company.html#leadership">Leadership</a></li>
+                      <li><a href="company.html#careers">Careers</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="products dropdown__title" href="products.html" aria-expanded="false" controls="company-dropdown"> <span>Products</span></a>
+                    <ul class="dropdown__menu" id="companyDropdown">
+                      <li><a href="products.html#creativegallery">Creative Gallery</a></li>
+                      <li><a href="products.html#innovation">Innovation</a></li>
+                      <li><a href="product-offers.html#leadership">Offers & Packages</a></li>
+                    </ul>
+                  </li>
                   <li><a class="technology" href="technology.html"> <span>Technology</span></a></li>
                   <li><a class="ideas" href="ideas.html"> <span>Ideas</span></a></li>
                   <li><a class="contact-us" href="contact-us.html"> <span>Contact us</span></a></li>
@@ -79,7 +107,7 @@
           </div>
         </div>
       </div>
-      <div class="company-page-section core-values">
+      <div class="company-page-section core-values" id="corevalues">
         <div class="scrolling-sidebar"><span>Core Values</span></div>
         <div class="section-copy">
           <h2 class="big large-up">Core Values</h2>
@@ -118,7 +146,7 @@
           </div>
         </div>
       </div>
-      <div class="company-page-section leadership">
+      <div class="company-page-section leadership" id="leadership">
         <div class="scrolling-sidebar"><span>Leadership</span></div>
         <div class="section-copy">
           <h2 class="big text-primaryGradient large-up">Leadership</h2>
@@ -164,7 +192,7 @@
             <div class="team-image-container"><img class="member-image" src="https://mk0newtlihs9atvmilj.kinstacdn.com/wp-content/uploads/2020/02/julia_shullman-768x900.jpg"/><img class="arrow" src="/images/orange-right-arrow-in-white-circle.svg"/></div></a>
         </div>
       </div>
-      <div class="careers-section-container">
+      <div class="careers-section-container" id="careers">
         <div class="image-bg">
           <div class="overlay"></div>
         </div>
