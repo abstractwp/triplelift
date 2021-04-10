@@ -2038,7 +2038,7 @@ button.triggerGalleryMenu {
     .explore-our-gallery-container a.explore-our-gallery .animate-border-content {
       display: flex;
       flex-direction: column;
-      background-image: url(/images/vapors/Vapors_100x100_Heritageblue.png);
+      background-image: url(/images/vapors/Vapors_100x100_Heritageblue_02.png);
       background-size: cover;
       background-repeat: no-repeat; }
       .explore-our-gallery-container a.explore-our-gallery .animate-border-content .cta {
@@ -2052,7 +2052,7 @@ button.triggerGalleryMenu {
       font-size: 4vw; } }
 
 .first-two-sections-container {
-  background-image: url(/images/vapors/Vapors_100x100_OrangeYellow.png);
+  background-image: url(/images/vapors/Vapors_100x100_OrangeYellow_02.png);
   background-size: 160%;
   background-repeat: no-repeat;
   background-color: black;
@@ -2647,13 +2647,13 @@ Demo Animation Style
       background-position: 160%; } }
 
 .homepage-section-transition-container .section-transition.transition2 {
-  background-image: url(/images/vapors/Vapors_100x100_Heritageblue.png);
+  background-image: url(/images/vapors/Vapors_100x100_Heritageblue_02.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-color: black; }
 
 .productpage-section-transition-container .section-transition.section1 {
-  background-image: url(/images/vapors/Vapors_100x100_YellowBlue.png);
+  background-image: url(/images/vapors/Vapors_100x100_YellowBlue_02.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-color: black; }
@@ -2667,7 +2667,7 @@ Demo Animation Style
   opacity: 0; }
 
 .technologypage-section-transition-container .section-transition.section1 {
-  background-image: url(/images/vapors/Vapors_100x100_Heritageblue.png);
+  background-image: url(/images/vapors/Vapors_100x100_Heritageblue_02.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-color: black; }
