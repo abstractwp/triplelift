@@ -2118,7 +2118,7 @@ button.triggerGalleryMenu {
     margin: 0 4vw; } }
 
 .hero.not-homepage.ideas-hero {
-  background-image: url(/images/vapors/Vapors_10x10_PinkYellow.png);
+  background-image: url(/images/vapors/Vapors_10x10_PinkYellow_02.png);
   background-size: 160%;
   background-repeat: no-repeat;
   background-color: black;
@@ -2162,7 +2162,7 @@ button.triggerGalleryMenu {
       transform: skew(-7deg, 0deg); }
 
 .hero.not-homepage.company-careers-hero {
-  background-image: url(/images/vapors/Vapors_10x10_PinkYellow.png);
+  background-image: url(/images/vapors/Vapors_10x10_PinkYellow_02.png);
   background-size: 160%;
   background-repeat: no-repeat;
   background-color: black;
