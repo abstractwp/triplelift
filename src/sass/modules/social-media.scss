@@ -1,0 +1,31 @@
+.social-media-container {
+    margin-top: 48px;
+
+    @media (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        margin-left: 100px;        
+    }
+
+    ul {
+        display: flex;
+        margin-top: 18px;
+
+        li {
+            margin: 0 12px 0 0;
+
+            a {
+                border: 1px solid #4A4A4A;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 64px;
+                width: 58px;
+                img {
+                    height: 28px;
+                }
+            }
+        }
+    }
+
+}

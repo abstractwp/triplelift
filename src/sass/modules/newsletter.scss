@@ -1,0 +1,78 @@
+.hbspt-form .input input {
+    border-radius: 0 !important;
+    border: 1px solid #4a4a4a;
+    background-color: transparent !important;
+    padding: 20px 0 20px 15px;
+    color: #aaa !important;
+    text-transform: normal;
+    margin-right: 0 !important;
+    width: 100%;
+    margin-bottom: 0;
+    line-height: 24px;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+}
+
+.hbspt-form input.hs-button.primary.large {
+    background-color: transparent;
+    content: '';
+    position: relative;
+    z-index: 10;
+    border-color: transparent !important;
+    color: transparent !important;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+
+.hs-submit::before {
+    position: relative;
+    content: '';
+    background: url(https://mk0newtlihs9atvmilj.kinstacdn.com/wp-content/themes/genesis-triplelift/images/footer-mail-white.svg) no-repeat;
+    display: block;
+    width: 70px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 65%;
+}
+
+.hs-submit {
+    background: #ff6418 !important;
+    background-image: linear-gradient(
+45deg
+,#ff6418 50%,#ffb730) !important;
+    background-image: -o-linear-gradient(45deg,#ff6418 50%,#ffb730) !important;
+    float: left;
+    max-height: 66px;
+    width: 70px;
+}
+
+.hs-email {
+    float: left;
+    max-width: 320px;
+    width: calc(80% - 16px);
+}
+
+.actions {
+    position: relative;
+    margin-top: -70px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+}
+
+.newsletter-container {
+    .hbspt-form {
+        height: 80px;
+        
+    }
+    
+    h2,
+    p,
+    .hs-email, 
+    .hs-submit {
+    margin-top: 24px;
+    }
+}
+
