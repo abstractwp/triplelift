@@ -1,0 +1,34 @@
+extends ../template.pug
+
+block content
+  - var page = "technology"
+  #technologyPageJSIndicator
+  include ../regions/header.pug
+  .technologypage-section-transition-container.section-transition-container
+    .section-transition.section1
+    .section-transition.section2
+  include ../modules/ott-hero.pug
+  .technologySectionContainer.technologySection1
+    .copy-container
+      h2.text-primaryGradient.bold Brand Integration
+      p Post-production visual effects puts the right brand in the right shot.
+    .video-container
+      .animate-video-border-outer.shadow-3
+      .animate-border-content
+        iframe(class="lazy-loaded" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="" src="https://player.vimeo.com/video/420893419?background=1")  
+  .technologySectionContainer.technologySection2
+    .copy-container
+      h2.text-primaryGradient.bold In-action Six
+      p Stylized video scaleback experience delivers beautiful creative with no disruption.
+    .video-container
+      .animate-video-border-outer.shadow-3
+      .animate-border-content
+        iframe(class="lazy-loaded" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="" src="https://player.vimeo.com/video/420893419?background=1")  
+  .technologySectionContainer.technologySection3
+    .copy-container
+      h2.text-primaryGradient.bold Dynamic Overlay
+      p A new take on the lower third, smart and subtle, with a powerful impact.
+    .video-container
+      .animate-video-border-outer.shadow-3
+      .animate-border-content
+        iframe(class="lazy-loaded" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="" src="https://player.vimeo.com/video/420893419?background=1")                  

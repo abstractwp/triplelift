@@ -125,15 +125,26 @@ body.menu-open {
   right: 0;
 }
 
+.main-nav a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+}
+
 .menu-on-small {
   display: flex;
   flex-direction: column;
   margin-top: 80px;
+
+  .dropdown__menu {
+    display: none;
+  }
+
   > .main-nav {
     display: flex;
     flex-direction: column;
 
-    a {
+    li {
       width: 100%;
       text-align: right;
       padding: 24px 40px 24px 24px;
@@ -157,62 +168,91 @@ body.menu-open {
   }
 }
 
+$transition: 280ms all 120ms ease-out;
+
 .menu-on-large {
   display: flex;
   align-items: center;
-}
+  ul.base-level {
+    display: flex;
+    align-items: center;
+  }
 
-.main-nav a {
-  color: #fff;
-  letter-spacing: 1.5px;
-  font-size: 13px;
-  font-weight: 400;
-  padding: 12px 24px;
-  position: relative;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: 0.6s ease-out;
-  position: relative;
+  .main-nav li a {
+    letter-spacing: 1.5px;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 12px 24px;
+    position: relative;
+    transition: 0.6s ease-out;
+    position: relative;
+    text-transform: uppercase;
 
-  // &.active span {
-  //   position: relative;
-  //   &::before{
-  //     content: "";
-  //     position: absolute;
-  //     left: -13%;
-  //     top: 46%;
-  //     transform: translate(-50%, -50%);
-  //     background: $primaryGradient;
-  //     height: 8px;
-  //     width: 8px;
-  //     border-radius: 10px;
-
-  //     @media (max-width:1023px) {
-  //       left: -10%;
-  //     }
-  //   }
-  // }
-
-  &.active {
-    font-weight: bold;
-    &.company {
-      color: $heritageOrange;
-    }
-    &.products {
-      color: $yellow;
-    }
-    &.technology {
-      color: $calmingBlue;
-    }
-    &.ideas {
-      color: $pink;
-    }
-    &.contact-us {
-      color: $amplifiedOrange;
+    &.active {
+      font-weight: bold;
+      &.company {
+        color: $heritageOrange;
+      }
+      &.products {
+        color: $yellow;
+      }
+      &.technology {
+        color: $calmingBlue;
+      }
+      &.ideas {
+        color: $pink;
+      }
+      &.contact-us {
+        color: $amplifiedOrange;
+      }
     }
   }
 
-  
+  .dropdown__menu {
+    position: absolute;
+    min-width: 15ch;
+    left: 50%;
+    top: calc(100%);
+    transition: $transition;
+    transform: rotateX(-90deg) translateX(-50%);
+    transform-origin: top center;
+    visibility: hidden;
+    opacity: 0.3;
+    padding: 0.5em 0;
+    background: $mineralGray;
+    border-radius: 4px;
+    box-shadow: 0 0.15em 0.25em rgba(black, 0.25);
+    width: 212px;
+
+    li a {
+      line-height: 1.3;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.dropdown {
+  position: relative;
+
+  &:hover,
+  &:focus-within {
+    .dropdown__menu {
+      opacity: 1;
+      transform: rotateX(0) translateX(-50%);
+      visibility: visible;
+      background: $mineralGray;
+
+      a {
+        opacity: 1;
+      }
+    }
+
+    &:after {
+      opacity: 1;
+    }
+  }
 }
 
 .menu-on-large .main-nav a {
@@ -225,8 +265,8 @@ body.menu-open {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    transition: .3s;
-  } 
+    transition: 0.3s;
+  }
 
   &.company:hover span:after {
     border-bottom: 4px solid $heritageOrange;
@@ -304,8 +344,6 @@ body.menu-open {
 }
 
 .header-vapor-background {
-  // background-image: url(/images/vapors/Vapors_100x100_DarkorangePink.png);
-  // background-size: cover;
   background-color: transparent;
   height: 100%;
   opacity: 0;

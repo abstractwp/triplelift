@@ -27,6 +27,10 @@
   z-index: 3;
 }
 
+.section-transition.white {
+  background: white;
+}
+
 .homepage-section-transition-container {
   .section-transition {
     opacity: 0;
@@ -46,7 +50,7 @@
   }
 
   .section-transition.transition2 {
-    background-image: url(/images/vapors/Vapors_100x100_Heritageblue.png);
+    background-image: url(/images/vapors/Vapors_100x100_Heritageblue_02.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: black;
@@ -55,7 +59,7 @@
 
 .productpage-section-transition-container {
   .section-transition.section1 {
-    background-image: url(/images/vapors/Vapors_100x100_YellowBlue.png);
+    background-image: url(/images/vapors/Vapors_100x100_YellowBlue_02.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: black;
@@ -74,7 +78,7 @@
 
 .technologypage-section-transition-container {
   .section-transition.section1 {
-    background-image: url(/images/vapors/Vapors_100x100_Heritageblue.png);
+    background-image: url(/images/vapors/Vapors_100x100_Heritageblue_02.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: black;
@@ -98,6 +102,5 @@
 
   .section-transition.gradientDark1 {
     background: $gradientDark1;
-    opacity: 0;
   }
 }

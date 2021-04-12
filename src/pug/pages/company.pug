@@ -3,7 +3,6 @@ extends ../template.pug
 mixin coreValue(number, headline, body)
   .core-value-container 
     .headline-container
-      h4.headline.number=number
       h4.headline !{headline}
     p.body= body
 
@@ -48,7 +47,7 @@ block content
         p This has been true from the first day of our existence, and it remains true today. 
         p We didn’t invent advertising, but we are making advertising better.
         p Scroll further to learn more about who we are, how we work and explore ways to join the team.
-  .company-page-section.core-values
+  .company-page-section.core-values#corevalues
     .scrolling-sidebar
       span Core Values
     .section-copy
@@ -80,7 +79,7 @@ block content
           "Crush It Daily",
           "We work harder and are hungrier than the competition. Hustle is magnified by working smarter and making sure that your efforts maximize output for yourself and those around you."
         )      
-  .company-page-section.leadership
+  .company-page-section.leadership#leadership
     .scrolling-sidebar
       span Leadership
     .section-copy
@@ -161,7 +160,7 @@ block content
         "CPO & GENERAL COUNSEL",
         "https://mk0newtlihs9atvmilj.kinstacdn.com/wp-content/uploads/2020/02/julia_shullman-768x900.jpg"
       )                        
-  .careers-section-container
+  .careers-section-container#careers
     .image-bg
       .overlay
     .section-copy
@@ -170,11 +169,11 @@ block content
       p Our culture enables individuals to share their uniqueness and contribute as part of a team. 
       p With our DEI initiatives, TripleLift aims to be a place that works for you, and where you can feel a sense of belonging. 
       p To drive our inclusive culture, our People team, DEI roundtable, employee resource groups, and Executive Leadership Team support efforts to break down barriers and create sustainable change in our organization.
-      a.cta.cta-style-2 
+      a(href="/company-careers.html").cta.cta-style-2 
         span Explore job openings 
         img(src="/images/arrow-right.svg")
   .our-offices-section-container 
     h2.text-primaryGradient Our offices
-    img(src="/images/our-offices.png")
+    img(src="/images/TL_global_offices.jpg")
 
       

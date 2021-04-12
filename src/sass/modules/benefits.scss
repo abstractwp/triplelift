@@ -1,0 +1,50 @@
+.core-values.benefits {
+  background: white;
+  color: black;
+
+  .headline-container {
+    color: black !important;
+    flex-direction: column;
+
+    img {
+      margin: 24px 0 0;
+      max-height: 100px;
+    }
+  }
+}
+
+.company-page-section.core-values.benefits
+  .core-value-grid
+  .headline-container {
+  @media (min-width: 1024px) {
+    width: 360px;
+    flex-direction: row;
+    align-items: center;
+
+    img {
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .company-page-section.core-values.benefits
+    .core-value-grid
+    .core-value-container {
+    align-items: center;
+  }
+}
+
+@media (min-width: 1440px) {
+  .company-page-section.core-values.benefits {
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+}
+@media (min-width: 1024px) {
+  .company-page-section.core-values.benefits
+    .core-value-grid
+    .core-value-container {
+    grid-template-columns: 1fr 2fr;
+  }
+}

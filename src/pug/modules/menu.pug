@@ -1,14 +1,37 @@
 
 - var currentUrl = page
-.main-nav
-  a.company(href="company.html" class={active: currentUrl === 'company'}) 
-    span Company
-  a.products(href="products.html" class={active: currentUrl === 'products'}) 
-    span Products
-  a.technology(href="technology.html" class={active: currentUrl === 'technology'}) 
-    span Technology
-  a.ideas(href="ideas.html" class={active: currentUrl === 'ideas'}) 
-    span Ideas
-  a.contact-us.does-not-work(class={active: currentUrl === 'contact'}) 
-    span Contact us
+nav.main-nav(aria-label="Main navigation")
+  ul.base-level
+    li.dropdown
+      // aria-expanded needs managed with Javascript
+      a.company.dropdown__title(href="company.html" aria-expanded="false" controls="companyDropdown" class={active: currentUrl === 'company'}) 
+        span Company
+      ul.dropdown__menu#companyDropdown
+        li
+          a(href="company.html#mission") Mission
+        li
+          a(href="company.html#corevalues") Core Values
+        li
+          a(href="company.html#leadership") Leadership
+        li
+          a(href="company-careers.html") Careers
+    li.dropdown
+      a.products.dropdown__title(href="products.html" aria-expanded="false" controls="company-dropdown" class={active: currentUrl === 'products'}) 
+        span Products
+      ul.dropdown__menu#companyDropdown
+        li
+          a(href="products.html#creativegallery") Creative Gallery
+        li
+          a(href="products.html#innovation") Innovation
+        li
+          a(href="product-offers.html#leadership") Offers & Packages
+    li
+      a.technology(href="technology.html" class={active: currentUrl === 'technology'}) 
+        span Technology
+    li
+      a.ideas(href="ideas.html" class={active: currentUrl === 'ideas'}) 
+        span Ideas
+    li
+      a.contact-us(href="contact-us.html" class={active: currentUrl === 'contact-us'}) 
+        span Contact us
 a.does-not-work.login(class={active: currentUrl === 'contact'}) Login

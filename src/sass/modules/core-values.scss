@@ -4,7 +4,6 @@
     border-bottom: 1px solid rgba(255, 255, 255, .2);
     align-items: flex-start;
 
-
     @media (min-width: 1024px) {
         border-bottom: 0;
     }
@@ -86,14 +85,15 @@
         .section-copy {
 
             border: 10px solid transparent;
-        -moz-border-image: -moz-linear-gradient(top left, #f47b20 2.47%, #f15c2c 43.9%,#ed79b0 95.24%);
-        -webkit-border-image: -webkit-linear-gradient(top left, #f47b20 2.47%, #f15c2c 43.9%, #ed79b0 95.24%);
-        border-image: linear-gradient(to bottom right, #f47b20 2.47%, #f15c2c 43.9%,#ed79b0 95.24%);
-        border-image-slice: 1;  
+            -moz-border-image: -moz-linear-gradient(top left, #f47b20 2.47%, #f15c2c 43.9%,#ed79b0 95.24%);
+            -webkit-border-image: -webkit-linear-gradient(top left, #f47b20 2.47%, #f15c2c 43.9%, #ed79b0 95.24%);
+            border-image: linear-gradient(to bottom right, #f47b20 2.47%, #f15c2c 43.9%,#ed79b0 95.24%);
+            border-image-slice: 1;  
             margin-bottom: 100px;
             padding: 64px;
 
             p {
+                margin-top: 0;
                 font-size: 32px;
             }
         }
@@ -105,7 +105,12 @@
             .core-value-container {
                 display: grid;
                 grid-template-columns: 1fr 2.5fr;  
-                column-gap: 36px;              
+                column-gap: 36px;
+                
+                .headline {
+                    font-size: 40px;
+                }
+                
             }
 
             .headline-container {
